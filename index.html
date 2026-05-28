@@ -1495,14 +1495,14 @@
             const formData = Object.fromEntries(new FormData(form).entries());
             formData.createdAt = new Date().toISOString();
 
-            const GOOGLE_APPS_SCRIPT_WEBHOOK_URL = "";
+            const GOOGLE_APPS_SCRIPT_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbxNYsrzfIU4moBbw_UarjMD7Jwpxy7YV43W4IPjKOYgipW5cHHSSyfkDCJXlkBXQoq1zg/exec";
 
             try {
                 if (GOOGLE_APPS_SCRIPT_WEBHOOK_URL) {
                     await fetch(GOOGLE_APPS_SCRIPT_WEBHOOK_URL, {
                         method: "POST",
                         mode: "no-cors",
-                        headers: { "Content-Type": "application/json" },
+                        headers: { "Content-Type": "text/plain" },
                         body: JSON.stringify(formData)
                     });
                 } else {
