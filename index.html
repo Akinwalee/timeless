@@ -35,6 +35,8 @@
 
         html {
             scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
         }
 
         body {
@@ -43,6 +45,7 @@
             color: var(--white);
             line-height: 1.5;
             overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
         }
 
         body::before {
@@ -120,7 +123,7 @@
 
         .hero-grid {
             display: grid;
-            grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+            grid-template-columns: minmax(0, 1.1fr) minmax(min(320px, 100%), 0.9fr);
             gap: 80px;
             align-items: end;
         }
@@ -495,7 +498,7 @@
 
         .waitlist-grid {
             display: grid;
-            grid-template-columns: minmax(0, 0.9fr) minmax(380px, 0.8fr);
+            grid-template-columns: minmax(0, 0.9fr) minmax(min(380px, 100%), 0.8fr);
             gap: 80px;
             align-items: start;
         }
@@ -678,6 +681,7 @@
             }
         }
 
+        /* ── Tablet landscape / small desktop ── */
         @media (max-width: 920px) {
             .container {
                 width: min(100% - 32px, var(--max-width));
@@ -692,8 +696,16 @@
                 padding: 62px 0 72px;
             }
 
-            .hero-grid,
-            .section-grid,
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 48px;
+            }
+
+            .section-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
             .waitlist-grid {
                 grid-template-columns: 1fr;
                 gap: 48px;
@@ -701,6 +713,7 @@
 
             .hero-card {
                 min-height: 460px;
+                max-width: 560px;
             }
 
             .countdown {
@@ -721,23 +734,41 @@
                 padding: 78px 0;
             }
 
-            .drop-grid,
+            .drop-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
             .benefits {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .benefit:nth-child(2) {
+                border-right: 0;
+            }
+
+            .benefit:nth-child(1),
+            .benefit:nth-child(2) {
+                border-bottom: 1px solid var(--border);
+            }
+
+            .benefit:nth-child(3) {
+                border-right: 0;
             }
 
             .benefit {
                 min-height: auto;
-                border-right: 0;
-                border-bottom: 1px solid var(--border);
             }
 
             .benefit:last-child {
-                border-bottom: 0;
+                border-right: 0;
             }
 
             .waitlist-grid {
                 gap: 42px;
+            }
+
+            .form-card {
+                max-width: 520px;
             }
 
             .footer-grid {
@@ -762,21 +793,122 @@
             }
         }
 
+        /* ── Tablet portrait / large phone ── */
+        @media (max-width: 720px) {
+            .hero {
+                padding: 48px 0 56px;
+            }
+
+            .hero-card {
+                max-width: none;
+            }
+
+            .hero-subtitle {
+                font-size: clamp(20px, 5vw, 30px);
+            }
+
+            .hero-body {
+                font-size: 16px;
+            }
+
+            .section,
+            .waitlist-section {
+                padding: 64px 0;
+            }
+
+            .section-copy {
+                font-size: 16px;
+            }
+
+            .countdown {
+                margin-top: 40px;
+            }
+
+            .drop-grid {
+                gap: 14px;
+                margin-top: 32px;
+            }
+
+            .drop-card {
+                min-height: 200px;
+                padding: 20px;
+            }
+
+            .drop-card-title {
+                font-size: 26px;
+            }
+
+            .benefits {
+                margin-top: 32px;
+            }
+
+            .benefit {
+                padding: 22px;
+                gap: 28px;
+            }
+
+            .benefit h3 {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            .footer-wordmark {
+                font-size: clamp(36px, 10vw, 80px);
+            }
+        }
+
+        /* ── Phone ── */
         @media (max-width: 560px) {
+            .container {
+                width: min(100% - 24px, var(--max-width));
+            }
+
+            .nav-inner {
+                height: 60px;
+            }
+
             .brand-mark {
                 font-size: 12px;
             }
 
             .nav-link {
                 font-size: 11px;
+                padding-bottom: 3px;
+            }
+
+            .hero {
+                padding: 36px 0 48px;
+            }
+
+            .hero-grid {
+                gap: 36px;
+            }
+
+            .eyebrow {
+                margin-bottom: 20px;
+                font-size: 11px;
             }
 
             .hero-title {
-                font-size: clamp(58px, 19vw, 96px);
+                font-size: clamp(48px, 16vw, 96px);
+            }
+
+            .hero-copy {
+                margin-top: 24px;
+            }
+
+            .hero-subtitle {
+                font-size: 20px;
+                margin-bottom: 14px;
+            }
+
+            .hero-body {
+                font-size: 15px;
             }
 
             .hero-actions {
                 display: grid;
+                margin-top: 24px;
             }
 
             .hero-actions .btn {
@@ -784,16 +916,21 @@
             }
 
             .hero-card {
-                min-height: 390px;
+                min-height: 360px;
                 padding: 22px;
             }
 
+            .hero-card::before {
+                inset: 16px;
+            }
+
             .hero-card::after {
-                font-size: 62px;
+                font-size: 56px;
             }
 
             .shirt-outline {
                 width: 58%;
+                margin: 32px auto;
             }
 
             .shirt-outline::before,
@@ -810,20 +947,298 @@
                 right: -34px;
             }
 
+            .shirt-text {
+                font-size: 16px;
+            }
+
             .drop-number {
                 font-size: 54px;
             }
 
+            .countdown {
+                margin-top: 32px;
+            }
+
             .count-item {
-                padding: 20px 16px;
+                padding: 18px 14px;
+            }
+
+            .count-label {
+                font-size: 10px;
+            }
+
+            .section-grid {
+                gap: 20px;
+            }
+
+            .section,
+            .waitlist-section {
+                padding: 52px 0;
+            }
+
+            .statement {
+                font-size: clamp(28px, 8vw, 48px);
+            }
+
+            .section-copy {
+                margin-top: 20px;
+                font-size: 15px;
+            }
+
+            .drop-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+                margin-top: 28px;
             }
 
             .drop-card {
-                min-height: 180px;
+                min-height: 160px;
+                padding: 18px;
+            }
+
+            .drop-card-title {
+                font-size: 24px;
+            }
+
+            .benefits {
+                grid-template-columns: 1fr;
+                margin-top: 28px;
+            }
+
+            .benefit {
+                border-right: 0 !important;
+                border-bottom: 1px solid var(--border);
+                padding: 20px;
+                gap: 24px;
+            }
+
+            .benefit:last-child {
+                border-bottom: 0;
+            }
+
+            .benefit:nth-child(1),
+            .benefit:nth-child(2) {
+                border-bottom: 1px solid var(--border);
+            }
+
+            .waitlist-title {
+                font-size: clamp(36px, 12vw, 72px);
             }
 
             .form-card {
-                padding: 22px;
+                padding: 20px;
+                max-width: none;
+            }
+
+            .form-title {
+                font-size: 16px;
+            }
+
+            .form-description {
+                font-size: 13px;
+                margin-bottom: 22px;
+            }
+
+            .field {
+                min-height: 50px;
+                font-size: 16px;
+            }
+
+            .btn {
+                min-height: 50px;
+                font-size: 11px;
+                padding: 0 22px;
+            }
+
+            .microcopy {
+                font-size: 12px;
+            }
+
+            .footer {
+                padding: 40px 0;
+            }
+
+            .footer-grid {
+                gap: 24px;
+            }
+
+            .footer-wordmark {
+                font-size: clamp(32px, 12vw, 64px);
+            }
+
+            .footer-links {
+                gap: 14px;
+                font-size: 11px;
+            }
+
+            .footer-meta {
+                font-size: 12px;
+            }
+
+            .mobile-sticky {
+                padding: 10px 16px;
+            }
+
+            .mobile-sticky .btn {
+                min-height: 48px;
+            }
+
+            body {
+                padding-bottom: 68px;
+            }
+        }
+
+        /* ── Ultra-small screens (older/compact phones) ── */
+        @media (max-width: 360px) {
+            .container {
+                width: min(100% - 20px, var(--max-width));
+            }
+
+            .hero-title {
+                font-size: clamp(40px, 14vw, 58px);
+            }
+
+            .hero-card {
+                min-height: 300px;
+                padding: 18px;
+            }
+
+            .hero-card::after {
+                font-size: 44px;
+            }
+
+            .shirt-outline {
+                width: 52%;
+                margin: 24px auto;
+                border-radius: 26px 26px 6px 6px;
+            }
+
+            .shirt-outline::before,
+            .shirt-outline::after {
+                width: 38px;
+                height: 90px;
+                top: 32px;
+            }
+
+            .shirt-outline::before {
+                left: -28px;
+            }
+
+            .shirt-outline::after {
+                right: -28px;
+            }
+
+            .shirt-text {
+                font-size: 14px;
+                letter-spacing: 0.12em;
+            }
+
+            .drop-number {
+                font-size: 42px;
+            }
+
+            .card-label {
+                font-size: 10px;
+            }
+
+            .countdown {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+
+            .count-item {
+                padding: 14px 8px;
+            }
+
+            .count-item:nth-child(1),
+            .count-item:nth-child(2) {
+                border-bottom: 0;
+            }
+
+            .count-item:nth-child(2) {
+                border-right: 1px solid var(--border);
+            }
+
+            .count-item:last-child {
+                border-right: 0;
+            }
+
+            .count-value {
+                font-size: 26px;
+            }
+
+            .count-label {
+                font-size: 9px;
+                letter-spacing: 0.1em;
+            }
+
+            .statement {
+                font-size: clamp(24px, 7vw, 36px);
+            }
+
+            .waitlist-title {
+                font-size: clamp(30px, 10vw, 48px);
+            }
+
+            .benefit h3 {
+                font-size: 16px;
+            }
+
+            .benefit p {
+                font-size: 13px;
+            }
+
+            .drop-card {
+                min-height: 140px;
+                padding: 16px;
+            }
+
+            .drop-card-title {
+                font-size: 20px;
+            }
+
+            .field {
+                min-height: 48px;
+                padding: 0 12px;
+            }
+
+            .form-card {
+                padding: 16px;
+            }
+        }
+
+        /* ── Landscape phone orientation fix ── */
+        @media (max-height: 500px) and (orientation: landscape) {
+            .hero {
+                min-height: auto;
+                padding: 32px 0 40px;
+            }
+
+            .hero-card {
+                min-height: 320px;
+            }
+
+            .section,
+            .waitlist-section {
+                padding: 48px 0;
+            }
+        }
+
+        /* ── Large desktop (> 1400px) ── */
+        @media (min-width: 1400px) {
+            .hero {
+                padding: 96px 0 112px;
+            }
+
+            .hero-grid {
+                gap: 100px;
+            }
+
+            .section {
+                padding: 140px 0;
+            }
+
+            .waitlist-section {
+                padding: 140px 0;
             }
         }
     </style>
