@@ -1,0 +1,147 @@
+/* ═══════════════════════════════════════════
+   HERO CARD
+   ═══════════════════════════════════════════ */
+
+.heroCard {
+  border: 1px solid var(--border-color);
+  background: linear-gradient(180deg, #111 0%, #070707 100%);
+  min-height: 520px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Inner border frame */
+.heroCard::before {
+  content: "";
+  position: absolute;
+  inset: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+}
+
+/* "TIMELESS" watermark text */
+.heroCard::after {
+  content: "TIMELESS";
+  position: absolute;
+  left: 50%;
+  top: 48%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  font-size: 96px;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -0.07em;
+  color: rgba(255, 255, 255, 0.045);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.cardTop,
+.cardBottom {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+/* ═══════════════════════════════════════════
+   SHIRT OUTLINE
+   ═══════════════════════════════════════════ */
+
+.shirtOutline {
+  position: relative;
+  z-index: 1;
+  width: min(72%, 280px);
+  aspect-ratio: 0.78;
+  margin: 48px auto;
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  border-radius: 34px 34px 8px 8px;
+  background:
+    linear-gradient(90deg, transparent 0 20%, rgba(255, 255, 255, 0.06) 20% 21%, transparent 21% 79%, rgba(255, 255, 255, 0.06) 79% 80%, transparent 80%),
+    radial-gradient(circle at 50% 18%, rgba(255, 255, 255, 0.10), transparent 18%),
+    #0b0b0b;
+  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.55);
+}
+
+/* Left sleeve */
+.shirtOutline::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: -48px;
+  width: 68px;
+  height: 150px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: #0b0b0b;
+  transform: rotate(18deg);
+  border-radius: 26px 8px 8px 18px;
+}
+
+/* Right sleeve */
+.shirtOutline::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: -48px;
+  width: 68px;
+  height: 150px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: #0b0b0b;
+  transform: rotate(-18deg);
+  border-radius: 8px 26px 18px 8px;
+}
+
+.shirtText {
+  position: absolute;
+  left: 50%;
+  top: 48%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════ */
+
+@media (max-width: 920px) {
+  .heroCard {
+    min-height: 460px;
+  }
+}
+
+@media (max-width: 560px) {
+  .heroCard {
+    min-height: 390px;
+    padding: 22px;
+  }
+
+  .heroCard::after {
+    font-size: 62px;
+  }
+
+  .shirtOutline {
+    width: 58%;
+  }
+
+  .shirtOutline::before,
+  .shirtOutline::after {
+    width: 48px;
+    height: 110px;
+  }
+
+  .shirtOutline::before {
+    left: -34px;
+  }
+
+  .shirtOutline::after {
+    right: -34px;
+  }
+}

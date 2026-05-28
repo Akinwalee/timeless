@@ -1,0 +1,65 @@
+/* ═══════════════════════════════════════════
+   FORM CARD
+   ═══════════════════════════════════════════ */
+
+.formCard {
+  background: var(--black);
+  color: var(--white);
+  padding: 28px;
+  border: 1px solid #171717;
+}
+
+/* ═══════════════════════════════════════════
+   FORM FIELDS
+   ═══════════════════════════════════════════ */
+
+.field {
+  width: 100%;
+  min-height: 54px;
+  border: 1px solid var(--border-color);
+  background: #0d0d0d;
+  color: var(--white);
+  padding: 0 16px;
+  outline: none;
+  border-radius: 0;
+  font: inherit;
+  transition:
+    border-color var(--transition-fast),
+    background var(--transition-fast);
+}
+
+.field:focus {
+  border-color: var(--white);
+  background: #111;
+}
+
+.field::placeholder {
+  color: #6f6f6f;
+}
+
+/* Select dropdown */
+.selectField {
+  composes: field;
+  appearance: none;
+  color: #9a9a9a;
+}
+
+/* ═══════════════════════════════════════════
+   SUCCESS MESSAGE
+   ═══════════════════════════════════════════ */
+
+.successMessage {
+  border: 1px solid var(--border-light);
+  padding: 22px;
+  background: #101010;
+}
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════ */
+
+@media (max-width: 560px) {
+  .formCard {
+    padding: 22px;
+  }
+}

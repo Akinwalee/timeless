@@ -1,24 +1,224 @@
 @import "tailwindcss";
 
+/* ═══════════════════════════════════════════
+   DESIGN TOKENS
+   ═══════════════════════════════════════════ */
+
 :root {
-  --background: #ffffff;
-  --foreground: #000000;
-  --card: #ffffff;
-  --border: #1f1f1f;
-  --muted-foreground: #525252;
-  --radius: 0.75rem;
+  /* ── Colors ── */
+  --black: #050505;
+  --soft-black: #0a0a0a;
+  --panel: #101010;
+  --white: #ffffff;
+  --off-white: #f5f5f0;
+  --muted: #a3a3a3;
+  --muted-2: #737373;
+  --border-color: #262626;
+  --border-light: #3a3a3a;
+
+  /* ── Layout ── */
+  --max-width: 1180px;
+  --container-padding: 40px;
+  --container-padding-mobile: 32px;
+
+  /* ── Spacing ── */
+  --nav-height: 78px;
+  --nav-height-mobile: 68px;
+  --section-padding: 112px;
+  --section-padding-mobile: 78px;
+
+  /* ── Border ── */
+  --radius: 2px;
+
+  /* ── Transitions ── */
+  --transition-fast: 180ms ease;
 }
 
+/* Map tokens to Tailwind v4 utilities */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-border: var(--border);
-  --color-muted-foreground: var(--muted-foreground);
+  /* Colors — usage: bg-brand-black, text-brand-muted, border-brand-border, etc. */
+  --color-brand-black: var(--black);
+  --color-brand-soft-black: var(--soft-black);
+  --color-brand-panel: var(--panel);
+  --color-brand-white: var(--white);
+  --color-brand-off-white: var(--off-white);
+  --color-brand-muted: var(--muted);
+  --color-brand-muted-2: var(--muted-2);
+  --color-brand-border: var(--border-color);
+  --color-brand-border-light: var(--border-light);
+
+  /* Breakpoints — matches original HTML media queries exactly */
+  --breakpoint-sm: 561px;
+  --breakpoint-md: 921px;
+}
+
+/* ═══════════════════════════════════════════
+   GLOBAL RESET
+   ═══════════════════════════════════════════ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--black);
+  color: var(--white);
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* Noise texture overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.06;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+/* ═══════════════════════════════════════════
+   LAYOUT UTILITIES
+   ═══════════════════════════════════════════ */
+
+.page {
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  width: min(100% - var(--container-padding), var(--max-width));
+  margin-inline: auto;
+}
+
+@media (max-width: 920px) {
+  .container {
+    width: min(100% - var(--container-padding-mobile), var(--max-width));
+  }
+}
+
+/* ═══════════════════════════════════════════
+   BUTTON STYLES
+   ═══════════════════════════════════════════ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  padding: 0 30px;
+  border: 1px solid var(--white);
+  background: var(--white);
+  color: var(--black);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 0;
+  transition:
+    transform var(--transition-fast),
+    background var(--transition-fast),
+    color var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  background: transparent;
+  color: var(--white);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--white);
+  border-color: var(--border-light);
+}
+
+.btn-outline:hover {
+  background: var(--white);
+  color: var(--black);
+  border-color: var(--white);
+}
+
+/* ═══════════════════════════════════════════
+   EYEBROW LABEL
+   ═══════════════════════════════════════════ */
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 42px;
+  height: 1px;
+  background: var(--muted-2);
+}
+
+/* ═══════════════════════════════════════════
+   REVEAL ANIMATIONS
+   ═══════════════════════════════════════════ */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  animation: reveal 760ms cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+
+.delay-1 {
+  animation-delay: 120ms;
+}
+
+.delay-2 {
+  animation-delay: 220ms;
+}
+
+.delay-3 {
+  animation-delay: 320ms;
+}
+
+@keyframes reveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ═══════════════════════════════════════════
+   MOBILE BOTTOM PADDING (for sticky CTA bar)
+   ═══════════════════════════════════════════ */
+
+@media (max-width: 920px) {
+  body {
+    padding-bottom: 78px;
+  }
 }

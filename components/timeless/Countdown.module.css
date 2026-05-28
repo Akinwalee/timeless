@@ -1,0 +1,20 @@
+/* Responsive border adjustments for 2-col countdown grid */
+.countdown {
+  /* Base styles handled by Tailwind in the component */
+}
+
+.countItem {
+  /* Base item styles handled by Tailwind */
+}
+
+/* At mobile/tablet: 2-col grid border adjustments */
+@media (max-width: 920px) {
+  .countItem:nth-child(2) {
+    border-right: 0;
+  }
+
+  .countItem:nth-child(1),
+  .countItem:nth-child(2) {
+    border-bottom: 1px solid var(--border-color);
+  }
+}
