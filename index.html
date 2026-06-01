@@ -292,53 +292,15 @@
             letter-spacing: -0.08em;
         }
 
-        .shirt-outline {
+        .preview-image {
             position: relative;
             z-index: 1;
-            width: min(72%, 280px);
-            aspect-ratio: 0.78;
-            margin: 48px auto;
-            border: 1px solid rgba(255, 255, 255, 0.20);
-            border-radius: 34px 34px 8px 8px;
-            background:
-                linear-gradient(90deg, transparent 0 20%, rgba(255, 255, 255, 0.06) 20% 21%, transparent 21% 79%, rgba(255, 255, 255, 0.06) 79% 80%, transparent 80%),
-                radial-gradient(circle at 50% 18%, rgba(255, 255, 255, 0.10), transparent 18%),
-                #0b0b0b;
-            box-shadow: 0 40px 90px rgba(0, 0, 0, 0.55);
-        }
-
-        .shirt-outline::before,
-        .shirt-outline::after {
-            content: "";
-            position: absolute;
-            top: 40px;
-            width: 68px;
-            height: 150px;
-            border: 1px solid rgba(255, 255, 255, 0.16);
-            background: #0b0b0b;
-        }
-
-        .shirt-outline::before {
-            left: -48px;
-            transform: rotate(18deg);
-            border-radius: 26px 8px 8px 18px;
-        }
-
-        .shirt-outline::after {
-            right: -48px;
-            transform: rotate(-18deg);
-            border-radius: 8px 26px 18px 8px;
-        }
-
-        .shirt-text {
-            position: absolute;
-            left: 50%;
-            top: 48%;
-            transform: translate(-50%, -50%);
-            font-size: 20px;
-            font-weight: 900;
-            letter-spacing: 0.18em;
-            text-transform: uppercase;
+            width: min(80%, 320px);
+            margin: auto;
+            border-radius: 8px;
+            box-shadow: 0 40px 90px rgba(0, 0, 0, 0.65);
+            display: block;
+            object-fit: cover;
         }
 
         .countdown {
@@ -929,27 +891,9 @@
                 font-size: 56px;
             }
 
-            .shirt-outline {
-                width: 58%;
-                margin: 32px auto;
-            }
-
-            .shirt-outline::before,
-            .shirt-outline::after {
-                width: 48px;
-                height: 110px;
-            }
-
-            .shirt-outline::before {
-                left: -34px;
-            }
-
-            .shirt-outline::after {
-                right: -34px;
-            }
-
-            .shirt-text {
-                font-size: 16px;
+            .preview-image {
+                width: 70%;
+                margin: 24px auto;
             }
 
             .drop-number {
@@ -1108,30 +1052,9 @@
                 font-size: 44px;
             }
 
-            .shirt-outline {
-                width: 52%;
-                margin: 24px auto;
-                border-radius: 26px 26px 6px 6px;
-            }
-
-            .shirt-outline::before,
-            .shirt-outline::after {
-                width: 38px;
-                height: 90px;
-                top: 32px;
-            }
-
-            .shirt-outline::before {
-                left: -28px;
-            }
-
-            .shirt-outline::after {
-                right: -28px;
-            }
-
-            .shirt-text {
-                font-size: 14px;
-                letter-spacing: 0.12em;
+            .preview-image {
+                width: 65%;
+                margin: 16px auto;
             }
 
             .drop-number {
@@ -1280,9 +1203,7 @@
                                 <span class="drop-number">01</span>
                             </div>
 
-                            <div class="shirt-outline" aria-hidden="true">
-                                <span class="shirt-text">Timeless</span>
-                            </div>
+                            <img class="preview-image" src="preview.png" alt="Timeless first drop preview">
 
                             <div class="card-bottom">
                                 <span class="card-label">Limited first release</span>
