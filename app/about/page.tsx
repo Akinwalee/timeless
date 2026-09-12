@@ -11,7 +11,7 @@ export default function AboutPage() {
   return (
     <main id="main-content">
       <section className="relative flex min-h-svh items-end overflow-hidden bg-black px-[var(--gutter)] pb-10 text-white md:pb-16">
-        <Image src="/images/brand/asset-034.jpg" alt="Timeless campaign portrait" fill priority sizes="100vw" className="object-cover opacity-70" />
+        <Image src="/images/brand/asset-038.jpg" alt="Timeless campaign portrait" fill priority sizes="100vw" className="object-cover opacity-70" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/30" />
         <div className="relative z-10"><p className="eyebrow mb-7 text-white/55">About Timeless</p><h1 className="display max-w-[12ch] text-[clamp(5rem,13vw,15rem)]">Identity over imitation.</h1></div>
       </section>

@@ -27,7 +27,7 @@ export function HeroScene() {
       <Image src="/images/brand/asset-034.jpg" alt="Timeless campaign portrait" fill priority sizes="100vw" className="hero-image object-cover object-[58%_center] md:object-center" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/5 to-black/25" />
       <div className="site-shell absolute inset-x-0 bottom-0 z-10 pb-8 md:pb-12">
-        <p className="hero-copy display max-w-[11ch] text-[clamp(4.4rem,11vw,12rem)]">Style moves without permission.</p>
+        <p className="hero-copy display max-w-[11ch] text-[clamp(4.4rem,11vw,12rem)]">Make your style move without permission.</p>
         <div className="hero-meta mt-7 flex items-end justify-between">
           <Link href="/shop" className="text-link">Explore the first drop <span aria-hidden>↗</span></Link>
           <span className="hidden text-[.62rem] uppercase tracking-[.16em] text-white/65 md:block">Drop 001 — Nigeria, 2026</span>

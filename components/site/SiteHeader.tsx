@@ -32,7 +32,7 @@ export function SiteHeader() {
     <>
       <header className={`fixed inset-x-0 top-0 z-[80] text-white mix-blend-difference transition-transform duration-500 ${hidden ? "-translate-y-full" : "translate-y-0"}`}>
         <nav className="site-shell flex h-20 items-center justify-between" aria-label="Primary navigation">
-          <Wordmark className="relative z-10 text-[2.15rem]" />
+          <Wordmark className="relative z-10" />
           <div className="hidden items-center gap-8 text-[.72rem] uppercase tracking-[.13em] md:flex">
             {links.map((link) => <Link key={link.href} className="transition-opacity hover:opacity-50" href={link.href}>{link.label}</Link>)}
             <button type="button" className="uppercase tracking-[.13em]" aria-label="Open shopping bag">Bag (0)</button>
@@ -45,7 +45,7 @@ export function SiteHeader() {
       </header>
       <div className={`fixed inset-0 z-[90] bg-black text-white transition-[clip-path] duration-700 [transition-timing-function:var(--ease-editorial)] ${open ? "[clip-path:inset(0_0_0_0)]" : "pointer-events-none [clip-path:inset(0_0_100%_0)]"}`} aria-hidden={!open}>
         <div className="site-shell flex h-20 items-center justify-between">
-          <Wordmark className="text-[2.15rem]" />
+          <Wordmark className="" />
           <button type="button" onClick={() => setOpen(false)} aria-label="Close menu"><X size={25} strokeWidth={1.2} /></button>
         </div>
         <div className="grid h-[calc(100svh-5rem)] md:grid-cols-[1.1fr_.9fr]">
