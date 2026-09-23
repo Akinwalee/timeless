@@ -40,7 +40,19 @@ Purposeful web exports are stored under `public/images/timeless`. The retained s
 
 The source-to-role shortlist is recorded in `docs/image-audit.md`.
 
-The local In the Wild groups are Court Assembly, At the Steps, and Between Frames. Journal fallback imagery uses the selected campaign, detail and packaging frames. Hero and Identity in Motion imagery remain on their existing assets.
+The Sanity seed includes Court Assembly, At the Steps, Between Frames, and the archive-only Late Light story. The local fallback retains the first three homepage stories. Journal imagery uses the selected campaign, detail and packaging frames. Hero and Identity in Motion imagery remain on their existing assets.
+
+## Seed Sanity
+
+The idempotent seed uses deterministic document IDs and reuses matching image assets by SHA-1 hash. It publishes one product, three Journal stories, four In the Wild entries, and Global Settings.
+
+```bash
+npm run sanity -- login
+npm run sanity:seed:dry
+npm run sanity:seed
+```
+
+The dry run does not contact or change Sanity. The authenticated seed refuses to continue when a matching draft exists, uploads only missing assets, and verifies the published document and asset totals after committing.
 
 ## Bag and checkout
 
@@ -59,7 +71,7 @@ npm run build
 
 1. Create a Sanity project on the free plan with a public `production` dataset.
 2. Copy `.env.example` to `.env.local` and add the project ID.
-3. Add `http://localhost:3000` and the deployed site origin to Sanity CORS with credentials enabled so Studio sign-in works.
+3. Add the local origin you use (`http://localhost:3000` or `http://127.0.0.1:3000`) and the deployed site origin to Sanity CORS with credentials enabled so Studio sign-in works.
 4. Restart the site, open `/studio`, and sign in.
-5. Upload only the curated images needed by the product, Journal and In the Wild records.
-6. Create and publish Global Settings plus the relevant documents, then smoke-test the connected site.
+5. Run the dry seed and authenticated seed commands above.
+6. Review the published records in Studio, then smoke-test the connected site.

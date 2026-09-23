@@ -1,4 +1,4 @@
-import createImageUrlBuilder, { type SanityImageSource } from "@sanity/image-url";
+import { createImageUrlBuilder, type SanityImageSource } from "@sanity/image-url";
 import type { ResolvedImage } from "@/lib/content";
 import { isSanityConfigured, sanityEnv } from "../env";
 
