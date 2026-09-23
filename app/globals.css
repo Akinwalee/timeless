@@ -50,6 +50,7 @@ button, input, select { font: inherit; }
 button { color: inherit; }
 img { background: #e9e8e4; }
 ::selection { background: var(--ink); color: var(--paper); }
+:focus-visible { outline: 1px solid currentColor; outline-offset: 4px; }
 
 .skip-link {
   position: fixed; left: 1rem; top: -4rem; z-index: 200;
@@ -91,12 +92,38 @@ img { background: #e9e8e4; }
 .page-intro { padding: clamp(8rem, 15vw, 14rem) var(--gutter) clamp(4rem, 7vw, 7rem); }
 .page-title { font-size: clamp(4.8rem, 14vw, 14rem); }
 .route-transition { transform-origin: top; }
+.responsive-content-image {
+  object-position: var(--image-position, center);
+}
+.responsive-content-image.object-contain { object-fit: contain; }
+.variant-image-enter { animation: variant-image-enter .45s var(--ease-editorial) both; }
+.editorial-carousel { scrollbar-width: none; }
+.editorial-carousel::-webkit-scrollbar { display: none; }
+.bag-dialog {
+  inset-block: 0;
+  border: 0;
+  box-shadow: -1rem 0 4rem rgba(0, 0, 0, .18);
+}
+.bag-dialog[open] { animation: bag-enter .45s var(--ease-editorial) both; }
+.bag-dialog::backdrop { background: rgba(0, 0, 0, .58); }
+.portable-copy p + p { margin-top: 1.25rem; }
+.portable-copy h2, .portable-copy h3 { margin-block: 3rem 1rem; font-size: clamp(2rem, 4vw, 4.25rem); line-height: 1; letter-spacing: -.05em; }
+
+@keyframes variant-image-enter {
+  from { opacity: .25; transform: scale(1.015); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes bag-enter {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
 
 @media (max-width: 767px) {
   :root { --section: 6.5rem; }
   .page-intro { padding-top: 8rem; }
   .editorial-copy { font-size: 1.08rem; }
   .desktop-only { display: none !important; }
+  .responsive-content-image { object-position: var(--image-position-mobile, var(--image-position, center)); }
 }
 @media (min-width: 768px) { .mobile-only { display: none !important; } }
 @media (prefers-reduced-motion: reduce) {
