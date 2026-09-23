@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { Wordmark } from "./Wordmark";
 import { BagButton } from "@/components/bag/BagButton";
@@ -17,8 +18,10 @@ export function SiteHeader({
   socialLinks: NavigationLink[];
   contactEmail: string;
 }) {
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [hidden, setHidden] = useState(false);
+  const [overHomeHero, setOverHomeHero] = useState(pathname === "/");
   const menu = useRef<HTMLDivElement>(null);
   const menuButton = useRef<HTMLButtonElement>(null);
   const closeButton = useRef<HTMLButtonElement>(null);
@@ -28,11 +31,13 @@ export function SiteHeader({
     const onScroll = () => {
       const next = window.scrollY;
       setHidden(next > previous && next > 100 && !open);
+      setOverHomeHero(pathname === "/" && next < window.innerHeight * 0.82);
       previous = next;
     };
+    onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, [open]);
+  }, [open, pathname]);
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
@@ -57,7 +62,7 @@ export function SiteHeader({
 
   return (
     <>
-      <header className={`fixed inset-x-0 top-0 z-[80] text-white mix-blend-difference transition-transform duration-500 ${hidden ? "-translate-y-full" : "translate-y-0"}`}>
+      <header className={`fixed inset-x-0 top-0 z-[80] text-white transition-transform duration-500 ${overHomeHero ? "" : "mix-blend-difference"} ${hidden ? "-translate-y-full" : "translate-y-0"}`}>
         <nav className="site-shell flex h-20 items-center justify-between" aria-label="Primary navigation">
           <Wordmark className="relative z-10" />
           <div className="hidden items-center gap-8 text-[.72rem] uppercase tracking-[.13em] md:flex">

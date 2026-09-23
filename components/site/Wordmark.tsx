@@ -3,8 +3,15 @@ import Link from "next/link";
 
 export function Wordmark({ className = "" }: { className?: string }) {
   return (
-    <Link href="/" aria-label="Timeless home" className={`${className}`}>
-      <Image src="/images/brand/logo-white.png" alt="Timeless Wordmark" width={244} height={27} className="h-auto max-w-[180px]" priority={true} />
+    <Link href="/" aria-label="Timeless home" className={className}>
+      <Image
+        src="/images/brand/logo-white.png"
+        alt="Timeless Wordmark"
+        width={4320}
+        height={1493}
+        className="brand-wordmark h-auto w-[180px]"
+        priority
+      />
     </Link>
   );
 }
