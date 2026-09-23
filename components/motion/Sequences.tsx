@@ -9,10 +9,9 @@ import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const identityFrames = [
-  { image: "/images/brand/asset-008.jpg", words: "One piece." },
-  { image: "/images/brand/asset-014.jpg", words: "Different moods." },
-  { image: "/images/brand/asset-011.jpg", words: "Different moments." },
-  { image: "/images/editorial/street-portrait.jpg", words: "No fixed form." },
+  { image: "/images/timeless/site/identity-one-piece.jpg", alt: "Two friends styling black Timeless tees against the sky", position: "50% 18%", words: "One piece." },
+  { image: "/images/timeless/site/identity-moods.jpg", alt: "Three Timeless models arranged across the stadium steps", position: "50% 18%", words: "Different moods." },
+  { image: "/images/timeless/site/identity-moments.jpg", alt: "Two Timeless models sharing a relaxed court-side portrait", position: "50% 22%", words: "Different moments." },
 ];
 
 export function IdentitySequence() {
@@ -31,18 +30,18 @@ export function IdentitySequence() {
   }, { scope: section });
 
   return (
-    <section ref={section} className="relative min-h-svh overflow-hidden bg-black text-white" aria-label="Identity in Motion">
+    <section id="identity-in-motion" ref={section} className="relative min-h-svh overflow-hidden bg-black text-white" aria-label="Identity in Motion">
       <div className="absolute left-[var(--gutter)] top-24 z-20 max-w-2xl"><p className="eyebrow mb-4 text-white/60">Identity in Motion</p><h2 className="display text-[clamp(3.5rem,8vw,8rem)]">Worn by every version of you.</h2></div>
       <div className="absolute inset-0 hidden md:left-[38%] md:block">
-        {identityFrames.map((frame, index) => <div key={frame.image} className="identity-frame absolute inset-0" style={{ zIndex: identityFrames.length - index }}><Image src={frame.image} alt="Timeless styling study" fill sizes="(max-width: 767px) 100vw, 62vw" className="object-cover" /></div>)}
+        {identityFrames.map((frame, index) => <div key={frame.image} className="identity-frame absolute inset-0" style={{ zIndex: identityFrames.length - index }}><Image src={frame.image} alt={frame.alt} fill loading="eager" sizes="(max-width: 767px) 100vw, 62vw" className="object-cover" style={{ objectPosition: frame.position }} /></div>)}
       </div>
       <div className="absolute bottom-10 left-[var(--gutter)] z-30 hidden h-20 overflow-hidden md:block">
         {identityFrames.map((frame, index) => <p key={frame.words} className={`identity-label absolute bottom-0 whitespace-nowrap text-[clamp(1.6rem,3vw,3rem)] ${index ? "opacity-0" : ""}`}>{frame.words}</p>)}
       </div>
       <div className="mobile-only relative z-10 space-y-4 px-[var(--gutter)] pb-12 pt-[22rem]">
-        {identityFrames.map((frame) => <div key={frame.words} className="relative aspect-[3/4] overflow-hidden"><Image src={frame.image} alt="Timeless styling study" fill sizes="100vw" className="object-cover" /><p className="absolute inset-x-4 bottom-4 text-2xl">{frame.words}</p></div>)}
+        {identityFrames.map((frame) => <div key={frame.words} className="relative aspect-[3/4] overflow-hidden"><Image src={frame.image} alt={frame.alt} fill sizes="100vw" className="object-cover" style={{ objectPosition: frame.position }} /><p className="absolute inset-x-4 bottom-4 text-2xl">{frame.words}</p></div>)}
       </div>
-      <p className="absolute bottom-8 right-[var(--gutter)] z-30 hidden text-[.65rem] uppercase tracking-[.16em] text-white/55 md:block">Scroll to transform</p>
+      <p className="absolute bottom-8 right-[var(--gutter)] z-30 hidden text-[.65rem] uppercase tracking-[.16em] text-white/55 md:block"></p>
     </section>
   );
 }

@@ -24,7 +24,7 @@ export function HeroScene() {
   }, { scope: scene });
   return (
     <section ref={scene} className="relative min-h-svh overflow-hidden bg-black text-white">
-      <Image src="/images/brand/asset-034.jpg" alt="Timeless campaign portrait" fill priority sizes="100vw" className="hero-image object-cover object-[58%_center] md:object-center" />
+      <Image src="/images/timeless/site/home-hero.jpg" alt="Two Timeless models photographed from below against a deep blue sky" fill priority sizes="100vw" className="hero-image object-cover object-center" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/5 to-black/25" />
       <div className="site-shell absolute inset-x-0 bottom-0 z-10 pb-8 md:pb-12">
         <p className="hero-copy display max-w-[11ch] text-[clamp(4.4rem,11vw,12rem)]">Make your style move without permission.</p>

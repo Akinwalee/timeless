@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { PageTransition } from "@/components/motion/PageTransition";
+import { BagProvider } from "@/components/bag/BagProvider";
+import { getGlobalSettings } from "@/sanity/lib/fetch";
 import "./globals.css";
 
 const host = localFont({
@@ -26,15 +28,20 @@ export const metadata: Metadata = {
     "Timeless is an independent Nigerian fashion label built around identity, movement and unrestricted expression.",
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const settings = await getGlobalSettings();
+  const whatsappNumber = settings.whatsappNumber || process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
+
   return (
     <html lang="en" className={`${host.variable} ${greatVibes.variable}`}>
       <body>
-        <a className="skip-link" href="#main-content">Skip to content</a>
-        <SiteHeader />
-        <PageTransition />
-        {children}
-        <SiteFooter />
+        <BagProvider whatsappNumber={whatsappNumber}>
+          <a className="skip-link" href="#main-content">Skip to content</a>
+          <SiteHeader links={settings.navigation} socialLinks={settings.socialLinks} contactEmail={settings.contactEmail} />
+          <PageTransition />
+          {children}
+          <SiteFooter settings={settings} />
+        </BagProvider>
       </body>
     </html>
   );
