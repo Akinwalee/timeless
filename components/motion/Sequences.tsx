@@ -10,8 +10,8 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const identityFrames = [
   { image: "/images/timeless/site/identity-one-piece.jpg", alt: "Two friends styling black Timeless tees against the sky", position: "50% 18%", words: "One piece." },
-  { image: "/images/timeless/site/identity-moods.jpg", alt: "Three Timeless models arranged across the stadium steps", position: "50% 18%", words: "Different moods." },
-  { image: "/images/timeless/site/identity-moments.jpg", alt: "Two Timeless models sharing a relaxed court-side portrait", position: "50% 22%", words: "Different moments." },
+  { image: "/images/timeless/site/identity-moments.jpg", alt: "Two Timeless models sharing a relaxed court-side portrait", position: "50% 18%", words: "Different moments." },
+  { image: "/images/timeless/site/identity-moods.jpg", alt: "Three Timeless models arranged across the stadium steps", position: "50% 22%", words: "Different moods." },
 ];
 
 export function IdentitySequence() {

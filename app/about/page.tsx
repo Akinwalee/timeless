@@ -35,7 +35,7 @@ export default function AboutPage() {
 
       <section className="site-shell grid gap-16 py-[var(--section)] md:grid-cols-[1.15fr_.85fr] md:items-end">
         <ImageReveal className="aspect-[4/5]"><Image src="/images/timeless/site/about-global.jpg" alt="Low-angle portrait of a Timeless model in the brown Essential Tee" fill sizes="(max-width: 767px) 100vw, 55vw" className="object-cover grayscale" /></ImageReveal>
-        <div className="pb-8"><p className="eyebrow text-black/45">Where it is going</p><h2 className="display mt-7 text-[clamp(4rem,7vw,8rem)]">Built here.<br />Not limited to here.</h2><p className="editorial-copy mt-10 text-black/58">A modern African streetwear identity can be deeply rooted without becoming geographically contained. Timeless is building from Nigeria, in conversation with everywhere.</p></div>
+        <div className="pb-8"><p className="eyebrow text-black/45">Where it is going</p><h2 className="display mt-7 text-[clamp(4rem,7vw,8rem)]">Designed here.<br />Never limited by that.</h2><p className="editorial-copy mt-10 text-black/58">A modern African streetwear identity can be deeply rooted without becoming geographically contained. Timeless is building from Nigeria, in conversation with everywhere.</p></div>
       </section>
 
       <section className="site-shell border-t border-black/15 py-[var(--section)]"><p className="display text-[clamp(4.5rem,10vw,12rem)]">This is only the beginning.</p><Link href="/shop" className="text-link mt-12">Explore the first drop <ArrowRight size={15} /></Link></section>

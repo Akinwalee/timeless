@@ -23,7 +23,9 @@ export default async function ProductPage({ params }: Props) {
   const [product, stories] = await Promise.all([getProduct(slug), getJournalEntries()]);
   if (!product) notFound();
   const firstVariant = product.variants[0];
-  const editorialImages = product.variants.flatMap((variant) => [variant.primaryImage, ...variant.gallery]);
+  const editorialImages = product.variants.map(
+    (variant) => variant.primaryImage
+  );
   const nextStory = stories[0];
   return (
     <main id="main-content" className="pt-20">

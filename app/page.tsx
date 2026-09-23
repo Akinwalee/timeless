@@ -33,7 +33,7 @@ export default async function Home() {
       <StatementSequence />
 
       <section className="site-shell grid gap-12 py-[clamp(5rem,9vw,8rem)] md:grid-cols-[.9fr_1.1fr] md:items-center">
-        <ImageReveal className="h-[min(68svh,42rem)] min-h-[30rem]"><Image src="/images/timeless/about/about-timeless-preview.jpg" alt="Timeless portrait on the stadium steps" fill sizes="(max-width: 767px) 100vw, 42vw" className="object-cover object-[50%_55%]" /></ImageReveal>
+        <ImageReveal className="h-[min(68svh,42rem)] min-h-[30rem]"><Image src="/images/timeless/about/about-timeless-pr.jpeg" alt="Timeless" fill sizes="(max-width: 767px) 100vw, 42vw" className="object-cover object-[50%_55%]" /></ImageReveal>
         <Reveal className="pb-2 md:pl-[8vw]">
           <p className="eyebrow text-black/50">About Timeless</p>
           <h2 className="mt-6 max-w-xl text-[clamp(2.7rem,5vw,5.6rem)] leading-[.96] tracking-[-.06em]">Designed with identity.</h2>
