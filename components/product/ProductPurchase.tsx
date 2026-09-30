@@ -17,9 +17,11 @@ export function ProductPurchase({
   onVariantChange: (id: string) => void;
 }) {
   const [size, setSize] = useState("");
-  const [added, setAdded] = useState(false);
+  const [addedSelection, setAddedSelection] = useState("");
   const { addItem } = useBag();
   const purchasable = product.status === "available";
+  const selection = `${variant.id}:${size}`;
+  const added = addedSelection === selection;
 
   const add = () => {
     if (!size || !variant || !purchasable) return;
@@ -35,7 +37,7 @@ export function ProductPurchase({
       image: variant.primaryImage.src,
       imageAlt: variant.primaryImage.alt,
     });
-    setAdded(true);
+    setAddedSelection(selection);
   };
 
   return (
@@ -44,11 +46,11 @@ export function ProductPurchase({
       <h1 className="mt-5 text-[clamp(2.3rem,4vw,4.6rem)] leading-[.95] tracking-[-.055em]">{product.name}</h1>
       <p className="mt-5 text-xl">{formatMoney(product.price, product.currency)}</p>
       <p className="mt-7 max-w-md text-sm leading-relaxed text-black/58">{product.description}</p>
-      <fieldset className="mt-10">
+      <fieldset className="product-colour-selector mt-10 hidden md:block">
         <legend className="mb-4 text-xs uppercase tracking-[.12em]">Colour <span className="ml-3 normal-case tracking-normal text-black/50">{variant.name}</span></legend>
         <div className="flex flex-wrap gap-2">
           {product.variants.map((item) => (
-            <button key={item.id} type="button" onClick={() => { onVariantChange(item.id); setAdded(false); }} aria-pressed={variant.id === item.id} className={`min-h-11 border px-4 text-xs ${variant.id === item.id ? "border-black bg-black text-white" : "border-black/25"}`}>{item.name}</button>
+            <button key={item.id} type="button" onClick={() => { onVariantChange(item.id); setAddedSelection(""); }} aria-pressed={variant.id === item.id} className={`min-h-11 border px-4 text-xs ${variant.id === item.id ? "border-black bg-black text-white" : "border-black/25"}`}>{item.name}</button>
           ))}
         </div>
       </fieldset>
@@ -56,7 +58,7 @@ export function ProductPurchase({
         <legend className="sr-only">Size</legend>
         <div className="mb-4 flex items-center justify-between"><span className="text-xs uppercase tracking-[.12em]">Size</span><Link className="border-b border-black/50 text-xs" href="#size-guide">Size guide</Link></div>
         <div className="grid grid-cols-6 gap-2">
-          {product.sizes.map((item) => <button key={item} type="button" onClick={() => { setSize(item); setAdded(false); }} aria-pressed={size === item} className={`aspect-square border text-xs ${size === item ? "border-black bg-black text-white" : "border-black/25"}`}>{item}</button>)}
+          {product.sizes.map((item) => <button key={item} type="button" onClick={() => { setSize(item); setAddedSelection(""); }} aria-pressed={size === item} className={`min-h-11 min-w-0 aspect-square border text-xs ${size === item ? "border-black bg-black text-white" : "border-black/25"}`}>{item}</button>)}
         </div>
       </fieldset>
       {!size && <p className="mt-3 text-xs text-black/50" role="status">Choose a size before adding this piece.</p>}

@@ -59,8 +59,8 @@ export default async function Home() {
         <div className="mt-10 max-w-xl md:mt-0"><p className="mb-12 text-xl leading-snug tracking-[-.03em]">Drops, stories and things worth knowing before they travel wider.</p><Newsletter /></div>
       </section>
 
-      <section className="relative min-h-svh overflow-hidden bg-black text-white">
-        <Image src="/images/brand/asset-025.jpg" alt="Folded Timeless garments in campaign colours" fill sizes="100vw" className="object-cover" />
+      <section className="relative overflow-hidden bg-black text-white md:min-h-svh">
+        <Image src="/images/brand/asset-025.jpg" alt="Folded Timeless garments in campaign colours" width={3456} height={1777} sizes="100vw" className="block h-auto w-full md:absolute md:inset-0 md:h-full md:object-cover" />
       </section>
     </main>
   );

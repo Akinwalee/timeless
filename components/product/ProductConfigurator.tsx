@@ -5,6 +5,7 @@ import type { Product } from "@/lib/content";
 import { resolveProductGallery } from "@/lib/product";
 import { GalleryViewer } from "./GalleryViewer";
 import { ProductPurchase } from "./ProductPurchase";
+import { ProductColourSelector } from "./ProductColourSelector";
 
 export function ProductConfigurator({ product }: { product: Product }) {
   const [variantId, setVariantId] = useState(product.variants[0]?.id || "");
@@ -14,7 +15,10 @@ export function ProductConfigurator({ product }: { product: Product }) {
   if (!variant) return null;
   return (
     <section className="grid items-start md:grid-cols-2">
-      <GalleryViewer key={images[0]?.src} images={images} />
+      <div className="min-w-0">
+        <GalleryViewer key={images[0]?.src} images={images} />
+        <ProductColourSelector variants={product.variants} selectedId={variant.id} onChange={setVariantId} className="mx-[var(--gutter)] mt-4 md:hidden" />
+      </div>
       <ProductPurchase product={product} variant={variant} onVariantChange={setVariantId} />
     </section>
   );

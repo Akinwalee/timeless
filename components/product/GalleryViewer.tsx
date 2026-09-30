@@ -27,10 +27,10 @@ export function GalleryViewer({ images }: { images: ResolvedImage[] }) {
           <button
             key={`${image.src}-${i}`}
             onClick={() => setIndex(i)}
-            className={`group image-frame relative w-full bg-bone ${i > 0 ? "hidden md:block" : "block"} ${i === 0 ? "aspect-[4/5]" : i === 1 ? "aspect-[5/6]" : "aspect-square"}`}
+            className={`group image-frame relative w-full bg-bone ${i > 0 ? "hidden md:block" : "block"} ${i === 0 ? "h-[min(52svh,32rem)] md:aspect-[4/5] md:h-auto" : i === 1 ? "aspect-[5/6]" : "aspect-square"}`}
             aria-label={`View image ${i + 1} full screen`}
           >
-            <ResponsiveImage image={image} priority={i === 0} sizes="(max-width: 767px) 100vw, 50vw" className="transition-transform duration-700 group-hover:scale-[1.015]" />
+            <ResponsiveImage image={image} priority={i === 0} sizes="(max-width: 767px) 100vw, 50vw" className="product-preview-image transition-transform duration-700 group-hover:scale-[1.015]" />
           </button>
         ))}
       </div>

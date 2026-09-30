@@ -77,7 +77,7 @@ export function InTheWildCarousel({ entries }: { entries: InTheWildEntry[] }) {
     >
       <div className="site-shell flex items-end justify-between gap-8">
         <div><p className="eyebrow text-white/45">Field archive</p><h2 className="display mt-5 text-[clamp(4.5rem,10vw,11rem)]">Timeless In the Wild</h2></div>
-        <Link href="/in-the-wild" className="text-link hidden md:inline-flex">Enter the archive <ArrowRight size={15} /></Link>
+        <Link href="/in-the-wild" className="text-link desktop-only">Enter the archive <ArrowRight size={15} /></Link>
       </div>
       <div ref={track} className="editorial-carousel mt-14 flex snap-x snap-mandatory gap-4 overflow-x-auto overscroll-x-contain pl-[var(--gutter)] pr-[12vw] md:gap-7 md:pr-[18vw]">
         {entries.map((entry, slideIndex) => (
@@ -107,7 +107,7 @@ export function InTheWildCarousel({ entries }: { entries: InTheWildEntry[] }) {
           <button type="button" onClick={() => goTo(index + 1)} className="grid h-12 w-12 place-items-center border border-white/35 transition-colors hover:bg-white hover:text-black" aria-label="Next story"><ArrowRight size={17} /></button>
         </div>
       </div>
-      <Link href="/in-the-wild" className="text-link mx-[var(--gutter)] mt-10 md:hidden">Enter the archive <ArrowRight size={15} /></Link>
+      <Link href="/in-the-wild" className="text-link mobile-only mx-[var(--gutter)] mt-10">Enter the archive <ArrowRight size={15} /></Link>
     </section>
   );
 }
