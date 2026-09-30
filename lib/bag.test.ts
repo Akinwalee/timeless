@@ -57,6 +57,13 @@ describe("bag", () => {
     expect(state.items).toHaveLength(1);
   });
 
+  it("preserves persisted string images from local and legacy Sanity delivery", () => {
+    for (const image of ["/tee.jpg", "https://cdn.sanity.io/images/project/production/image.jpg?w=2400&auto=format", "https://cdn.sanity.io/images/project/production/image.jpg?rect=10,10,100,200"]) {
+      const state = bagReducer(initialBagState, { type: "add", item: { ...item, image } });
+      expect(parseStoredBag(serializeBag(state.items))[0].image).toBe(image);
+    }
+  });
+
   it("disables checkout for a missing or invalid number", () => {
     expect(normalizeWhatsAppNumber("+234 (800) 123-4567")).toBe("2348001234567");
     expect(buildWhatsAppUrl([{ ...item, key: "key", quantity: 1 }], "123")).toBeNull();

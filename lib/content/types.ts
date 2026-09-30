@@ -1,3 +1,21 @@
+export type ImageCrop = { top: number; bottom: number; left: number; right: number };
+export type ImageHotspot = { x: number; y: number; width: number; height: number };
+export type SanityImageMetadata = {
+  assetId: string;
+  projectId: string;
+  dataset: string;
+  crop?: ImageCrop;
+  hotspot?: ImageHotspot;
+};
+
+export type ImageSource = {
+  src: string;
+  width?: number;
+  height?: number;
+  lqip?: string;
+  sanity?: SanityImageMetadata;
+};
+
 export type ResolvedImage = {
   src: string;
   alt: string;
@@ -7,6 +25,9 @@ export type ResolvedImage = {
   position?: string;
   mobilePosition?: string;
   caption?: string;
+  lqip?: string;
+  sanity?: SanityImageMetadata;
+  mobile?: ImageSource;
 };
 
 export type ProductVariant = {

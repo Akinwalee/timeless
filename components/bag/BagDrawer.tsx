@@ -53,7 +53,7 @@ export function BagDrawer({ whatsappNumber }: { whatsappNumber?: string }) {
               {items.map((item) => (
                 <article key={item.key} className="grid grid-cols-[6.5rem_1fr] gap-5 border-b border-black/15 py-6">
                   <div className="relative aspect-[4/5] overflow-hidden bg-bone">
-                    <Image src={item.image} alt={item.imageAlt} fill sizes="110px" className="object-cover" />
+                    {open && <Image src={item.image} alt={item.imageAlt} fill sizes="104px" quality={75} className="object-cover" />}
                   </div>
                   <div className="flex min-w-0 flex-col">
                     <div className="flex items-start justify-between gap-4">

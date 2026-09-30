@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getInTheWildEntries } from "@/sanity/lib/fetch";
 import { ImageReveal, Reveal } from "@/components/motion/Reveal";
+import { columnImageSizes } from "@/lib/images";
 import { ResponsiveImage } from "@/components/media/ResponsiveImage";
 
 export const metadata: Metadata = {
@@ -28,7 +29,7 @@ export default async function InTheWildPage() {
               <div className="grid gap-4 md:grid-cols-12 md:items-start">
                 {entry.images.slice(0, 3).map((image, imageIndex) => (
                   <ImageReveal key={image.src} className={`${imageIndex === 0 ? "aspect-[4/5] md:col-span-7 md:aspect-[5/4]" : imageIndex === 1 ? "aspect-[3/4] md:col-span-3 md:mt-28" : "aspect-[3/4] md:col-span-2 md:mt-8"}`}>
-                    <ResponsiveImage image={image} sizes={imageIndex === 0 ? "(max-width: 767px) 100vw, 58vw" : "(max-width: 767px) 100vw, 25vw"} />
+                    <ResponsiveImage image={image} frame={{ mobile: imageIndex === 0 ? .8 : .75, desktop: imageIndex === 0 ? 1.25 : .75 }} priority={index === 0 && imageIndex === 0} sizes={columnImageSizes(imageIndex === 0 ? 7 : imageIndex === 1 ? 3 : 2)} />
                   </ImageReveal>
                 ))}
               </div>

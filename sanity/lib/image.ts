@@ -1,12 +1,12 @@
 import { createImageUrlBuilder, type SanityImageSource } from "@sanity/image-url";
-import type { ResolvedImage } from "@/lib/content";
+import type { ImageCrop, ImageHotspot, ImageSource, ResolvedImage } from "@/lib/content/types";
 import { isSanityConfigured, sanityEnv } from "../env";
 
 type RawImage = {
   alt?: string;
   caption?: string;
-  crop?: unknown;
-  hotspot?: unknown;
+  crop?: ImageCrop;
+  hotspot?: ImageHotspot;
   asset?: {
     _id?: string;
     _ref?: string;
@@ -32,24 +32,38 @@ const builder = isSanityConfigured
 
 function resolveSource(source?: RawImage) {
   if (!source?.asset) return undefined;
-  if (builder) return builder.image(source as SanityImageSource).width(2400).fit("max").auto("format").url();
-  return source.asset.url;
+  const assetId = source.asset._id || source.asset._ref;
+  const src = builder && assetId ? builder.image(source as SanityImageSource).url() : source.asset.url;
+  if (!src) return undefined;
+  const dimensions = source.asset.metadata?.dimensions;
+  return {
+    src,
+    width: dimensions?.width,
+    height: dimensions?.height,
+    lqip: source.asset.metadata?.lqip,
+    sanity: assetId && isSanityConfigured ? {
+      assetId,
+      projectId: sanityEnv.projectId,
+      dataset: sanityEnv.dataset,
+      crop: source.crop,
+      hotspot: source.hotspot,
+    } : undefined,
+  } satisfies ImageSource;
 }
 
 export function resolveSanityImage(
   value: RawResponsiveImage | undefined,
   fallbackAlt = "Timeless editorial image",
 ): ResolvedImage | null {
-  const src = resolveSource(value?.image);
-  if (!src) return null;
+  const desktop = resolveSource(value?.image);
+  if (!desktop) return null;
+  const mobile = resolveSource(value?.mobileImage);
 
-  const dimensions = value?.image?.asset?.metadata?.dimensions;
   return {
-    src,
-    mobileSrc: resolveSource(value?.mobileImage),
+    ...desktop,
+    mobile,
+    mobileSrc: mobile?.src,
     alt: value?.image?.alt || fallbackAlt,
     caption: value?.image?.caption,
-    width: dimensions?.width,
-    height: dimensions?.height,
   };
 }

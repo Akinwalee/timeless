@@ -91,7 +91,7 @@ export function InTheWildCarousel({ entries }: { entries: InTheWildEntry[] }) {
             aria-label={`${slideIndex + 1} of ${entries.length}: ${entry.title}`}
           >
             <div className={`image-frame ${slideIndex % 2 ? "aspect-[4/5] md:aspect-[16/10]" : "aspect-[3/4] md:aspect-[16/9]"}`}>
-              <ResponsiveImage image={entry.images[0]} sizes="(max-width: 767px) 84vw, 64vw" />
+              <ResponsiveImage image={entry.images[0]} frame={{ mobile: slideIndex % 2 ? .8 : .75, desktop: slideIndex % 2 ? 1.6 : 16 / 9 }} sizes="(max-width: 767px) 84vw, 64vw" />
             </div>
             <div data-caption className="mt-5 grid gap-4 border-t border-white/25 pt-4 md:grid-cols-[1fr_auto]">
               <div><h3 className="text-[clamp(1.7rem,3vw,3.4rem)] leading-none tracking-[-.045em]">{entry.title}</h3><p className="mt-3 text-xs uppercase tracking-[.13em] text-white/50">{entry.location} · {entry.date}</p></div>

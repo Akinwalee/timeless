@@ -11,10 +11,12 @@ export function ProductPurchase({
   product,
   variant,
   onVariantChange,
+  onVariantIntent,
 }: {
   product: Product;
   variant: ProductVariant;
   onVariantChange: (id: string) => void;
+  onVariantIntent?: (id: string) => void;
 }) {
   const [size, setSize] = useState("");
   const [addedSelection, setAddedSelection] = useState("");
@@ -50,7 +52,7 @@ export function ProductPurchase({
         <legend className="mb-4 text-xs uppercase tracking-[.12em]">Colour <span className="ml-3 normal-case tracking-normal text-black/50">{variant.name}</span></legend>
         <div className="flex flex-wrap gap-2">
           {product.variants.map((item) => (
-            <button key={item.id} type="button" onClick={() => { onVariantChange(item.id); setAddedSelection(""); }} aria-pressed={variant.id === item.id} className={`min-h-11 border px-4 text-xs ${variant.id === item.id ? "border-black bg-black text-white" : "border-black/25"}`}>{item.name}</button>
+            <button key={item.id} type="button" onClick={() => { onVariantChange(item.id); setAddedSelection(""); }} onFocus={() => onVariantIntent?.(item.id)} onPointerEnter={() => onVariantIntent?.(item.id)} aria-pressed={variant.id === item.id} className={`min-h-11 border px-4 text-xs ${variant.id === item.id ? "border-black bg-black text-white" : "border-black/25"}`}>{item.name}</button>
           ))}
         </div>
       </fieldset>

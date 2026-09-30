@@ -1,22 +1,28 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import type { Product } from "@/lib/content";
 import { formatMoney } from "@/lib/money";
-import { ResponsiveImage } from "@/components/media/ResponsiveImage";
+import { SwitchableImage } from "@/components/media/SwitchableImage";
+import { useImageWarming } from "@/components/media/useImageWarming";
+import { IMAGE_SIZES, productPreviewSizes } from "@/lib/images";
 
 export function ProductCard({ product }: { product: Product }) {
   const [variantId, setVariantId] = useState(product.variants[0]?.id || "");
   const variant = product.variants.find((item) => item.id === variantId) || product.variants[0];
+  const primaryImages = useMemo(() => product.variants.map((item) => item.primaryImage), [product.variants]);
+  const { ref, warm } = useImageWarming(primaryImages, IMAGE_SIZES.shopProduct, true);
   if (!variant) return null;
 
   return (
     <article className="group grid min-w-0 grid-cols-1 md:grid-cols-[1fr_auto]">
-      <Link href={`/shop/${product.slug}`} className="image-frame relative order-1 col-span-full block h-[min(52svh,32rem)] bg-[#ecebe7] md:h-[min(58svh,38rem)] md:min-h-[26rem]" aria-label={`View ${product.name} in ${variant.name}`}>
-        <ResponsiveImage key={variant.id} image={variant.primaryImage} sizes="(max-width: 767px) 100vw, 54vw" className="variant-image-enter product-preview-image transition-transform duration-700 group-hover:scale-[1.015]" />
+      <div ref={ref} className="order-1 col-span-full">
+      <Link href={`/shop/${product.slug}`} className="image-frame relative block h-[min(52svh,32rem)] bg-[#ecebe7] md:h-[min(58svh,38rem)] md:min-h-[26rem]" aria-label={`View ${product.name} in ${variant.name}`}>
+        <SwitchableImage image={variant.primaryImage} selection={variant.name} sizes={productPreviewSizes(variant.primaryImage, IMAGE_SIZES.shopProduct)} className="product-preview-image transition-transform duration-700 group-hover:scale-[1.015]" />
         <span className="absolute bottom-5 right-5 bg-white px-3 py-2 text-[.6rem] uppercase tracking-[.14em] opacity-0 transition-opacity group-hover:opacity-100">View</span>
       </Link>
+      </div>
       <div className="order-3 mt-5 md:order-2">
         <h3 className="text-base">{product.name}</h3><p className="mt-1 text-sm text-black/55">{formatMoney(product.price, product.currency)}</p>
       </div>
@@ -28,6 +34,8 @@ export function ProductCard({ product }: { product: Product }) {
               key={item.id}
               type="button"
               onClick={() => setVariantId(item.id)}
+              onFocus={() => warm(item.primaryImage)}
+              onPointerEnter={() => warm(item.primaryImage)}
               aria-label={`Select ${item.name}`}
               aria-pressed={variant.id === item.id}
               title={item.name}

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { ImageReveal } from "@/components/motion/Reveal";
+import { IMAGE_SIZES } from "@/lib/images";
 import { ResponsiveImage } from "@/components/media/ResponsiveImage";
 import { JournalBody } from "@/components/editorial/JournalBody";
 import { getJournalEntries, getJournalEntry } from "@/sanity/lib/fetch";
@@ -32,7 +33,7 @@ export default async function ArticlePage({ params }: Props) {
       <header className="page-intro pb-14">
         <div className="grid gap-7 md:grid-cols-[.65fr_1.35fr]"><div><p className="eyebrow text-black/45">{story.category}</p><p className="mt-4 text-xs text-black/45">{story.issue} · {formatEditorialDate(story.date)}</p></div><h1 className="display text-[clamp(4.5rem,10vw,11rem)]">{story.title}</h1></div>
       </header>
-      <ImageReveal className="mx-[var(--gutter)] aspect-[4/5] md:aspect-[16/9] md:max-h-[76svh]"><ResponsiveImage image={story.coverImage} priority sizes="100vw" className="grayscale" /></ImageReveal>
+      <ImageReveal className="mx-[var(--gutter)] aspect-[4/5] md:aspect-[16/9] md:max-h-[76svh]"><ResponsiveImage image={story.coverImage} frame={{ mobile: .8, desktop: 16 / 9 }} priority sizes={IMAGE_SIZES.full} className="grayscale" /></ImageReveal>
       <article>
         <section className="site-shell grid gap-10 py-[var(--section)] md:grid-cols-[.55fr_1.45fr]"><p className="eyebrow pt-2 text-black/40">Introduction</p><p className="max-w-4xl text-[clamp(2.1rem,4.2vw,5rem)] leading-[1.03] tracking-[-.055em]">{story.excerpt}</p></section>
         <JournalBody blocks={story.body} />

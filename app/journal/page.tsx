@@ -4,6 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 import { ImageReveal, Reveal } from "@/components/motion/Reveal";
 import { ResponsiveImage } from "@/components/media/ResponsiveImage";
 import { getJournalEntries } from "@/sanity/lib/fetch";
+import { IMAGE_SIZES, columnImageSizes } from "@/lib/images";
 import { formatEditorialDate } from "@/lib/dates";
 
 export const metadata: Metadata = {
@@ -36,7 +37,7 @@ export default async function JournalPage() {
           <>
             <Link href={`/journal/${featured.slug}`} className="group grid gap-7 border-t border-black/20 pt-5 md:grid-cols-[1.35fr_.65fr]">
               <ImageReveal className="aspect-[4/5] md:aspect-[16/10] md:min-h-[55svh]">
-                <ResponsiveImage image={featured.coverImage} priority sizes="(max-width: 767px) 100vw, 67vw" className="grayscale transition-transform duration-700 group-hover:scale-[1.02]" />
+                <ResponsiveImage image={featured.coverImage} frame={{ mobile: .8, desktop: 1.6 }} priority sizes={IMAGE_SIZES.journalFeatured} className="grayscale transition-transform duration-700 group-hover:scale-[1.02]" />
               </ImageReveal>
               <div className="flex flex-col justify-between">
                 <p className="eyebrow text-black/45">{featured.issue} · {featured.category}<br />{formatEditorialDate(featured.date)}</p>
@@ -48,7 +49,7 @@ export default async function JournalPage() {
               {remaining.map((story, index) => (
                 <Reveal key={story.slug} as="article" className={index % 3 === 0 ? "md:col-span-5" : index % 3 === 1 ? "md:col-span-4 md:mt-48" : "md:col-span-7 md:col-start-6"}>
                   <Link href={`/journal/${story.slug}`} className="group">
-                    <ImageReveal className={index % 3 === 2 ? "aspect-[16/10]" : "aspect-[3/4]"}><ResponsiveImage image={story.coverImage} sizes="(max-width: 767px) 100vw, 45vw" className="transition-transform duration-700 group-hover:scale-[1.02]" /></ImageReveal>
+                    <ImageReveal className={index % 3 === 2 ? "aspect-[16/10]" : "aspect-[3/4]"}><ResponsiveImage image={story.coverImage} frame={{ mobile: index % 3 === 2 ? 1.6 : .75, desktop: index % 3 === 2 ? 1.6 : .75 }} sizes={columnImageSizes(index % 3 === 0 ? 5 : index % 3 === 1 ? 4 : 7, 12, 20)} className="transition-transform duration-700 group-hover:scale-[1.02]" /></ImageReveal>
                     <div className="mt-5 flex items-start justify-between gap-5"><div><p className="eyebrow text-black/40">{story.issue} · {story.category}</p><h2 className="mt-4 text-[clamp(2rem,3vw,3.8rem)] leading-[.98] tracking-[-.05em]">{story.title}</h2></div><ArrowUpRight className="mt-1 shrink-0" strokeWidth={1.2} /></div>
                     <p className="mt-5 max-w-md text-sm leading-relaxed text-black/55">{story.excerpt}</p>
                   </Link>

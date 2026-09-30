@@ -9,8 +9,8 @@ export function Wordmark({ className = "" }: { className?: string }) {
         alt="Timeless Wordmark"
         width={4320}
         height={1493}
+        sizes="180px"
         className="brand-wordmark h-auto w-[180px]"
-        priority
       />
     </Link>
   );

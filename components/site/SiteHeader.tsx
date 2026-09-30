@@ -20,11 +20,20 @@ export function SiteHeader({
 }) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [showPortrait, setShowPortrait] = useState(false);
   const [hidden, setHidden] = useState(false);
   const [overHomeHero, setOverHomeHero] = useState(pathname === "/");
   const menu = useRef<HTMLDivElement>(null);
   const menuButton = useRef<HTMLButtonElement>(null);
   const closeButton = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    const desktop = window.matchMedia("(min-width: 768px)");
+    const update = () => setShowPortrait(open && desktop.matches);
+    update();
+    desktop.addEventListener("change", update);
+    return () => desktop.removeEventListener("change", update);
+  }, [open]);
 
   useEffect(() => {
     let previous = window.scrollY;
@@ -93,7 +102,7 @@ export function SiteHeader({
             </div>
           </div>
           <div className="relative hidden overflow-hidden md:block">
-            <Image src="/images/timeless/site/navigation-portrait.jpg" alt="Portrait of a Timeless model in the cream Essential Tee" fill sizes="45vw" className="object-cover grayscale" />
+            {showPortrait && <Image src="/images/timeless/site/navigation-portrait.jpg" alt="Portrait of a Timeless model in the cream Essential Tee" fill loading="eager" sizes="45vw" className="object-cover grayscale" />}
           </div>
         </div>
       </div>
