@@ -52,15 +52,21 @@ const statements = ["No fixed form.", "No fixed identity.", "No fixed expression
 export function StatementSequence() {
   const section = useRef<HTMLElement>(null);
   useGSAP(() => {
-    if (matchMedia("(prefers-reduced-motion: reduce), (max-width: 767px)").matches) return;
-    const lines = gsap.utils.toArray<HTMLElement>(".statement-line", section.current);
-    const timeline = gsap.timeline({ scrollTrigger: { trigger: section.current, start: "top top", end: "+=220%", scrub: 1, pin: true } });
-    lines.slice(1).forEach((line, index) => timeline.to(lines[index], { yPercent: -120, opacity: 0, duration: .6 }, index).fromTo(line, { yPercent: 120, opacity: 0 }, { yPercent: 0, opacity: 1, duration: .6 }, index + .25));
+    const media = gsap.matchMedia();
+    media.add("(prefers-reduced-motion: no-preference)", () => {
+      const lines = gsap.utils.toArray<HTMLElement>(".statement-line", section.current);
+      gsap.set(".statement-stack", { height: "clamp(10rem,20vw,20rem)" });
+      gsap.set(lines, { position: "absolute", inset: 0 });
+      gsap.set(lines.slice(1), { opacity: 0 });
+      const timeline = gsap.timeline({ scrollTrigger: { trigger: section.current, start: "top top", end: "+=220%", scrub: 1, pin: true } });
+      lines.slice(1).forEach((line, index) => timeline.to(lines[index], { yPercent: -120, opacity: 0, duration: .6 }, index).fromTo(line, { yPercent: 120, opacity: 0 }, { yPercent: 0, opacity: 1, duration: .6 }, index + .25));
+    });
+    return () => media.revert();
   }, { scope: section });
   return (
-    <section ref={section} className="site-shell relative flex min-h-svh items-center overflow-hidden bg-white">
-      <div className="relative h-[clamp(10rem,20vw,20rem)] w-full">
-        {statements.map((text, index) => <p key={text} className={`statement-line display absolute inset-0 flex items-center text-[clamp(4rem,12vw,13rem)] ${index ? "opacity-0" : ""}`}>{text}</p>)}
+    <section ref={section} aria-label="Timeless manifesto" className="site-shell relative flex min-h-svh items-center overflow-hidden bg-white">
+      <div className="statement-stack relative grid w-full gap-10 py-12">
+        {statements.map((text) => <p key={text} className="statement-line display flex items-center text-[clamp(2.75rem,12vw,13rem)] md:text-[clamp(4rem,12vw,13rem)]">{text}</p>)}
       </div>
     </section>
   );

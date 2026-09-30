@@ -1,11 +1,10 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import { Check } from "lucide-react";
 import type { Product, ProductVariant } from "@/lib/content";
 import { formatMoney } from "@/lib/money";
-import { useBag } from "@/components/bag/BagProvider";
+import { useProductSelection } from "./ProductSelection";
 
 export function ProductPurchase({
   product,
@@ -18,29 +17,8 @@ export function ProductPurchase({
   onVariantChange: (id: string) => void;
   onVariantIntent?: (id: string) => void;
 }) {
-  const [size, setSize] = useState("");
-  const [addedSelection, setAddedSelection] = useState("");
-  const { addItem } = useBag();
+  const { size, added, selectSize, add } = useProductSelection();
   const purchasable = product.status === "available";
-  const selection = `${variant.id}:${size}`;
-  const added = addedSelection === selection;
-
-  const add = () => {
-    if (!size || !variant || !purchasable) return;
-    addItem({
-      productId: product.id,
-      productSlug: product.slug,
-      name: product.name,
-      variantId: variant.id,
-      colour: variant.name,
-      size,
-      price: product.price,
-      currency: product.currency,
-      image: variant.primaryImage.src,
-      imageAlt: variant.primaryImage.alt,
-    });
-    setAddedSelection(selection);
-  };
 
   return (
     <div className="px-[var(--gutter)] py-10 md:sticky md:top-20 md:min-h-[calc(100svh-5rem)] md:px-[clamp(2rem,5vw,6rem)] md:py-20">
@@ -52,15 +30,15 @@ export function ProductPurchase({
         <legend className="mb-4 text-xs uppercase tracking-[.12em]">Colour <span className="ml-3 normal-case tracking-normal text-black/50">{variant.name}</span></legend>
         <div className="flex flex-wrap gap-2">
           {product.variants.map((item) => (
-            <button key={item.id} type="button" onClick={() => { onVariantChange(item.id); setAddedSelection(""); }} onFocus={() => onVariantIntent?.(item.id)} onPointerEnter={() => onVariantIntent?.(item.id)} aria-pressed={variant.id === item.id} className={`min-h-11 border px-4 text-xs ${variant.id === item.id ? "border-black bg-black text-white" : "border-black/25"}`}>{item.name}</button>
+            <button key={item.id} type="button" onClick={() => onVariantChange(item.id)} onFocus={() => onVariantIntent?.(item.id)} onPointerEnter={() => onVariantIntent?.(item.id)} aria-pressed={variant.id === item.id} className={`min-h-11 border px-4 text-xs ${variant.id === item.id ? "border-black bg-black text-white" : "border-black/25"}`}>{item.name}</button>
           ))}
         </div>
       </fieldset>
-      <fieldset className="mt-8">
+      <fieldset className="product-size-selector mt-8">
         <legend className="sr-only">Size</legend>
         <div className="mb-4 flex items-center justify-between"><span className="text-xs uppercase tracking-[.12em]">Size</span><Link className="border-b border-black/50 text-xs" href="#size-guide">Size guide</Link></div>
         <div className="grid grid-cols-6 gap-2">
-          {product.sizes.map((item) => <button key={item} type="button" onClick={() => { setSize(item); setAddedSelection(""); }} aria-pressed={size === item} className={`min-h-11 min-w-0 aspect-square border text-xs ${size === item ? "border-black bg-black text-white" : "border-black/25"}`}>{item}</button>)}
+          {product.sizes.map((item) => <button key={item} type="button" onClick={() => selectSize(item)} aria-pressed={size === item} className={`min-h-11 min-w-0 aspect-square border text-xs ${size === item ? "border-black bg-black text-white" : "border-black/25"}`}>{item}</button>)}
         </div>
       </fieldset>
       {!size && <p className="mt-3 text-xs text-black/50" role="status">Choose a size before adding this piece.</p>}

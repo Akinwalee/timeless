@@ -100,7 +100,7 @@ img { background: #e9e8e4; }
 .responsive-content-image.product-preview-image { object-fit: contain; }
 .image-preview { position: absolute; inset: 0; background-image: var(--image-preview); background-size: cover; background-position: var(--image-position, center); background-repeat: no-repeat; pointer-events: none; }
 .image-preview-contain, .image-preview-product { background-size: contain; }
-.product-colour-selector button[aria-pressed="true"] { color: var(--paper); }
+.product-colour-selector button[aria-pressed="true"], .product-size-selector button[aria-pressed="true"] { color: var(--paper); }
 .variant-image-enter { animation: variant-image-enter .45s var(--ease-editorial) both; }
 .editorial-carousel { scrollbar-width: none; }
 .editorial-carousel::-webkit-scrollbar { display: none; }
