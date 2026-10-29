@@ -1,0 +1,100 @@
+{
+  "auditDate": "2026-10-28",
+  "timezone": "Africa/Lagos",
+  "commit": "60655c89a1a46e0d79cb0c470705b518f73eb378",
+  "decision": "NO-GO",
+  "counts": {
+    "P0": 0,
+    "P1": 5,
+    "P2": 9,
+    "P3": 1
+  },
+  "applicationCodeChanged": false,
+  "browser": "Chromium automation",
+  "contentMode": "credential-free local fallback; separate dummy WhatsApp build",
+  "findings": [
+    {
+      "id": "TL-001",
+      "severity": "P1",
+      "title": "Reduced-motion and JavaScript-disabled visits are completely black"
+    },
+    {
+      "id": "TL-004",
+      "severity": "P1",
+      "title": "Low-contrast secondary text is systemic, including purchase guidance"
+    },
+    {
+      "id": "TL-012",
+      "severity": "P2",
+      "title": "Home lacks an H1 and animated paragraph receives prohibited ARIA"
+    },
+    {
+      "id": "TL-013",
+      "severity": "P2",
+      "title": "Auto-hidden navigation can retain entirely offscreen keyboard focus"
+    },
+    {
+      "id": "TL-002",
+      "severity": "P1",
+      "title": "Newsletter claims success while discarding every subscription"
+    },
+    {
+      "id": "TL-003",
+      "severity": "P1",
+      "title": "Shipping, returns, privacy and terms are dead links"
+    },
+    {
+      "id": "TL-009",
+      "severity": "P2",
+      "title": "\u201cSize guide\u201d offers no measurements or actionable size comparison"
+    },
+    {
+      "id": "TL-005",
+      "severity": "P2",
+      "title": "Tablet image frames overflow across three major pages"
+    },
+    {
+      "id": "TL-014",
+      "severity": "P3",
+      "title": "Display typography departs from the documented brand system"
+    },
+    {
+      "id": "TL-006",
+      "severity": "P2",
+      "title": "No application analytics or conversion instrumentation"
+    },
+    {
+      "id": "TL-007",
+      "severity": "P2",
+      "title": "Public pages lack canonical and social-sharing metadata"
+    },
+    {
+      "id": "TL-008",
+      "severity": "P2",
+      "title": "No sitemap or robots discovery resources"
+    },
+    {
+      "id": "TL-010",
+      "severity": "P2",
+      "title": "Fallback social link is a placeholder and contact identity changes"
+    },
+    {
+      "id": "TL-011",
+      "severity": "P2",
+      "title": "Denied browser storage crashes the page"
+    },
+    {
+      "id": "TL-015",
+      "severity": "P1",
+      "title": "Release dependency graph matches high/critical published advisories"
+    }
+  ],
+  "coverageLimits": [
+    "Production provider/domain controls unverified",
+    "CMS-connected build and published content not exercised",
+    "Other browsers, physical devices and assistive technology unverified",
+    "Optimizer image requests fulfilled via request-client workaround",
+    "No field CWV/INP or formal Lighthouse score",
+    "No real messages, transactions or production mutations"
+  ]
+}

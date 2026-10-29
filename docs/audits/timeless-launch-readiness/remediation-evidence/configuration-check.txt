@@ -1,0 +1,9 @@
+
+> timeless@0.1.0 check:launch
+> node scripts/check-launch.mjs
+
+MISSING/INVALID BREVO_API_KEY — Add a server-only Brevo API key.
+MISSING/INVALID BREVO_LIST_ID — Add the positive numeric ID from Brevo.
+MISSING/INVALID BREVO_DOI_TEMPLATE_ID — Add the positive numeric ID from Brevo.
+MISSING/INVALID NEXT_PUBLIC_SITE_URL — Set the verified production HTTPS origin, without a path/query.
+REVIEW Confirm Brevo template/sender, delivery to a controlled inbox, approved policies, real recipient, collection/alerts and rollback. This command does not contact providers.

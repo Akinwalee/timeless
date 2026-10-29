@@ -1,0 +1,1706 @@
+[
+  {
+    "route": "/",
+    "run": 1,
+    "viewport": "375x812 DPR1",
+    "cpu": 4,
+    "latencyMs": 150,
+    "downloadBytesPerSec": 200000,
+    "imageDelivery": "API-fetched response fulfillment; bypasses normal image delivery; timings diagnostic only",
+    "failures": [],
+    "paint": [
+      {
+        "name": "first-paint",
+        "ms": 980
+      },
+      {
+        "name": "first-contentful-paint",
+        "ms": 980
+      }
+    ],
+    "observer": {
+      "lcp": [
+        {
+          "start": 980,
+          "duration": 0,
+          "size": 65436,
+          "element": "P"
+        }
+      ],
+      "cls": [
+        {
+          "start": 1177.6999999955297,
+          "duration": 0,
+          "value": 2.9445507580261595e-05,
+          "recent": false
+        }
+      ],
+      "long": [
+        {
+          "start": 642.3999999985099,
+          "duration": 54
+        },
+        {
+          "start": 732.1999999955297,
+          "duration": 217
+        },
+        {
+          "start": 2147.89999999851,
+          "duration": 160
+        },
+        {
+          "start": 2321.2999999970198,
+          "duration": 62
+        },
+        {
+          "start": 2465.5999999940395,
+          "duration": 96
+        }
+      ]
+    },
+    "resources": [
+      {
+        "name": "/_next/static/media/628a7ea889047126-s.p.ttf",
+        "type": "link",
+        "transfer": 30024,
+        "encoded": 29724,
+        "duration": 976.6000000014901
+      },
+      {
+        "name": "/_next/static/media/a7579e5dd58d12a3-s.p.ttf",
+        "type": "link",
+        "transfer": 30019,
+        "encoded": 29719,
+        "duration": 968.6000000014901
+      },
+      {
+        "name": "/_next/static/media/c46c151259bc4580-s.p.ttf",
+        "type": "link",
+        "transfer": 171169,
+        "encoded": 170869,
+        "duration": 2542.2999999970198
+      },
+      {
+        "name": "/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fhome-hero.jpg&w=1920&q=75",
+        "type": "link",
+        "transfer": 101655,
+        "encoded": 101355,
+        "duration": 33.899999998509884
+      },
+      {
+        "name": "/_next/static/css/6f798f8692f6a281.css",
+        "type": "link",
+        "transfer": 9766,
+        "encoded": 9466,
+        "duration": 433.80000000447035
+      },
+      {
+        "name": "/_next/static/chunks/webpack-44613ea72a0cf9ef.js",
+        "type": "link",
+        "transfer": 4745,
+        "encoded": 4445,
+        "duration": 344.8999999985099
+      },
+      {
+        "name": "/_next/static/chunks/f0296bd9-5c705f0bb119c68b.js",
+        "type": "script",
+        "transfer": 63180,
+        "encoded": 62880,
+        "duration": 1777.3999999985099
+      },
+      {
+        "name": "/_next/static/chunks/main-app-51bf7e8f6ead91ca.js",
+        "type": "script",
+        "transfer": 827,
+        "encoded": 527,
+        "duration": 620.3999999985099
+      },
+      {
+        "name": "/_next/static/chunks/eb8cc6e6-e1fa6adbba55a3f8.js",
+        "type": "script",
+        "transfer": 20078,
+        "encoded": 19778,
+        "duration": 1311.6999999955297
+      },
+      {
+        "name": "/_next/static/chunks/4692-8df06275dbe8c47d.js",
+        "type": "script",
+        "transfer": 61732,
+        "encoded": 61432,
+        "duration": 1949.5
+      },
+      {
+        "name": "/_next/static/chunks/7865-0487ce6ccd508b87.js",
+        "type": "script",
+        "transfer": 3724,
+        "encoded": 3424,
+        "duration": 1257.5
+      },
+      {
+        "name": "/_next/static/chunks/6096-ac104356767cc4b1.js",
+        "type": "script",
+        "transfer": 13984,
+        "encoded": 13684,
+        "duration": 1489.6000000014901
+      },
+      {
+        "name": "/_next/static/chunks/7486-6ceb3124d0e10000.js",
+        "type": "script",
+        "transfer": 3414,
+        "encoded": 3114,
+        "duration": 1528.5
+      },
+      {
+        "name": "/_next/static/chunks/app/layout-3151ba708557dd88.js",
+        "type": "script",
+        "transfer": 4196,
+        "encoded": 3896,
+        "duration": 1572.7999999970198
+      },
+      {
+        "name": "/_next/static/chunks/6390-a70a46ac4e960f33.js",
+        "type": "script",
+        "transfer": 4209,
+        "encoded": 3909,
+        "duration": 1796.6000000014901
+      },
+      {
+        "name": "/_next/static/chunks/363-9409249d575fede2.js",
+        "type": "script",
+        "transfer": 20636,
+        "encoded": 20336,
+        "duration": 2037.6000000014901
+      },
+      {
+        "name": "/_next/static/chunks/9103-5af2084c1ed24468.js",
+        "type": "script",
+        "transfer": 4136,
+        "encoded": 3836,
+        "duration": 1841.1999999955297
+      },
+      {
+        "name": "/_next/static/chunks/app/page-ec7db761b63e7235.js",
+        "type": "script",
+        "transfer": 5349,
+        "encoded": 5049,
+        "duration": 2020.8000000044703
+      },
+      {
+        "name": "/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=256&q=75",
+        "type": "img",
+        "transfer": 2823,
+        "encoded": 2523,
+        "duration": 10.100000001490116
+      },
+      {
+        "name": "/_next/image?url=%2Fimages%2Ftimeless%2Fproduct%2Fessential-tee-black-primary.jpg&w=384&q=75",
+        "type": "img",
+        "transfer": 31895,
+        "encoded": 31595,
+        "duration": 11.800000004470348
+      },
+      {
+        "name": "/?_rsc=7h4NYy5eoyMcNlUN",
+        "type": "fetch",
+        "transfer": 849,
+        "encoded": 549,
+        "duration": 163.70000000298023
+      },
+      {
+        "name": "/?_rsc=yIp22O3xgPPxC28X",
+        "type": "fetch",
+        "transfer": 2228,
+        "encoded": 1928,
+        "duration": 192.89999999850988
+      },
+      {
+        "name": "/?_rsc=8nTjltbQWvg6NcbE",
+        "type": "fetch",
+        "transfer": 4266,
+        "encoded": 3966,
+        "duration": 214.5
+      },
+      {
+        "name": "/shop?_rsc=5CB68i4pnAekjehf",
+        "type": "fetch",
+        "transfer": 587,
+        "encoded": 287,
+        "duration": 154.79999999701977
+      },
+      {
+        "name": "/shop?_rsc=7h4NYy5eoyMcNlUN",
+        "type": "fetch",
+        "transfer": 840,
+        "encoded": 540,
+        "duration": 163.5
+      },
+      {
+        "name": "/shop?_rsc=I1nRbsap9uK5woTj",
+        "type": "fetch",
+        "transfer": 521,
+        "encoded": 221,
+        "duration": 172.29999999701977
+      },
+      {
+        "name": "/shop?_rsc=j92W4uwEyrymIlok",
+        "type": "fetch",
+        "transfer": 2233,
+        "encoded": 1933,
+        "duration": 192.79999999701977
+      },
+      {
+        "name": "/favicon.ico?603d046c9a6fdfbb",
+        "type": "other",
+        "transfer": 26231,
+        "encoded": 25931,
+        "duration": 320.70000000298023
+      },
+      {
+        "name": "/_next/static/chunks/app/shop/page-2ce36fc4f7a9e840.js",
+        "type": "script",
+        "transfer": 7883,
+        "encoded": 7583,
+        "duration": 200.39999999850988
+      },
+      {
+        "name": "/_next/image?url=%2Fimages%2Ftimeless%2Fproduct%2Fessential-tee-white-primary.jpg&w=384&q=75",
+        "type": "img",
+        "transfer": 22390,
+        "encoded": 22090,
+        "duration": 4.200000002980232
+      },
+      {
+        "name": "/_next/image?url=%2Fimages%2Ftimeless%2Fproduct%2Fessential-tee-cream-primary.jpg&w=384&q=75",
+        "type": "img",
+        "transfer": 27344,
+        "encoded": 27044,
+        "duration": 5.299999997019768
+      }
+    ],
+    "navigation": [
+      {
+        "ttfb": 16.899999998509884,
+        "dom": 642.5,
+        "load": 2751.39999999851
+      }
+    ]
+  },
+  {
+    "route": "/",
+    "run": 2,
+    "viewport": "375x812 DPR1",
+    "cpu": 4,
+    "latencyMs": 150,
+    "downloadBytesPerSec": 200000,
+    "imageDelivery": "API-fetched response fulfillment; bypasses normal image delivery; timings diagnostic only",
+    "failures": [],
+    "paint": [
+      {
+        "name": "first-paint",
+        "ms": 832
+      },
+      {
+        "name": "first-contentful-paint",
+        "ms": 832
+      }
+    ],
+    "observer": {
+      "lcp": [
+        {
+          "start": 832,
+          "duration": 0,
+          "size": 65436,
+          "element": "P"
+        }
+      ],
+      "cls": [
+        {
+          "start": 1178.6999999955297,
+          "duration": 0,
+          "value": 2.9445507580261595e-05,
+          "recent": false
+        }
+      ],
+      "long": [
+        {
+          "start": 629,
+          "duration": 53
+        },
+        {
+          "start": 716.5,
+          "duration": 79
+        },
+        {
+          "start": 2122.5,
+          "duration": 159
+        },
+        {
+          "start": 2295.60000000149,
+          "duration": 61
+        },
+        {
+          "start": 2435.39999999851,
+          "duration": 95
+        }
+      ]
+    },
+    "resources": [
+      {
+        "name": "/_next/static/media/628a7ea889047126-s.p.ttf",
+        "type": "link",
+        "transfer": 30024,
+        "encoded": 29724,
+        "duration": 976.0999999940395
+      },
+      {
+        "name": "/_next/static/media/a7579e5dd58d12a3-s.p.ttf",
+        "type": "link",
+        "transfer": 30019,
+        "encoded": 29719,
+        "duration": 983.2000000029802
+      },
+      {
+        "name": "/_next/static/media/c46c151259bc4580-s.p.ttf",
+        "type": "link",
+        "transfer": 171169,
+        "encoded": 170869,
+        "duration": 2551.0999999940395
+      },
+      {
+        "name": "/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fhome-hero.jpg&w=1920&q=75",
+        "type": "link",
+        "transfer": 101655,
+        "encoded": 101355,
+        "duration": 26.399999998509884
+      },
+      {
+        "name": "/_next/static/css/6f798f8692f6a281.css",
+        "type": "link",
+        "transfer": 9766,
+        "encoded": 9466,
+        "duration": 435.3999999985099
+      },
+      {
+        "name": "/_next/static/chunks/webpack-44613ea72a0cf9ef.js",
+        "type": "link",
+        "transfer": 4745,
+        "encoded": 4445,
+        "duration": 330.5
+      },
+      {
+        "name": "/_next/static/chunks/main-app-51bf7e8f6ead91ca.js",
+        "type": "script",
+        "transfer": 827,
+        "encoded": 527,
+        "duration": 630.8000000044703
+      },
+      {
+        "name": "/_next/static/chunks/f0296bd9-5c705f0bb119c68b.js",
+        "type": "script",
+        "transfer": 63180,
+        "encoded": 62880,
+        "duration": 1769.8999999985099
+      },
+      {
+        "name": "/_next/static/chunks/4692-8df06275dbe8c47d.js",
+        "type": "script",
+        "transfer": 61732,
+        "encoded": 61432,
+        "duration": 1942.5
+      },
+      {
+        "name": "/_next/static/chunks/eb8cc6e6-e1fa6adbba55a3f8.js",
+        "type": "script",
+        "transfer": 20078,
+        "encoded": 19778,
+        "duration": 1326.6000000014901
+      },
+      {
+        "name": "/_next/static/chunks/7865-0487ce6ccd508b87.js",
+        "type": "script",
+        "transfer": 3724,
+        "encoded": 3424,
+        "duration": 1267.3999999985099
+      },
+      {
+        "name": "/_next/static/chunks/6096-ac104356767cc4b1.js",
+        "type": "script",
+        "transfer": 13984,
+        "encoded": 13684,
+        "duration": 1499
+      },
+      {
+        "name": "/_next/static/chunks/7486-6ceb3124d0e10000.js",
+        "type": "script",
+        "transfer": 3414,
+        "encoded": 3114,
+        "duration": 1536.3999999985099
+      },
+      {
+        "name": "/_next/static/chunks/app/layout-3151ba708557dd88.js",
+        "type": "script",
+        "transfer": 4196,
+        "encoded": 3896,
+        "duration": 1588.8999999985099
+      },
+      {
+        "name": "/_next/static/chunks/6390-a70a46ac4e960f33.js",
+        "type": "script",
+        "transfer": 4209,
+        "encoded": 3909,
+        "duration": 1805.4000000059605
+      },
+      {
+        "name": "/_next/static/chunks/363-9409249d575fede2.js",
+        "type": "script",
+        "transfer": 20636,
+        "encoded": 20336,
+        "duration": 2037.7000000029802
+      },
+      {
+        "name": "/_next/static/chunks/9103-5af2084c1ed24468.js",
+        "type": "script",
+        "transfer": 4136,
+        "encoded": 3836,
+        "duration": 1850.3999999985099
+      },
+      {
+        "name": "/_next/static/chunks/app/page-ec7db761b63e7235.js",
+        "type": "script",
+        "transfer": 5349,
+        "encoded": 5049,
+        "duration": 2015.2999999970198
+      },
+      {
+        "name": "/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=256&q=75",
+        "type": "img",
+        "transfer": 2823,
+        "encoded": 2523,
+        "duration": 7.700000002980232
+      },
+      {
+        "name": "/_next/image?url=%2Fimages%2Ftimeless%2Fproduct%2Fessential-tee-black-primary.jpg&w=384&q=75",
+        "type": "img",
+        "transfer": 31895,
+        "encoded": 31595,
+        "duration": 7.899999998509884
+      },
+      {
+        "name": "/?_rsc=7h4NYy5eoyMcNlUN",
+        "type": "fetch",
+        "transfer": 849,
+        "encoded": 549,
+        "duration": 161.69999999552965
+      },
+      {
+        "name": "/?_rsc=yIp22O3xgPPxC28X",
+        "type": "fetch",
+        "transfer": 2228,
+        "encoded": 1928,
+        "duration": 189.60000000149012
+      },
+      {
+        "name": "/?_rsc=8nTjltbQWvg6NcbE",
+        "type": "fetch",
+        "transfer": 4266,
+        "encoded": 3966,
+        "duration": 213.30000000447035
+      },
+      {
+        "name": "/shop?_rsc=5CB68i4pnAekjehf",
+        "type": "fetch",
+        "transfer": 587,
+        "encoded": 287,
+        "duration": 162.39999999850988
+      },
+      {
+        "name": "/shop?_rsc=7h4NYy5eoyMcNlUN",
+        "type": "fetch",
+        "transfer": 840,
+        "encoded": 540,
+        "duration": 163.5
+      },
+      {
+        "name": "/shop?_rsc=I1nRbsap9uK5woTj",
+        "type": "fetch",
+        "transfer": 521,
+        "encoded": 221,
+        "duration": 170.10000000149012
+      },
+      {
+        "name": "/shop?_rsc=j92W4uwEyrymIlok",
+        "type": "fetch",
+        "transfer": 2233,
+        "encoded": 1933,
+        "duration": 193.69999999552965
+      },
+      {
+        "name": "/favicon.ico?603d046c9a6fdfbb",
+        "type": "other",
+        "transfer": 26231,
+        "encoded": 25931,
+        "duration": 295.3999999985099
+      },
+      {
+        "name": "/_next/static/chunks/app/shop/page-2ce36fc4f7a9e840.js",
+        "type": "script",
+        "transfer": 7883,
+        "encoded": 7583,
+        "duration": 196.90000000596046
+      },
+      {
+        "name": "/_next/image?url=%2Fimages%2Ftimeless%2Fproduct%2Fessential-tee-white-primary.jpg&w=384&q=75",
+        "type": "img",
+        "transfer": 22390,
+        "encoded": 22090,
+        "duration": 4.700000002980232
+      },
+      {
+        "name": "/_next/image?url=%2Fimages%2Ftimeless%2Fproduct%2Fessential-tee-cream-primary.jpg&w=384&q=75",
+        "type": "img",
+        "transfer": 27344,
+        "encoded": 27044,
+        "duration": 5.100000001490116
+      }
+    ],
+    "navigation": [
+      {
+        "ttfb": 10.399999998509884,
+        "dom": 629.2999999970198,
+        "load": 2743
+      }
+    ]
+  },
+  {
+    "route": "/",
+    "run": 3,
+    "viewport": "375x812 DPR1",
+    "cpu": 4,
+    "latencyMs": 150,
+    "downloadBytesPerSec": 200000,
+    "imageDelivery": "API-fetched response fulfillment; bypasses normal image delivery; timings diagnostic only",
+    "failures": [],
+    "paint": [
+      {
+        "name": "first-paint",
+        "ms": 832
+      },
+      {
+        "name": "first-contentful-paint",
+        "ms": 832
+      }
+    ],
+    "observer": {
+      "lcp": [
+        {
+          "start": 832,
+          "duration": 0,
+          "size": 65436,
+          "element": "P"
+        }
+      ],
+      "cls": [
+        {
+          "start": 1177.8000000044703,
+          "duration": 0,
+          "value": 2.9445507580261595e-05,
+          "recent": false
+        }
+      ],
+      "long": [
+        {
+          "start": 627.6000000014901,
+          "duration": 50
+        },
+        {
+          "start": 717.5,
+          "duration": 85
+        },
+        {
+          "start": 2136.5,
+          "duration": 158
+        },
+        {
+          "start": 2308.4000000059605,
+          "duration": 60
+        },
+        {
+          "start": 2448.7000000029802,
+          "duration": 96
+        }
+      ]
+    },
+    "resources": [
+      {
+        "name": "/_next/static/media/628a7ea889047126-s.p.ttf",
+        "type": "link",
+        "transfer": 30024,
+        "encoded": 29724,
+        "duration": 968
+      },
+      {
+        "name": "/_next/static/media/a7579e5dd58d12a3-s.p.ttf",
+        "type": "link",
+        "transfer": 30019,
+        "encoded": 29719,
+        "duration": 982.5
+      },
+      {
+        "name": "/_next/static/media/c46c151259bc4580-s.p.ttf",
+        "type": "link",
+        "transfer": 171169,
+        "encoded": 170869,
+        "duration": 2540.6999999955297
+      },
+      {
+        "name": "/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fhome-hero.jpg&w=1920&q=75",
+        "type": "link",
+        "transfer": 101655,
+        "encoded": 101355,
+        "duration": 26.80000000447035
+      },
+      {
+        "name": "/_next/static/css/6f798f8692f6a281.css",
+        "type": "link",
+        "transfer": 9766,
+        "encoded": 9466,
+        "duration": 433.79999999701977
+      },
+      {
+        "name": "/_next/static/chunks/webpack-44613ea72a0cf9ef.js",
+        "type": "link",
+        "transfer": 4745,
+        "encoded": 4445,
+        "duration": 342.20000000298023
+      },
+      {
+        "name": "/_next/static/chunks/f0296bd9-5c705f0bb119c68b.js",
+        "type": "script",
+        "transfer": 63180,
+        "encoded": 62880,
+        "duration": 1767.6000000014901
+      },
+      {
+        "name": "/_next/static/chunks/4692-8df06275dbe8c47d.js",
+        "type": "script",
+        "transfer": 61732,
+        "encoded": 61432,
+        "duration": 1955.1000000014901
+      },
+      {
+        "name": "/_next/static/chunks/main-app-51bf7e8f6ead91ca.js",
+        "type": "script",
+        "transfer": 827,
+        "encoded": 527,
+        "duration": 627.8999999985099
+      },
+      {
+        "name": "/_next/static/chunks/eb8cc6e6-e1fa6adbba55a3f8.js",
+        "type": "script",
+        "transfer": 20078,
+        "encoded": 19778,
+        "duration": 1331.2999999970198
+      },
+      {
+        "name": "/_next/static/chunks/7865-0487ce6ccd508b87.js",
+        "type": "script",
+        "transfer": 3724,
+        "encoded": 3424,
+        "duration": 1264.2999999970198
+      },
+      {
+        "name": "/_next/static/chunks/6096-ac104356767cc4b1.js",
+        "type": "script",
+        "transfer": 13984,
+        "encoded": 13684,
+        "duration": 1495.8999999985099
+      },
+      {
+        "name": "/_next/static/chunks/7486-6ceb3124d0e10000.js",
+        "type": "script",
+        "transfer": 3414,
+        "encoded": 3114,
+        "duration": 1533.5
+      },
+      {
+        "name": "/_next/static/chunks/app/layout-3151ba708557dd88.js",
+        "type": "script",
+        "transfer": 4196,
+        "encoded": 3896,
+        "duration": 1595
+      },
+      {
+        "name": "/_next/static/chunks/363-9409249d575fede2.js",
+        "type": "script",
+        "transfer": 20636,
+        "encoded": 20336,
+        "duration": 2035.5
+      },
+      {
+        "name": "/_next/static/chunks/6390-a70a46ac4e960f33.js",
+        "type": "script",
+        "transfer": 4209,
+        "encoded": 3909,
+        "duration": 1802.7999999970198
+      },
+      {
+        "name": "/_next/static/chunks/9103-5af2084c1ed24468.js",
+        "type": "script",
+        "transfer": 4136,
+        "encoded": 3836,
+        "duration": 1855.5
+      },
+      {
+        "name": "/_next/static/chunks/app/page-ec7db761b63e7235.js",
+        "type": "script",
+        "transfer": 5349,
+        "encoded": 5049,
+        "duration": 2020.5999999940395
+      },
+      {
+        "name": "/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=256&q=75",
+        "type": "img",
+        "transfer": 2823,
+        "encoded": 2523,
+        "duration": 9.100000001490116
+      },
+      {
+        "name": "/_next/image?url=%2Fimages%2Ftimeless%2Fproduct%2Fessential-tee-black-primary.jpg&w=384&q=75",
+        "type": "img",
+        "transfer": 31895,
+        "encoded": 31595,
+        "duration": 10.100000001490116
+      },
+      {
+        "name": "/?_rsc=7h4NYy5eoyMcNlUN",
+        "type": "fetch",
+        "transfer": 849,
+        "encoded": 549,
+        "duration": 167.29999999701977
+      },
+      {
+        "name": "/?_rsc=yIp22O3xgPPxC28X",
+        "type": "fetch",
+        "transfer": 2228,
+        "encoded": 1928,
+        "duration": 196.80000000447035
+      },
+      {
+        "name": "/?_rsc=8nTjltbQWvg6NcbE",
+        "type": "fetch",
+        "transfer": 4266,
+        "encoded": 3966,
+        "duration": 219.89999999850988
+      },
+      {
+        "name": "/shop?_rsc=5CB68i4pnAekjehf",
+        "type": "fetch",
+        "transfer": 587,
+        "encoded": 287,
+        "duration": 161.10000000149012
+      },
+      {
+        "name": "/shop?_rsc=7h4NYy5eoyMcNlUN",
+        "type": "fetch",
+        "transfer": 840,
+        "encoded": 540,
+        "duration": 161.70000000298023
+      },
+      {
+        "name": "/shop?_rsc=I1nRbsap9uK5woTj",
+        "type": "fetch",
+        "transfer": 521,
+        "encoded": 221,
+        "duration": 169.29999999701977
+      },
+      {
+        "name": "/shop?_rsc=j92W4uwEyrymIlok",
+        "type": "fetch",
+        "transfer": 2233,
+        "encoded": 1933,
+        "duration": 192.30000000447035
+      },
+      {
+        "name": "/favicon.ico?603d046c9a6fdfbb",
+        "type": "other",
+        "transfer": 26231,
+        "encoded": 25931,
+        "duration": 317.30000000447035
+      },
+      {
+        "name": "/_next/static/chunks/app/shop/page-2ce36fc4f7a9e840.js",
+        "type": "script",
+        "transfer": 7883,
+        "encoded": 7583,
+        "duration": 198
+      },
+      {
+        "name": "/_next/image?url=%2Fimages%2Ftimeless%2Fproduct%2Fessential-tee-white-primary.jpg&w=384&q=75",
+        "type": "img",
+        "transfer": 22390,
+        "encoded": 22090,
+        "duration": 6.200000002980232
+      },
+      {
+        "name": "/_next/image?url=%2Fimages%2Ftimeless%2Fproduct%2Fessential-tee-cream-primary.jpg&w=384&q=75",
+        "type": "img",
+        "transfer": 27344,
+        "encoded": 27044,
+        "duration": 6.5999999940395355
+      }
+    ],
+    "navigation": [
+      {
+        "ttfb": 10.200000002980232,
+        "dom": 627.7000000029802,
+        "load": 2734.2000000029802
+      }
+    ]
+  },
+  {
+    "route": "/shop/essential-tee",
+    "run": 1,
+    "viewport": "375x812 DPR1",
+    "cpu": 4,
+    "latencyMs": 150,
+    "downloadBytesPerSec": 200000,
+    "imageDelivery": "API-fetched response fulfillment; bypasses normal image delivery; timings diagnostic only",
+    "failures": [],
+    "paint": [
+      {
+        "name": "first-paint",
+        "ms": 784
+      },
+      {
+        "name": "first-contentful-paint",
+        "ms": 784
+      }
+    ],
+    "observer": {
+      "lcp": [
+        {
+          "start": 784,
+          "duration": 0,
+          "size": 118160,
+          "element": "IMG"
+        }
+      ],
+      "cls": [
+        {
+          "start": 1172.5,
+          "duration": 0,
+          "value": 0.004466223214538491,
+          "recent": false
+        }
+      ],
+      "long": [
+        {
+          "start": 626.3999999985099,
+          "duration": 58
+        },
+        {
+          "start": 2130.2999999970198,
+          "duration": 164
+        },
+        {
+          "start": 2308.5999999940395,
+          "duration": 62
+        },
+        {
+          "start": 2449.5999999940395,
+          "duration": 65
+        }
+      ]
+    },
+    "resources": [
+      {
+        "name": "/_next/static/media/628a7ea889047126-s.p.ttf",
+        "type": "link",
+        "transfer": 30024,
+        "encoded": 29724,
+        "duration": 963.7999999970198
+      },
+      {
+        "name": "/_next/static/media/a7579e5dd58d12a3-s.p.ttf",
+        "type": "link",
+        "transfer": 30019,
+        "encoded": 29719,
+        "duration": 970.6000000014901
+      },
+      {
+        "name": "/_next/static/css/6f798f8692f6a281.css",
+        "type": "link",
+        "transfer": 9766,
+        "encoded": 9466,
+        "duration": 429.8999999985099
+      },
+      {
+        "name": "/_next/static/media/c46c151259bc4580-s.p.ttf",
+        "type": "link",
+        "transfer": 171169,
+        "encoded": 170869,
+        "duration": 2552.2000000029802
+      },
+      {
+        "name": "/_next/static/chunks/webpack-44613ea72a0cf9ef.js",
+        "type": "link",
+        "transfer": 4745,
+        "encoded": 4445,
+        "duration": 341
+      },
+      {
+        "name": "/_next/static/chunks/f0296bd9-5c705f0bb119c68b.js",
+        "type": "script",
+        "transfer": 63180,
+        "encoded": 62880,
+        "duration": 1757.6999999955297
+      },
+      {
+        "name": "/_next/static/chunks/4692-8df06275dbe8c47d.js",
+        "type": "script",
+        "transfer": 61732,
+        "encoded": 61432,
+        "duration": 1943.8000000044703
+      },
+      {
+        "name": "/_next/static/chunks/main-app-51bf7e8f6ead91ca.js",
+        "type": "script",
+        "transfer": 827,
+        "encoded": 527,
+        "duration": 625.1000000014901
+      },
+      {
+        "name": "/_next/static/chunks/7865-0487ce6ccd508b87.js",
+        "type": "script",
+        "transfer": 3724,
+        "encoded": 3424,
+        "duration": 1253.7000000029802
+      },
+      {
+        "name": "/_next/static/chunks/eb8cc6e6-e1fa6adbba55a3f8.js",
+        "type": "script",
+        "transfer": 20078,
+        "encoded": 19778,
+        "duration": 1330.1000000014901
+      },
+      {
+        "name": "/_next/static/chunks/6096-ac104356767cc4b1.js",
+        "type": "script",
+        "transfer": 13984,
+        "encoded": 13684,
+        "duration": 1494.5
+      },
+      {
+        "name": "/_next/static/chunks/7486-6ceb3124d0e10000.js",
+        "type": "script",
+        "transfer": 3414,
+        "encoded": 3114,
+        "duration": 1515.5
+      },
+      {
+        "name": "/_next/static/chunks/app/layout-3151ba708557dd88.js",
+        "type": "script",
+        "transfer": 4196,
+        "encoded": 3896,
+        "duration": 1582.8000000044703
+      },
+      {
+        "name": "/_next/static/chunks/6390-a70a46ac4e960f33.js",
+        "type": "script",
+        "transfer": 4209,
+        "encoded": 3909,
+        "duration": 1777.8000000044703
+      },
+      {
+        "name": "/_next/static/chunks/363-9409249d575fede2.js",
+        "type": "script",
+        "transfer": 20636,
+        "encoded": 20336,
+        "duration": 2056.3000000044703
+      },
+      {
+        "name": "/_next/static/chunks/9103-5af2084c1ed24468.js",
+        "type": "script",
+        "transfer": 4136,
+        "encoded": 3836,
+        "duration": 1837.7999999970198
+      },
+      {
+        "name": "/_next/static/chunks/app/shop/%5Bslug%5D/page-26c369700d3d02eb.js",
+        "type": "script",
+        "transfer": 3895,
+        "encoded": 3595,
+        "duration": 2004.1000000014901
+      },
+      {
+        "name": "/_next/static/chunks/app/page-ec7db761b63e7235.js",
+        "type": "script",
+        "transfer": 5349,
+        "encoded": 5049,
+        "duration": 2048.10000000149
+      },
+      {
+        "name": "/_next/image?url=%2Fimages%2Ftimeless%2Fproduct%2Fessential-tee-black-primary.jpg&w=384&q=75",
+        "type": "img",
+        "transfer": 31895,
+        "encoded": 31595,
+        "duration": 6
+      },
+      {
+        "name": "/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=256&q=75",
+        "type": "img",
+        "transfer": 2823,
+        "encoded": 2523,
+        "duration": 5.600000001490116
+      },
+      {
+        "name": "/?_rsc=vfkdkEqoVjpG_3D1",
+        "type": "fetch",
+        "transfer": 581,
+        "encoded": 281,
+        "duration": 167
+      },
+      {
+        "name": "/shop/essential-tee?_rsc=RlunHRe_voWUy6ZM",
+        "type": "fetch",
+        "transfer": 835,
+        "encoded": 535,
+        "duration": 168.19999999552965
+      },
+      {
+        "name": "/shop/essential-tee?_rsc=qo4VeMFaFfjBbz9G",
+        "type": "fetch",
+        "transfer": 2267,
+        "encoded": 1967,
+        "duration": 197.89999999850988
+      },
+      {
+        "name": "/shop/essential-tee?_rsc=AnHUsu3RIo4_VG03",
+        "type": "fetch",
+        "transfer": 521,
+        "encoded": 221,
+        "duration": 180.79999999701977
+      },
+      {
+        "name": "/shop/essential-tee?_rsc=h8U-rW3gW9flyp0P",
+        "type": "fetch",
+        "transfer": 521,
+        "encoded": 221,
+        "duration": 159.19999999552965
+      },
+      {
+        "name": "/shop/essential-tee?_rsc=zAp95KESc9CkVi5B",
+        "type": "fetch",
+        "transfer": 3562,
+        "encoded": 3262,
+        "duration": 180.70000000298023
+      },
+      {
+        "name": "/?_rsc=RlunHRe_voWUy6ZM",
+        "type": "fetch",
+        "transfer": 849,
+        "encoded": 549,
+        "duration": 163
+      },
+      {
+        "name": "/?_rsc=T3LvfEVpAHaUhCW0",
+        "type": "fetch",
+        "transfer": 4266,
+        "encoded": 3966,
+        "duration": 175.39999999850988
+      },
+      {
+        "name": "/favicon.ico?603d046c9a6fdfbb",
+        "type": "other",
+        "transfer": 26231,
+        "encoded": 25931,
+        "duration": 285.3999999985099
+      },
+      {
+        "name": "/_next/image?url=%2Fimages%2Ftimeless%2Fproduct%2Fessential-tee-white-primary.jpg&w=384&q=75",
+        "type": "img",
+        "transfer": 22390,
+        "encoded": 22090,
+        "duration": 7.100000001490116
+      },
+      {
+        "name": "/_next/image?url=%2Fimages%2Ftimeless%2Fproduct%2Fessential-tee-cream-primary.jpg&w=384&q=75",
+        "type": "img",
+        "transfer": 27344,
+        "encoded": 27044,
+        "duration": 5.899999998509884
+      }
+    ],
+    "navigation": [
+      {
+        "ttfb": 18.399999998509884,
+        "dom": 626.3999999985099,
+        "load": 2746.6999999955297
+      }
+    ]
+  },
+  {
+    "route": "/shop/essential-tee",
+    "run": 2,
+    "viewport": "375x812 DPR1",
+    "cpu": 4,
+    "latencyMs": 150,
+    "downloadBytesPerSec": 200000,
+    "imageDelivery": "API-fetched response fulfillment; bypasses normal image delivery; timings diagnostic only",
+    "failures": [],
+    "paint": [
+      {
+        "name": "first-paint",
+        "ms": 764
+      },
+      {
+        "name": "first-contentful-paint",
+        "ms": 764
+      }
+    ],
+    "observer": {
+      "lcp": [
+        {
+          "start": 764,
+          "duration": 0,
+          "size": 118160,
+          "element": "IMG"
+        }
+      ],
+      "cls": [
+        {
+          "start": 1176.6999999955297,
+          "duration": 0,
+          "value": 0.004466223214538491,
+          "recent": false
+        }
+      ],
+      "long": [
+        {
+          "start": 617.3999999985099,
+          "duration": 52
+        },
+        {
+          "start": 2129,
+          "duration": 163
+        },
+        {
+          "start": 2306.5999999940395,
+          "duration": 63
+        },
+        {
+          "start": 2449.6999999955297,
+          "duration": 72
+        }
+      ]
+    },
+    "resources": [
+      {
+        "name": "/_next/static/media/628a7ea889047126-s.p.ttf",
+        "type": "link",
+        "transfer": 30024,
+        "encoded": 29724,
+        "duration": 975.1000000014901
+      },
+      {
+        "name": "/_next/static/media/a7579e5dd58d12a3-s.p.ttf",
+        "type": "link",
+        "transfer": 30019,
+        "encoded": 29719,
+        "duration": 982.3999999985099
+      },
+      {
+        "name": "/_next/static/media/c46c151259bc4580-s.p.ttf",
+        "type": "link",
+        "transfer": 171169,
+        "encoded": 170869,
+        "duration": 2549.2000000029802
+      },
+      {
+        "name": "/_next/static/css/6f798f8692f6a281.css",
+        "type": "link",
+        "transfer": 9766,
+        "encoded": 9466,
+        "duration": 426.70000000298023
+      },
+      {
+        "name": "/_next/static/chunks/webpack-44613ea72a0cf9ef.js",
+        "type": "link",
+        "transfer": 4745,
+        "encoded": 4445,
+        "duration": 329
+      },
+      {
+        "name": "/_next/static/chunks/f0296bd9-5c705f0bb119c68b.js",
+        "type": "script",
+        "transfer": 63180,
+        "encoded": 62880,
+        "duration": 1754
+      },
+      {
+        "name": "/_next/static/chunks/main-app-51bf7e8f6ead91ca.js",
+        "type": "script",
+        "transfer": 827,
+        "encoded": 527,
+        "duration": 622.5
+      },
+      {
+        "name": "/_next/static/chunks/4692-8df06275dbe8c47d.js",
+        "type": "script",
+        "transfer": 61732,
+        "encoded": 61432,
+        "duration": 1948.3999999985099
+      },
+      {
+        "name": "/_next/static/chunks/eb8cc6e6-e1fa6adbba55a3f8.js",
+        "type": "script",
+        "transfer": 20078,
+        "encoded": 19778,
+        "duration": 1319.1000000014901
+      },
+      {
+        "name": "/_next/static/chunks/6096-ac104356767cc4b1.js",
+        "type": "script",
+        "transfer": 13984,
+        "encoded": 13684,
+        "duration": 1499.7999999970198
+      },
+      {
+        "name": "/_next/static/chunks/7865-0487ce6ccd508b87.js",
+        "type": "script",
+        "transfer": 3724,
+        "encoded": 3424,
+        "duration": 1265.6000000014901
+      },
+      {
+        "name": "/_next/static/chunks/7486-6ceb3124d0e10000.js",
+        "type": "script",
+        "transfer": 3414,
+        "encoded": 3114,
+        "duration": 1535.5
+      },
+      {
+        "name": "/_next/static/chunks/app/layout-3151ba708557dd88.js",
+        "type": "script",
+        "transfer": 4196,
+        "encoded": 3896,
+        "duration": 1580.8000000044703
+      },
+      {
+        "name": "/_next/static/chunks/363-9409249d575fede2.js",
+        "type": "script",
+        "transfer": 20636,
+        "encoded": 20336,
+        "duration": 2060.5
+      },
+      {
+        "name": "/_next/static/chunks/6390-a70a46ac4e960f33.js",
+        "type": "script",
+        "transfer": 4209,
+        "encoded": 3909,
+        "duration": 1798.1000000014901
+      },
+      {
+        "name": "/_next/static/chunks/9103-5af2084c1ed24468.js",
+        "type": "script",
+        "transfer": 4136,
+        "encoded": 3836,
+        "duration": 1834.8999999985099
+      },
+      {
+        "name": "/_next/static/chunks/app/shop/%5Bslug%5D/page-26c369700d3d02eb.js",
+        "type": "script",
+        "transfer": 3895,
+        "encoded": 3595,
+        "duration": 1992.5
+      },
+      {
+        "name": "/_next/static/chunks/app/page-ec7db761b63e7235.js",
+        "type": "script",
+        "transfer": 5349,
+        "encoded": 5049,
+        "duration": 2053
+      },
+      {
+        "name": "/_next/image?url=%2Fimages%2Ftimeless%2Fproduct%2Fessential-tee-black-primary.jpg&w=384&q=75",
+        "type": "img",
+        "transfer": 31895,
+        "encoded": 31595,
+        "duration": 7.699999995529652
+      },
+      {
+        "name": "/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=256&q=75",
+        "type": "img",
+        "transfer": 2823,
+        "encoded": 2523,
+        "duration": 6.100000001490116
+      },
+      {
+        "name": "/?_rsc=vfkdkEqoVjpG_3D1",
+        "type": "fetch",
+        "transfer": 581,
+        "encoded": 281,
+        "duration": 159.89999999850988
+      },
+      {
+        "name": "/shop/essential-tee?_rsc=RlunHRe_voWUy6ZM",
+        "type": "fetch",
+        "transfer": 835,
+        "encoded": 535,
+        "duration": 163.69999999552965
+      },
+      {
+        "name": "/shop/essential-tee?_rsc=qo4VeMFaFfjBbz9G",
+        "type": "fetch",
+        "transfer": 2267,
+        "encoded": 1967,
+        "duration": 193.29999999701977
+      },
+      {
+        "name": "/shop/essential-tee?_rsc=AnHUsu3RIo4_VG03",
+        "type": "fetch",
+        "transfer": 521,
+        "encoded": 221,
+        "duration": 177.39999999850988
+      },
+      {
+        "name": "/shop/essential-tee?_rsc=h8U-rW3gW9flyp0P",
+        "type": "fetch",
+        "transfer": 521,
+        "encoded": 221,
+        "duration": 159.39999999850988
+      },
+      {
+        "name": "/shop/essential-tee?_rsc=zAp95KESc9CkVi5B",
+        "type": "fetch",
+        "transfer": 3562,
+        "encoded": 3262,
+        "duration": 181.69999999552965
+      },
+      {
+        "name": "/?_rsc=RlunHRe_voWUy6ZM",
+        "type": "fetch",
+        "transfer": 849,
+        "encoded": 549,
+        "duration": 162
+      },
+      {
+        "name": "/?_rsc=T3LvfEVpAHaUhCW0",
+        "type": "fetch",
+        "transfer": 4266,
+        "encoded": 3966,
+        "duration": 190.30000000447035
+      },
+      {
+        "name": "/favicon.ico?603d046c9a6fdfbb",
+        "type": "other",
+        "transfer": 26231,
+        "encoded": 25931,
+        "duration": 305.40000000596046
+      },
+      {
+        "name": "/_next/image?url=%2Fimages%2Ftimeless%2Fproduct%2Fessential-tee-white-primary.jpg&w=384&q=75",
+        "type": "img",
+        "transfer": 22390,
+        "encoded": 22090,
+        "duration": 4.799999997019768
+      },
+      {
+        "name": "/_next/image?url=%2Fimages%2Ftimeless%2Fproduct%2Fessential-tee-cream-primary.jpg&w=384&q=75",
+        "type": "img",
+        "transfer": 27344,
+        "encoded": 27044,
+        "duration": 4
+      }
+    ],
+    "navigation": [
+      {
+        "ttfb": 10.599999994039536,
+        "dom": 617.5,
+        "load": 2736.6999999955297
+      }
+    ]
+  },
+  {
+    "route": "/shop/essential-tee",
+    "run": 3,
+    "viewport": "375x812 DPR1",
+    "cpu": 4,
+    "latencyMs": 150,
+    "downloadBytesPerSec": 200000,
+    "imageDelivery": "API-fetched response fulfillment; bypasses normal image delivery; timings diagnostic only",
+    "failures": [],
+    "paint": [
+      {
+        "name": "first-paint",
+        "ms": 776
+      },
+      {
+        "name": "first-contentful-paint",
+        "ms": 776
+      }
+    ],
+    "observer": {
+      "lcp": [
+        {
+          "start": 776,
+          "duration": 0,
+          "size": 118160,
+          "element": "IMG"
+        }
+      ],
+      "cls": [
+        {
+          "start": 1176,
+          "duration": 0,
+          "value": 0.004466223214538491,
+          "recent": false
+        }
+      ],
+      "long": [
+        {
+          "start": 619.5,
+          "duration": 55
+        },
+        {
+          "start": 2138.5,
+          "duration": 159
+        },
+        {
+          "start": 2312.39999999851,
+          "duration": 60
+        },
+        {
+          "start": 2453.5,
+          "duration": 65
+        }
+      ]
+    },
+    "resources": [
+      {
+        "name": "/_next/static/media/628a7ea889047126-s.p.ttf",
+        "type": "link",
+        "transfer": 30024,
+        "encoded": 29724,
+        "duration": 970.4000000059605
+      },
+      {
+        "name": "/_next/static/media/a7579e5dd58d12a3-s.p.ttf",
+        "type": "link",
+        "transfer": 30019,
+        "encoded": 29719,
+        "duration": 986.1000000014901
+      },
+      {
+        "name": "/_next/static/media/c46c151259bc4580-s.p.ttf",
+        "type": "link",
+        "transfer": 171169,
+        "encoded": 170869,
+        "duration": 2559.1999999955297
+      },
+      {
+        "name": "/_next/static/css/6f798f8692f6a281.css",
+        "type": "link",
+        "transfer": 9766,
+        "encoded": 9466,
+        "duration": 429
+      },
+      {
+        "name": "/_next/static/chunks/webpack-44613ea72a0cf9ef.js",
+        "type": "link",
+        "transfer": 4745,
+        "encoded": 4445,
+        "duration": 338.79999999701977
+      },
+      {
+        "name": "/_next/static/chunks/f0296bd9-5c705f0bb119c68b.js",
+        "type": "script",
+        "transfer": 63180,
+        "encoded": 62880,
+        "duration": 1764
+      },
+      {
+        "name": "/_next/static/chunks/main-app-51bf7e8f6ead91ca.js",
+        "type": "script",
+        "transfer": 827,
+        "encoded": 527,
+        "duration": 623.8999999985099
+      },
+      {
+        "name": "/_next/static/chunks/eb8cc6e6-e1fa6adbba55a3f8.js",
+        "type": "script",
+        "transfer": 20078,
+        "encoded": 19778,
+        "duration": 1320.7999999970198
+      },
+      {
+        "name": "/_next/static/chunks/6096-ac104356767cc4b1.js",
+        "type": "script",
+        "transfer": 13984,
+        "encoded": 13684,
+        "duration": 1486.2999999970198
+      },
+      {
+        "name": "/_next/static/chunks/4692-8df06275dbe8c47d.js",
+        "type": "script",
+        "transfer": 61732,
+        "encoded": 61432,
+        "duration": 1959.0999999940395
+      },
+      {
+        "name": "/_next/static/chunks/7865-0487ce6ccd508b87.js",
+        "type": "script",
+        "transfer": 3724,
+        "encoded": 3424,
+        "duration": 1268.3000000044703
+      },
+      {
+        "name": "/_next/static/chunks/7486-6ceb3124d0e10000.js",
+        "type": "script",
+        "transfer": 3414,
+        "encoded": 3114,
+        "duration": 1531.3999999985099
+      },
+      {
+        "name": "/_next/static/chunks/app/layout-3151ba708557dd88.js",
+        "type": "script",
+        "transfer": 4196,
+        "encoded": 3896,
+        "duration": 1582.8999999985099
+      },
+      {
+        "name": "/_next/static/chunks/6390-a70a46ac4e960f33.js",
+        "type": "script",
+        "transfer": 4209,
+        "encoded": 3909,
+        "duration": 1800.1000000014901
+      },
+      {
+        "name": "/_next/static/chunks/363-9409249d575fede2.js",
+        "type": "script",
+        "transfer": 20636,
+        "encoded": 20336,
+        "duration": 2048.5
+      },
+      {
+        "name": "/_next/static/chunks/9103-5af2084c1ed24468.js",
+        "type": "script",
+        "transfer": 4136,
+        "encoded": 3836,
+        "duration": 1845.1999999955297
+      },
+      {
+        "name": "/_next/static/chunks/app/shop/%5Bslug%5D/page-26c369700d3d02eb.js",
+        "type": "script",
+        "transfer": 3895,
+        "encoded": 3595,
+        "duration": 2002.3999999985099
+      },
+      {
+        "name": "/_next/static/chunks/app/page-ec7db761b63e7235.js",
+        "type": "script",
+        "transfer": 5349,
+        "encoded": 5049,
+        "duration": 2061.6999999955297
+      },
+      {
+        "name": "/_next/image?url=%2Fimages%2Ftimeless%2Fproduct%2Fessential-tee-black-primary.jpg&w=384&q=75",
+        "type": "img",
+        "transfer": 31895,
+        "encoded": 31595,
+        "duration": 4.100000001490116
+      },
+      {
+        "name": "/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=256&q=75",
+        "type": "img",
+        "transfer": 2823,
+        "encoded": 2523,
+        "duration": 4.9000000059604645
+      },
+      {
+        "name": "/?_rsc=vfkdkEqoVjpG_3D1",
+        "type": "fetch",
+        "transfer": 581,
+        "encoded": 281,
+        "duration": 162.70000000298023
+      },
+      {
+        "name": "/shop/essential-tee?_rsc=RlunHRe_voWUy6ZM",
+        "type": "fetch",
+        "transfer": 835,
+        "encoded": 535,
+        "duration": 164.29999999701977
+      },
+      {
+        "name": "/shop/essential-tee?_rsc=qo4VeMFaFfjBbz9G",
+        "type": "fetch",
+        "transfer": 2267,
+        "encoded": 1967,
+        "duration": 193.59999999403954
+      },
+      {
+        "name": "/shop/essential-tee?_rsc=AnHUsu3RIo4_VG03",
+        "type": "fetch",
+        "transfer": 521,
+        "encoded": 221,
+        "duration": 179
+      },
+      {
+        "name": "/shop/essential-tee?_rsc=h8U-rW3gW9flyp0P",
+        "type": "fetch",
+        "transfer": 521,
+        "encoded": 221,
+        "duration": 158.19999999552965
+      },
+      {
+        "name": "/shop/essential-tee?_rsc=zAp95KESc9CkVi5B",
+        "type": "fetch",
+        "transfer": 3562,
+        "encoded": 3262,
+        "duration": 182.5
+      },
+      {
+        "name": "/?_rsc=RlunHRe_voWUy6ZM",
+        "type": "fetch",
+        "transfer": 849,
+        "encoded": 549,
+        "duration": 161.5
+      },
+      {
+        "name": "/?_rsc=T3LvfEVpAHaUhCW0",
+        "type": "fetch",
+        "transfer": 4266,
+        "encoded": 3966,
+        "duration": 176.09999999403954
+      },
+      {
+        "name": "/favicon.ico?603d046c9a6fdfbb",
+        "type": "other",
+        "transfer": 26231,
+        "encoded": 25931,
+        "duration": 292.8999999985099
+      },
+      {
+        "name": "/_next/image?url=%2Fimages%2Ftimeless%2Fproduct%2Fessential-tee-white-primary.jpg&w=384&q=75",
+        "type": "img",
+        "transfer": 22390,
+        "encoded": 22090,
+        "duration": 7.200000002980232
+      },
+      {
+        "name": "/_next/image?url=%2Fimages%2Ftimeless%2Fproduct%2Fessential-tee-cream-primary.jpg&w=384&q=75",
+        "type": "img",
+        "transfer": 27344,
+        "encoded": 27044,
+        "duration": 5.800000004470348
+      }
+    ],
+    "navigation": [
+      {
+        "ttfb": 6.799999997019768,
+        "dom": 619.6000000014901,
+        "load": 2745.60000000149
+      }
+    ]
+  }
+]

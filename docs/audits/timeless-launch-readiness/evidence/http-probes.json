@@ -1,0 +1,185 @@
+[
+  {
+    "path": "/robots.txt",
+    "status": 404,
+    "headers": {
+      "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "x-nextjs-cache": "HIT",
+      "x-nextjs-prerender": "1, 1",
+      "x-nextjs-stale-time": "300",
+      "x-powered-by": "Next.js",
+      "etag": "\"15i81rivb94jiv\"",
+      "content-type": "text/html; charset=utf-8",
+      "content-encoding": "gzip",
+      "date": "Wed, 28 Oct 2026 07:34:57 GMT",
+      "connection": "keep-alive",
+      "keep-alive": "timeout=5",
+      "transfer-encoding": "chunked"
+    },
+    "noindex": true
+  },
+  {
+    "path": "/sitemap.xml",
+    "status": 404,
+    "headers": {
+      "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "x-nextjs-cache": "HIT",
+      "x-nextjs-prerender": "1, 1",
+      "x-nextjs-stale-time": "300",
+      "x-powered-by": "Next.js",
+      "etag": "\"15i81rivb94jiv\"",
+      "content-type": "text/html; charset=utf-8",
+      "content-encoding": "gzip",
+      "date": "Wed, 28 Oct 2026 07:34:57 GMT",
+      "connection": "keep-alive",
+      "keep-alive": "timeout=5",
+      "transfer-encoding": "chunked"
+    },
+    "noindex": true
+  },
+  {
+    "path": "/not-a-real-route",
+    "status": 404,
+    "headers": {
+      "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "x-nextjs-cache": "HIT",
+      "x-nextjs-prerender": "1, 1",
+      "x-nextjs-stale-time": "300",
+      "x-powered-by": "Next.js",
+      "etag": "\"15i81rivb94jiv\"",
+      "content-type": "text/html; charset=utf-8",
+      "content-encoding": "gzip",
+      "date": "Wed, 28 Oct 2026 07:34:57 GMT",
+      "connection": "keep-alive",
+      "keep-alive": "timeout=5",
+      "transfer-encoding": "chunked"
+    },
+    "noindex": true
+  },
+  {
+    "path": "/shop/not-a-product",
+    "status": 200,
+    "headers": {
+      "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "x-nextjs-cache": "MISS",
+      "x-nextjs-prerender": "1",
+      "x-nextjs-stale-time": "300",
+      "x-powered-by": "Next.js",
+      "cache-control": "s-maxage=31536000",
+      "etag": "\"sopew28otoj36\"",
+      "content-type": "text/html; charset=utf-8",
+      "content-encoding": "gzip",
+      "date": "Wed, 28 Oct 2026 07:34:57 GMT",
+      "connection": "keep-alive",
+      "keep-alive": "timeout=5",
+      "transfer-encoding": "chunked"
+    },
+    "noindex": true
+  },
+  {
+    "path": "/journal/not-a-story",
+    "status": 200,
+    "headers": {
+      "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "x-nextjs-cache": "MISS",
+      "x-nextjs-prerender": "1",
+      "x-nextjs-stale-time": "300",
+      "x-powered-by": "Next.js",
+      "cache-control": "s-maxage=31536000",
+      "etag": "\"bu09dnp7y0ism\"",
+      "content-type": "text/html; charset=utf-8",
+      "content-encoding": "gzip",
+      "date": "Wed, 28 Oct 2026 07:34:57 GMT",
+      "connection": "keep-alive",
+      "keep-alive": "timeout=5",
+      "transfer-encoding": "chunked"
+    },
+    "noindex": true
+  },
+  {
+    "path": "/journal/in-the-wild-akure",
+    "status": 308,
+    "headers": {
+      "location": "/in-the-wild",
+      "refresh": "0;url=/in-the-wild",
+      "date": "Wed, 28 Oct 2026 07:34:57 GMT",
+      "connection": "keep-alive",
+      "keep-alive": "timeout=5",
+      "transfer-encoding": "chunked"
+    },
+    "noindex": false
+  },
+  {
+    "path": "/studio",
+    "status": 200,
+    "headers": {
+      "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "link": "</_next/static/media/628a7ea889047126-s.p.ttf>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/ttf\", </_next/static/media/a7579e5dd58d12a3-s.p.ttf>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/ttf\", </_next/static/media/c46c151259bc4580-s.p.ttf>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/ttf\"",
+      "x-powered-by": "Next.js",
+      "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "content-type": "text/html; charset=utf-8",
+      "content-encoding": "gzip",
+      "date": "Wed, 28 Oct 2026 07:34:57 GMT",
+      "connection": "keep-alive",
+      "keep-alive": "timeout=5",
+      "transfer-encoding": "chunked"
+    },
+    "noindex": true
+  },
+  {
+    "path": "/.env.local",
+    "status": 404,
+    "headers": {
+      "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "x-nextjs-cache": "HIT",
+      "x-nextjs-prerender": "1, 1",
+      "x-nextjs-stale-time": "300",
+      "x-powered-by": "Next.js",
+      "etag": "\"15i81rivb94jiv\"",
+      "content-type": "text/html; charset=utf-8",
+      "content-encoding": "gzip",
+      "date": "Wed, 28 Oct 2026 07:34:57 GMT",
+      "connection": "keep-alive",
+      "keep-alive": "timeout=5",
+      "transfer-encoding": "chunked"
+    },
+    "noindex": true
+  },
+  {
+    "path": "/_next/static/chunks/app/page-ec7db761b63e7235.js.map",
+    "status": 404,
+    "headers": {
+      "cache-control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "content-type": "text/plain; charset=utf-8",
+      "vary": "Accept-Encoding",
+      "date": "Wed, 28 Oct 2026 07:34:57 GMT",
+      "connection": "keep-alive",
+      "keep-alive": "timeout=5",
+      "transfer-encoding": "chunked"
+    },
+    "noindex": false
+  },
+  {
+    "path": "/",
+    "status": 200,
+    "headers": {
+      "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding",
+      "x-nextjs-cache": "HIT",
+      "x-nextjs-prerender": "1, 1",
+      "x-nextjs-stale-time": "300",
+      "x-powered-by": "Next.js",
+      "cache-control": "s-maxage=31536000",
+      "etag": "\"o5yq2fpuef1mma\"",
+      "content-type": "text/html; charset=utf-8",
+      "content-encoding": "gzip",
+      "date": "Wed, 28 Oct 2026 07:34:57 GMT",
+      "connection": "keep-alive",
+      "keep-alive": "timeout=5",
+      "transfer-encoding": "chunked"
+    }
+  }
+]

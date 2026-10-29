@@ -1,0 +1,106 @@
+{
+  "note": "On-disk production chunks; not per-route transfer or Brotli sizes. Studio chunks are not attributed to storefront.",
+  "largest": [
+    {
+      "path": "2743-88444f7610b0437c.js",
+      "bytes": 2400693,
+      "gzipBytes": 804096
+    },
+    {
+      "path": "f9c8e7dd-1d2a6a3e44a369bf.js",
+      "bytes": 1067019,
+      "gzipBytes": 336065
+    },
+    {
+      "path": "5c0e48a7.c3b6af206ec9ca1e.js",
+      "bytes": 577224,
+      "gzipBytes": 176947
+    },
+    {
+      "path": "9851.5455a4b77f12e3cf.js",
+      "bytes": 572184,
+      "gzipBytes": 144460
+    },
+    {
+      "path": "eec3500c-cc7074c1e388b4b5.js",
+      "bytes": 405490,
+      "gzipBytes": 140534
+    },
+    {
+      "path": "2c0cdfc6-f314317415fb38f0.js",
+      "bytes": 343339,
+      "gzipBytes": 94319
+    },
+    {
+      "path": "0bcc618f-3d6fa91be6e56488.js",
+      "bytes": 339806,
+      "gzipBytes": 118161
+    },
+    {
+      "path": "4d121af0-7bd78958ab7b4241.js",
+      "bytes": 238578,
+      "gzipBytes": 77415
+    },
+    {
+      "path": "4692-8df06275dbe8c47d.js",
+      "bytes": 222721,
+      "gzipBytes": 61273
+    },
+    {
+      "path": "framework-d5a767dfe21bce8c.js",
+      "bytes": 218937,
+      "gzipBytes": 68447
+    },
+    {
+      "path": "f0296bd9-5c705f0bb119c68b.js",
+      "bytes": 199869,
+      "gzipBytes": 62751
+    },
+    {
+      "path": "98ecb5d7.880326e0eea99f49.js",
+      "bytes": 187976,
+      "gzipBytes": 62337
+    },
+    {
+      "path": "main-3d556c85e72c844d.js",
+      "bytes": 137749,
+      "gzipBytes": 39632
+    },
+    {
+      "path": "polyfills-42372ed130431b0a.js",
+      "bytes": 112594,
+      "gzipBytes": 39373
+    },
+    {
+      "path": "4c07856d-fadf6fdfab81db71.js",
+      "bytes": 104269,
+      "gzipBytes": 34442
+    },
+    {
+      "path": "3fcfd0a4-b274811fd0839334.js",
+      "bytes": 99614,
+      "gzipBytes": 31200
+    },
+    {
+      "path": "9519282b-a785a32a523c8908.js",
+      "bytes": 95961,
+      "gzipBytes": 28935
+    },
+    {
+      "path": "3542.a9afb3d573447c5d.js",
+      "bytes": 91205,
+      "gzipBytes": 31602
+    },
+    {
+      "path": "3ecf52cc-0e5106e62ca01cb4.js",
+      "bytes": 89326,
+      "gzipBytes": 31118
+    },
+    {
+      "path": "dfe2a160-306cf31921c8d63d.js",
+      "bytes": 85726,
+      "gzipBytes": 24210
+    }
+  ],
+  "totalBytes": 8620750
+}

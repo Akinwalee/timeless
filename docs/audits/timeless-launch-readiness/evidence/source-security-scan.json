@@ -1,0 +1,8 @@
+{
+  "scope": "Current tracked text source only; not Git history, ignored environment contents, or provider secrets. Values never retained.",
+  "hits": [],
+  "trackedEnvironmentFiles": [
+    ".env.example"
+  ],
+  "ciOrDeploymentConfig": []
+}

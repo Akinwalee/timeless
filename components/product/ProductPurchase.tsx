@@ -1,0 +1,51 @@
+"use client";
+
+import Link from "next/link";
+import { Check } from "lucide-react";
+import type { Product, ProductVariant } from "@/lib/content";
+import { formatMoney } from "@/lib/money";
+import { useProductSelection } from "./ProductSelection";
+
+export function ProductPurchase({
+  product,
+  variant,
+  onVariantChange,
+  onVariantIntent,
+}: {
+  product: Product;
+  variant: ProductVariant;
+  onVariantChange: (id: string) => void;
+  onVariantIntent?: (id: string) => void;
+}) {
+  const { size, added, selectSize, add } = useProductSelection();
+  const purchasable = product.status === "available";
+
+  return (
+    <div className="px-[var(--gutter)] py-10 md:sticky md:top-20 md:min-h-[calc(100svh-5rem)] md:px-[clamp(2rem,5vw,6rem)] md:py-20">
+      <p className="eyebrow text-muted">{product.drop}</p>
+      <h1 className="mt-5 text-[clamp(2.3rem,4vw,4.6rem)] leading-[.95] tracking-[-.055em]">{product.name}</h1>
+      <p className="mt-5 text-xl">{formatMoney(product.price, product.currency)}</p>
+      <p className="mt-7 max-w-md text-sm leading-relaxed text-muted">{product.description}</p>
+      <fieldset className="product-colour-selector mt-10 hidden md:block">
+        <legend className="mb-4 text-xs uppercase tracking-[.12em]">Colour <span className="ml-3 normal-case tracking-normal text-muted">{variant.name}</span></legend>
+        <div className="flex flex-wrap gap-2">
+          {product.variants.map((item) => (
+            <button key={item.id} type="button" onClick={() => onVariantChange(item.id)} onFocus={() => onVariantIntent?.(item.id)} onPointerEnter={() => onVariantIntent?.(item.id)} aria-pressed={variant.id === item.id} className={`min-h-11 border px-4 text-xs ${variant.id === item.id ? "border-black bg-black text-white" : "border-black/25"}`}>{item.name}</button>
+          ))}
+        </div>
+      </fieldset>
+      <fieldset className="product-size-selector mt-8">
+        <legend className="sr-only">Size</legend>
+        <div className="mb-4 flex items-center justify-between"><span className="text-xs uppercase tracking-[.12em]">Size</span><Link className="border-b border-black/50 text-xs" href="#size-guide">Fit &amp; sizing help</Link></div>
+        <div className="grid grid-cols-6 gap-2">
+          {product.sizes.map((item) => <button key={item} type="button" onClick={() => selectSize(item)} aria-pressed={size === item} className={`min-h-11 min-w-0 aspect-square border text-xs ${size === item ? "border-black bg-black text-white" : "border-black/25"}`}>{item}</button>)}
+        </div>
+      </fieldset>
+      {!size && <p className="mt-3 text-xs text-muted" role="status">Choose a size before adding this piece.</p>}
+      {!purchasable && <p className="mt-3 text-xs text-muted" role="status">This piece is currently {product.status.replace("-", " ")}.</p>}
+      <button type="button" disabled={!size || !purchasable} onClick={add} className="solid-button mt-8 w-full disabled:cursor-not-allowed disabled:opacity-35">{added ? <><Check size={16} className="mr-2" /> Added to bag</> : "Add to Bag"}</button>
+      <div className="mt-7 grid gap-3 border-t border-black/15 pt-5 text-xs text-black/60"><p>Shipping is quoted on WhatsApp after you share your delivery address.</p><p><Link href="/returns" className="underline underline-offset-4">Read our returns information</Link> before ordering.</p></div>
+      {size && purchasable && <div className="fixed inset-x-0 bottom-0 z-50 flex items-center justify-between gap-4 border-t border-black/15 bg-white/95 px-4 pt-3 pb-[max(.75rem,env(safe-area-inset-bottom))] backdrop-blur md:hidden"><div><p className="text-xs">{product.shortName} · {size}</p><p className="text-[.65rem] text-muted">{variant.name} · {formatMoney(product.price, product.currency)}</p></div><button onClick={add} className="solid-button min-h-11 px-5">{added ? "Added" : "Add to Bag"}</button></div>}
+    </div>
+  );
+}

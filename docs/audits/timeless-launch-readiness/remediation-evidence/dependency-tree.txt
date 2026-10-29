@@ -1,0 +1,77 @@
+timeless@0.1.0 /Users/ade/timeless
+├─┬ eslint@9.39.4
+│ └─┬ @eslint/eslintrc@3.3.5
+│   └── js-yaml@4.3.2 overridden
+├─┬ sanity@6.20.0
+│ ├─┬ @sanity/access-ui@6.20.0
+│ │ └─┬ @sanity/client@8.12.0
+│ │   └─┬ get-it@9.6.2
+│ │     └── undici@7.30.1 deduped
+│ ├─┬ @sanity/cli@8.25.0
+│ │ ├─┬ @sanity/cli-core@3.14.0
+│ │ │ └─┬ get-it@9.6.2
+│ │ │   └── undici@7.30.1 deduped
+│ │ ├─┬ @sanity/client@8.12.0
+│ │ │ └─┬ get-it@9.6.2
+│ │ │   └── undici@7.30.1 deduped
+│ │ ├─┬ @sanity/import@7.1.0
+│ │ │ └─┬ get-it@9.6.2
+│ │ │   └── undici@7.30.1 deduped
+│ │ ├─┬ @sanity/runtime-cli@17.16.0
+│ │ │ └─┬ @sanity/client@8.12.0
+│ │ │   └─┬ get-it@9.6.2
+│ │ │     └── undici@7.30.1 deduped
+│ │ ├─┬ @sanity/workbench-cli@2.14.1
+│ │ │ └─┬ @module-federation/vite@1.23.5
+│ │ │   └─┬ @module-federation/dts-plugin@2.9.2 overridden
+│ │ │     └── undici@7.30.1 deduped
+│ │ ├─┬ @vercel/frameworks@3.29.0 overridden
+│ │ │ ├── js-yaml@3.15.2 overridden
+│ │ │ └── smol-toml@1.9.1 deduped
+│ │ ├── smol-toml@1.9.1 overridden
+│ │ └─┬ typeid-js@1.2.0 overridden
+│ │   └── uuid@11.1.1 deduped
+│ ├─┬ @sanity/client@8.12.0
+│ │ └─┬ get-it@9.6.2
+│ │   └── undici@7.30.1 deduped
+│ ├─┬ @sanity/comlink@4.0.3
+│ │ └── uuid@14.0.3
+│ ├─┬ @sanity/migrate@8.0.5
+│ │ └─┬ get-it@9.6.2
+│ │   └── undici@7.30.1 deduped
+│ ├─┬ @sanity/mutate@0.18.2
+│ │ └─┬ @sanity/client@8.12.0
+│ │   └─┬ get-it@9.6.2
+│ │     └── undici@7.30.1 deduped
+│ ├─┬ @sanity/schema@6.20.0
+│ │ └─┬ get-it@9.6.2
+│ │   └── undici@7.30.1 deduped
+│ ├─┬ @sanity/sdk-react@3.10.0
+│ │ └─┬ @sanity/client@8.12.0
+│ │   └─┬ get-it@9.6.2
+│ │     └── undici@7.30.1 deduped
+│ ├─┬ @sanity/sdk@3.10.0
+│ │ └─┬ @sanity/client@8.12.0
+│ │   └─┬ get-it@9.6.2
+│ │     └── undici@7.30.1 deduped
+│ ├─┬ @sanity/types@6.20.0
+│ │ └─┬ @sanity/client@8.12.0
+│ │   └─┬ get-it@9.6.2
+│ │     └── undici@7.30.1 deduped
+│ ├─┬ @sanity/util@6.20.0
+│ │ └─┬ get-it@9.6.2
+│ │   └── undici@7.30.1 deduped
+│ ├─┬ @sanity/uuid@3.0.3
+│ │ └── uuid@11.1.1
+│ ├─┬ @sanity/validation@6.20.0
+│ │ └─┬ @sanity/client@8.12.0
+│ │   └─┬ get-it@9.6.2
+│ │     └── undici@7.30.1 deduped
+│ ├─┬ isomorphic-dompurify@2.36.0
+│ │ └─┬ jsdom@28.1.0
+│ │   └── undici@7.30.1 deduped
+│ └── uuid@14.0.3
+└─┬ vitest@5.0.5
+  └─┬ jsdom@29.1.1
+    └── undici@7.30.1
+

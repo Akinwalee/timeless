@@ -1,0 +1,22 @@
+{
+  "title": "Timeless Essential Tee",
+  "displayedPrice": "₦15,000",
+  "colours": [
+    "Black",
+    "White",
+    "Cream",
+    "Brown",
+    "Black",
+    "White",
+    "Cream",
+    "Brown"
+  ],
+  "selectedSize": "M",
+  "bagMatchesTitle": true,
+  "bagMatchesPrice": true,
+  "handoffHost": "wa.me",
+  "handoffIncludesSize": true,
+  "shippingQuoteDisclosure": true,
+  "externalHandoffOpened": false,
+  "errors": []
+}

@@ -1,0 +1,4536 @@
+{
+  "baselineCommit": "ad838bf",
+  "date": "2026-09-30",
+  "method": "Production; DPR 1; diagnostic proxy; three visits per route/width; browser bypass uses no-store, not a fresh profile; optimizer/CDN caches retained; deployment proxy adds overhead.",
+  "samples": [
+    {
+      "phase": "before",
+      "route": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 112,
+      "cls": 0,
+      "requestCount": 6,
+      "payloadBytes": 283094,
+      "transferBytes": 284894,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 112,
+      "cls": 0,
+      "requestCount": 6,
+      "payloadBytes": 283094,
+      "transferBytes": 284894,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 100,
+      "cls": 0,
+      "requestCount": 6,
+      "payloadBytes": 283094,
+      "transferBytes": 284894,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/shop",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 200,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 234694,
+      "transferBytes": 235894,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/shop",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 100,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 234694,
+      "transferBytes": 235894,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/shop",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 152,
+      "cls": 0,
+      "requestCount": 5,
+      "payloadBytes": 328942,
+      "transferBytes": 330442,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 124,
+      "cls": 0,
+      "requestCount": 2,
+      "payloadBytes": 141398,
+      "transferBytes": 141998,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 88,
+      "cls": 0,
+      "requestCount": 2,
+      "payloadBytes": 141398,
+      "transferBytes": 141998,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 96,
+      "cls": 0,
+      "requestCount": 2,
+      "payloadBytes": 141398,
+      "transferBytes": 141998,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/journal",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 116,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 208502,
+      "transferBytes": 209702,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/journal",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 112,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 208502,
+      "transferBytes": 209702,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/journal",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 92,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 208502,
+      "transferBytes": 209702,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/journal/the-making-of-drop-001",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 100,
+      "cls": 0,
+      "requestCount": 3,
+      "payloadBytes": 190298,
+      "transferBytes": 191198,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/journal/the-making-of-drop-001",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 84,
+      "cls": 0,
+      "requestCount": 3,
+      "payloadBytes": 190298,
+      "transferBytes": 191198,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/journal/the-making-of-drop-001",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 116,
+      "cls": 0,
+      "requestCount": 3,
+      "payloadBytes": 190298,
+      "transferBytes": 191198,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/in-the-wild",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 112,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 289910,
+      "transferBytes": 291110,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/in-the-wild",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 84,
+      "cls": 0,
+      "requestCount": 5,
+      "payloadBytes": 384158,
+      "transferBytes": 385658,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/in-the-wild",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 100,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 289910,
+      "transferBytes": 291110,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/about",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 108,
+      "cls": 0,
+      "requestCount": 3,
+      "payloadBytes": 214666,
+      "transferBytes": 215566,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/about",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 96,
+      "cls": 0,
+      "requestCount": 3,
+      "payloadBytes": 214666,
+      "transferBytes": 215566,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/about",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 100,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 308914,
+      "transferBytes": 310114,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "normal",
+      "lcpMs": 144,
+      "cls": 0,
+      "requestCount": 6,
+      "payloadBytes": 283094,
+      "transferBytes": 284894,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "normal",
+      "lcpMs": 124,
+      "cls": 0,
+      "requestCount": 6,
+      "payloadBytes": 283094,
+      "transferBytes": 0,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "normal",
+      "lcpMs": 96,
+      "cls": 0,
+      "requestCount": 6,
+      "payloadBytes": 283094,
+      "transferBytes": 0,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/shop",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "normal",
+      "lcpMs": 120,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 234694,
+      "transferBytes": 93896,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/shop",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "normal",
+      "lcpMs": 100,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 234694,
+      "transferBytes": 0,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/shop",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "normal",
+      "lcpMs": 112,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 234694,
+      "transferBytes": 0,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "normal",
+      "lcpMs": 104,
+      "cls": 0,
+      "requestCount": 2,
+      "payloadBytes": 141398,
+      "transferBytes": 0,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "normal",
+      "lcpMs": 104,
+      "cls": 0,
+      "requestCount": 2,
+      "payloadBytes": 141398,
+      "transferBytes": 0,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "normal",
+      "lcpMs": 100,
+      "cls": 0,
+      "requestCount": 2,
+      "payloadBytes": 141398,
+      "transferBytes": 0,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/journal",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "normal",
+      "lcpMs": 108,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 208502,
+      "transferBytes": 115154,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/journal",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "normal",
+      "lcpMs": 92,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 208502,
+      "transferBytes": 0,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/journal",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "normal",
+      "lcpMs": 100,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 208502,
+      "transferBytes": 0,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/journal/the-making-of-drop-001",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "normal",
+      "lcpMs": 108,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 198906,
+      "transferBytes": 16444,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/journal/the-making-of-drop-001",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "normal",
+      "lcpMs": 100,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 198906,
+      "transferBytes": 0,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/journal/the-making-of-drop-001",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "normal",
+      "lcpMs": 84,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 198906,
+      "transferBytes": 0,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/in-the-wild",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "normal",
+      "lcpMs": 108,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 289910,
+      "transferBytes": 196562,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/in-the-wild",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "normal",
+      "lcpMs": 160,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 289910,
+      "transferBytes": 0,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/in-the-wild",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "normal",
+      "lcpMs": 104,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 289910,
+      "transferBytes": 0,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/about",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "normal",
+      "lcpMs": 116,
+      "cls": 0,
+      "requestCount": 3,
+      "payloadBytes": 214666,
+      "transferBytes": 121018,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/about",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "normal",
+      "lcpMs": 100,
+      "cls": 0,
+      "requestCount": 3,
+      "payloadBytes": 214666,
+      "transferBytes": 0,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/about",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "normal",
+      "lcpMs": 80,
+      "cls": 0,
+      "requestCount": 3,
+      "payloadBytes": 214666,
+      "transferBytes": 0,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 520,
+      "cls": 0,
+      "requestCount": 7,
+      "payloadBytes": 743036,
+      "transferBytes": 745136,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 128,
+      "cls": 0,
+      "requestCount": 7,
+      "payloadBytes": 743036,
+      "transferBytes": 745136,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 92,
+      "cls": 0,
+      "requestCount": 7,
+      "payloadBytes": 743036,
+      "transferBytes": 745136,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/shop",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 112,
+      "cls": 0,
+      "requestCount": 5,
+      "payloadBytes": 886332,
+      "transferBytes": 887832,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/shop",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 76,
+      "cls": 0,
+      "requestCount": 5,
+      "payloadBytes": 886332,
+      "transferBytes": 887832,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/shop",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 96,
+      "cls": 0,
+      "requestCount": 5,
+      "payloadBytes": 886332,
+      "transferBytes": 887832,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 2032,
+      "cls": 0,
+      "requestCount": 6,
+      "payloadBytes": 491894,
+      "transferBytes": 493394,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 96,
+      "cls": 0,
+      "requestCount": 6,
+      "payloadBytes": 586142,
+      "transferBytes": 587942,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 124,
+      "cls": 0,
+      "requestCount": 6,
+      "payloadBytes": 586142,
+      "transferBytes": 587942,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/journal",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 156,
+      "cls": 0,
+      "requestCount": 5,
+      "payloadBytes": 995518,
+      "transferBytes": 997018,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/journal",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 104,
+      "cls": 0,
+      "requestCount": 5,
+      "payloadBytes": 995518,
+      "transferBytes": 997018,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/journal",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 148,
+      "cls": 0,
+      "requestCount": 5,
+      "payloadBytes": 995518,
+      "transferBytes": 997018,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/journal/the-making-of-drop-001",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 112,
+      "cls": 0,
+      "requestCount": 3,
+      "payloadBytes": 950172,
+      "transferBytes": 951072,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/journal/the-making-of-drop-001",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 104,
+      "cls": 0,
+      "requestCount": 3,
+      "payloadBytes": 950172,
+      "transferBytes": 951072,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/journal/the-making-of-drop-001",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 80,
+      "cls": 0,
+      "requestCount": 3,
+      "payloadBytes": 950172,
+      "transferBytes": 951072,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/in-the-wild",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 116,
+      "cls": 0,
+      "requestCount": 8,
+      "payloadBytes": 704520,
+      "transferBytes": 706920,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/in-the-wild",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 116,
+      "cls": 0,
+      "requestCount": 8,
+      "payloadBytes": 704520,
+      "transferBytes": 706920,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/in-the-wild",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 112,
+      "cls": 0,
+      "requestCount": 8,
+      "payloadBytes": 704520,
+      "transferBytes": 706920,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/about",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 120,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 887228,
+      "transferBytes": 888428,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/about",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 116,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 887228,
+      "transferBytes": 888428,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/about",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 120,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 887228,
+      "transferBytes": 888428,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "normal",
+      "lcpMs": 188,
+      "cls": 0,
+      "requestCount": 7,
+      "payloadBytes": 743036,
+      "transferBytes": 413324,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "normal",
+      "lcpMs": 120,
+      "cls": 0,
+      "requestCount": 7,
+      "payloadBytes": 743036,
+      "transferBytes": 0,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "normal",
+      "lcpMs": 88,
+      "cls": 0,
+      "requestCount": 7,
+      "payloadBytes": 743036,
+      "transferBytes": 0,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "normal",
+      "lcpMs": 92,
+      "cls": 0,
+      "requestCount": 6,
+      "payloadBytes": 579568,
+      "transferBytes": 161582,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "normal",
+      "lcpMs": 104,
+      "cls": 0,
+      "requestCount": 6,
+      "payloadBytes": 579568,
+      "transferBytes": 0,
+      "overflow": false
+    },
+    {
+      "phase": "before",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "normal",
+      "lcpMs": 100,
+      "cls": 0,
+      "requestCount": 6,
+      "payloadBytes": 579568,
+      "transferBytes": 0,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 316,
+      "cls": 0,
+      "requestCount": 6,
+      "payloadBytes": 153804,
+      "transferBytes": 155604,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 120,
+      "cls": 0,
+      "requestCount": 6,
+      "payloadBytes": 153804,
+      "transferBytes": 155604,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 104,
+      "cls": 0,
+      "requestCount": 3,
+      "payloadBytes": 93560,
+      "transferBytes": 94460,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/shop",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 96,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 176258,
+      "transferBytes": 177458,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/shop",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 100,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 176258,
+      "transferBytes": 177458,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/shop",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 100,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 176258,
+      "transferBytes": 177458,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 116,
+      "cls": 0,
+      "requestCount": 2,
+      "payloadBytes": 30056,
+      "transferBytes": 30656,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 96,
+      "cls": 0,
+      "requestCount": 2,
+      "payloadBytes": 30056,
+      "transferBytes": 30656,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 112,
+      "cls": 0,
+      "requestCount": 2,
+      "payloadBytes": 30056,
+      "transferBytes": 30656,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/journal",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 100,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 53556,
+      "transferBytes": 54756,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/journal",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 88,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 53556,
+      "transferBytes": 54756,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/journal",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 104,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 53556,
+      "transferBytes": 54756,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/journal/the-making-of-drop-001",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 92,
+      "cls": 0,
+      "requestCount": 3,
+      "payloadBytes": 37812,
+      "transferBytes": 38712,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/journal/the-making-of-drop-001",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 88,
+      "cls": 0,
+      "requestCount": 3,
+      "payloadBytes": 37812,
+      "transferBytes": 38712,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/journal/the-making-of-drop-001",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 84,
+      "cls": 0,
+      "requestCount": 3,
+      "payloadBytes": 37812,
+      "transferBytes": 38712,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/in-the-wild",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 112,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 172378,
+      "transferBytes": 173578,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/in-the-wild",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 100,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 172378,
+      "transferBytes": 173578,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/in-the-wild",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 88,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 172378,
+      "transferBytes": 173578,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/about",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 108,
+      "cls": 0,
+      "requestCount": 3,
+      "payloadBytes": 188180,
+      "transferBytes": 189080,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/about",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 76,
+      "cls": 0,
+      "requestCount": 3,
+      "payloadBytes": 188180,
+      "transferBytes": 189080,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/about",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 76,
+      "cls": 0,
+      "requestCount": 3,
+      "payloadBytes": 188180,
+      "transferBytes": 189080,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 196,
+      "cls": 0,
+      "requestCount": 6,
+      "payloadBytes": 416330,
+      "transferBytes": 418130,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 96,
+      "cls": 0,
+      "requestCount": 6,
+      "payloadBytes": 416330,
+      "transferBytes": 418130,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 112,
+      "cls": 0,
+      "requestCount": 6,
+      "payloadBytes": 416330,
+      "transferBytes": 418130,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/shop",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 104,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 552040,
+      "transferBytes": 553240,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/shop",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 96,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 552040,
+      "transferBytes": 553240,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/shop",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 108,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 552040,
+      "transferBytes": 553240,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 104,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 165188,
+      "transferBytes": 166388,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 104,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 165188,
+      "transferBytes": 166388,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 116,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 165188,
+      "transferBytes": 166388,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/journal",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 128,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 296436,
+      "transferBytes": 297636,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/journal",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 116,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 296436,
+      "transferBytes": 297636,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/journal",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 92,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 296436,
+      "transferBytes": 297636,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/journal/the-making-of-drop-001",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 92,
+      "cls": 0,
+      "requestCount": 2,
+      "payloadBytes": 623466,
+      "transferBytes": 624066,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/journal/the-making-of-drop-001",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 92,
+      "cls": 0,
+      "requestCount": 2,
+      "payloadBytes": 623466,
+      "transferBytes": 624066,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/journal/the-making-of-drop-001",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 96,
+      "cls": 0,
+      "requestCount": 2,
+      "payloadBytes": 623466,
+      "transferBytes": 624066,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/in-the-wild",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 132,
+      "cls": 0,
+      "requestCount": 7,
+      "payloadBytes": 318584,
+      "transferBytes": 320684,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/in-the-wild",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 112,
+      "cls": 0,
+      "requestCount": 7,
+      "payloadBytes": 318584,
+      "transferBytes": 320684,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/in-the-wild",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 112,
+      "cls": 0,
+      "requestCount": 7,
+      "payloadBytes": 318584,
+      "transferBytes": 320684,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/about",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 96,
+      "cls": 0,
+      "requestCount": 3,
+      "payloadBytes": 560522,
+      "transferBytes": 561422,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/about",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 108,
+      "cls": 0,
+      "requestCount": 3,
+      "payloadBytes": 560522,
+      "transferBytes": 561422,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/about",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 92,
+      "cls": 0,
+      "requestCount": 3,
+      "payloadBytes": 560522,
+      "transferBytes": 561422,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "normal",
+      "lcpMs": 176,
+      "cls": 0,
+      "requestCount": 6,
+      "payloadBytes": 416330,
+      "transferBytes": 0,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "normal",
+      "lcpMs": 84,
+      "cls": 0,
+      "requestCount": 7,
+      "payloadBytes": 546376,
+      "transferBytes": 130346,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "normal",
+      "lcpMs": 120,
+      "cls": 0,
+      "requestCount": 7,
+      "payloadBytes": 546376,
+      "transferBytes": 0,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "normal",
+      "lcpMs": 116,
+      "cls": 0,
+      "requestCount": 5,
+      "payloadBytes": 252862,
+      "transferBytes": 0,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "normal",
+      "lcpMs": 108,
+      "cls": 0,
+      "requestCount": 5,
+      "payloadBytes": 252862,
+      "transferBytes": 0,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "normal",
+      "lcpMs": 100,
+      "cls": 0,
+      "requestCount": 5,
+      "payloadBytes": 252862,
+      "transferBytes": 0,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "normal",
+      "lcpMs": 128,
+      "cls": 0,
+      "requestCount": 11,
+      "payloadBytes": 1171758,
+      "transferBytes": 0,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "normal",
+      "lcpMs": 88,
+      "cls": 0,
+      "requestCount": 11,
+      "payloadBytes": 1171758,
+      "transferBytes": 0,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "normal",
+      "lcpMs": 92,
+      "cls": 0,
+      "requestCount": 11,
+      "payloadBytes": 1171758,
+      "transferBytes": 0,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "normal",
+      "lcpMs": 116,
+      "cls": 0,
+      "requestCount": 3,
+      "payloadBytes": 117730,
+      "transferBytes": 0,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "normal",
+      "lcpMs": 104,
+      "cls": 0,
+      "requestCount": 3,
+      "payloadBytes": 117730,
+      "transferBytes": 0,
+      "overflow": false
+    },
+    {
+      "phase": "after",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "normal",
+      "lcpMs": 100,
+      "cls": 0,
+      "requestCount": 3,
+      "payloadBytes": 117730,
+      "transferBytes": 0,
+      "overflow": false
+    }
+  ],
+  "representativeWaterfalls": [
+    {
+      "phase": "before",
+      "route": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 112,
+      "cls": 0,
+      "requestCount": 6,
+      "payloadBytes": 283094,
+      "transferBytes": 284894,
+      "overflow": false,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fhome-hero.jpg&w=640&q=75",
+          "start": 24,
+          "end": 48,
+          "duration": 24,
+          "transfer": 16214,
+          "encoded": 15914,
+          "decoded": 15914
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=3840&q=75",
+          "start": 24,
+          "end": 53.599999994039536,
+          "duration": 29.599999994039536,
+          "transfer": 94548,
+          "encoded": 94248,
+          "decoded": 94248
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fidentity-one-piece.jpg&w=640&q=75",
+          "start": 24,
+          "end": 63.19999998807907,
+          "duration": 39.19999998807907,
+          "transfer": 23832,
+          "encoded": 23532,
+          "decoded": 23532
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=640&q=75",
+          "start": 24,
+          "end": 63.69999998807907,
+          "duration": 39.69999998807907,
+          "transfer": 47450,
+          "encoded": 47150,
+          "decoded": 47150
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fidentity-moments.jpg&w=640&q=75",
+          "start": 24.099999994039536,
+          "end": 62.29999998211861,
+          "duration": 38.19999998807907,
+          "transfer": 46838,
+          "encoded": 46538,
+          "decoded": 46538
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fidentity-moods.jpg&w=640&q=75",
+          "start": 24.099999994039536,
+          "end": 64.5,
+          "duration": 40.400000005960464,
+          "transfer": 56012,
+          "encoded": 55712,
+          "decoded": 55712
+        }
+      ],
+      "images": [
+        {
+          "alt": "Timeless Wordmark",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=3840&q=75",
+          "sizes": "",
+          "displayWidth": 180,
+          "displayHeight": 62.203125,
+          "loading": "auto",
+          "priority": "auto",
+          "complete": true
+        },
+        {
+          "alt": "Timeless Wordmark",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=3840&q=75",
+          "sizes": "",
+          "displayWidth": 180,
+          "displayHeight": 62.203125,
+          "loading": "auto",
+          "priority": "auto",
+          "complete": true
+        },
+        {
+          "alt": "Two Timeless models photographed from below against a deep blue sky",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fhome-hero.jpg&w=640&q=75",
+          "sizes": "100vw",
+          "displayWidth": 390,
+          "displayHeight": 844,
+          "loading": "auto",
+          "priority": "auto",
+          "complete": true
+        },
+        {
+          "alt": "Model wearing the black Timeless Essential Tee on a sunlit court",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=640&q=75",
+          "sizes": "(max-width: 767px) 100vw, 62vw",
+          "displayWidth": 350,
+          "displayHeight": 438.875,
+          "loading": "auto",
+          "priority": "auto",
+          "complete": true
+        },
+        {
+          "alt": "Two friends styling black Timeless tees against the sky",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fidentity-one-piece.jpg&w=640&q=75",
+          "sizes": "(max-width: 767px) 100vw, 62vw",
+          "displayWidth": 0,
+          "displayHeight": 0,
+          "loading": "eager",
+          "priority": "auto",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 88,
+      "cls": 0,
+      "requestCount": 2,
+      "payloadBytes": 141398,
+      "transferBytes": 141998,
+      "overflow": false,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=3840&q=75",
+          "start": 17.299999982118607,
+          "end": 32.29999998211861,
+          "duration": 15,
+          "transfer": 94548,
+          "encoded": 94248,
+          "decoded": 94248
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=640&q=75",
+          "start": 17.299999982118607,
+          "end": 35.19999998807907,
+          "duration": 17.900000005960464,
+          "transfer": 47450,
+          "encoded": 47150,
+          "decoded": 47150
+        }
+      ],
+      "images": [
+        {
+          "alt": "Timeless Wordmark",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=3840&q=75",
+          "sizes": "",
+          "displayWidth": 180,
+          "displayHeight": 62.203125,
+          "loading": "auto",
+          "priority": "auto",
+          "complete": true
+        },
+        {
+          "alt": "Timeless Wordmark",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=3840&q=75",
+          "sizes": "",
+          "displayWidth": 180,
+          "displayHeight": 62.203125,
+          "loading": "auto",
+          "priority": "auto",
+          "complete": true
+        },
+        {
+          "alt": "Model wearing the black Timeless Essential Tee on a sunlit court",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=640&q=75",
+          "sizes": "(max-width: 767px) 100vw, 50vw",
+          "displayWidth": 390,
+          "displayHeight": 438.875,
+          "loading": "auto",
+          "priority": "auto",
+          "complete": true
+        },
+        {
+          "alt": "Model wearing the black Timeless Essential Tee on a sunlit court",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=640&q=75",
+          "sizes": "(max-width: 767px) 100vw, 50vw",
+          "displayWidth": 421.20001220703125,
+          "displayHeight": 683.64013671875,
+          "loading": "lazy",
+          "priority": "auto",
+          "complete": false
+        },
+        {
+          "alt": "Model wearing the black Timeless Essential Tee on a sunlit court",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=640&q=75",
+          "sizes": "(max-width: 767px) 100vw, 36vw",
+          "displayWidth": 378,
+          "displayHeight": 503.9970703125,
+          "loading": "lazy",
+          "priority": "auto",
+          "complete": false
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "route": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 128,
+      "cls": 0,
+      "requestCount": 7,
+      "payloadBytes": 743036,
+      "transferBytes": 745136,
+      "overflow": false,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=3840&q=75",
+          "start": 23.099999994039536,
+          "end": 47.39999997615814,
+          "duration": 24.299999982118607,
+          "transfer": 94548,
+          "encoded": 94248,
+          "decoded": 94248
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fhome-hero.jpg&w=1920&q=75",
+          "start": 23.099999994039536,
+          "end": 47.599999994039536,
+          "duration": 24.5,
+          "transfer": 63804,
+          "encoded": 63504,
+          "decoded": 63504
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=1080&q=75",
+          "start": 23.099999994039536,
+          "end": 52,
+          "duration": 28.900000005960464,
+          "transfer": 87974,
+          "encoded": 87674,
+          "decoded": 87674
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fidentity-moments.jpg&w=1080&q=75",
+          "start": 23.099999994039536,
+          "end": 55.89999997615814,
+          "duration": 32.79999998211861,
+          "transfer": 85544,
+          "encoded": 85244,
+          "decoded": 85244
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fidentity-one-piece.jpg&w=1080&q=75",
+          "start": 23.099999994039536,
+          "end": 56.79999998211861,
+          "duration": 33.69999998807907,
+          "transfer": 50976,
+          "encoded": 50676,
+          "decoded": 50676
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fidentity-moods.jpg&w=1080&q=75",
+          "start": 23.19999998807907,
+          "end": 57.69999998807907,
+          "duration": 34.5,
+          "transfer": 125026,
+          "encoded": 124726,
+          "decoded": 124726
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2F917223db775b9016547f90fc32c6e48ab87f0b49-1781x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=1080&q=75",
+          "start": 113.09999999403954,
+          "end": 142.59999999403954,
+          "duration": 29.5,
+          "transfer": 237264,
+          "encoded": 236964,
+          "decoded": 236964
+        }
+      ],
+      "images": [
+        {
+          "alt": "Timeless Wordmark",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=3840&q=75",
+          "sizes": "",
+          "displayWidth": 180,
+          "displayHeight": 62.203125,
+          "loading": "auto",
+          "priority": "auto",
+          "complete": true
+        },
+        {
+          "alt": "Timeless Wordmark",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=3840&q=75",
+          "sizes": "",
+          "displayWidth": 180,
+          "displayHeight": 62.203125,
+          "loading": "auto",
+          "priority": "auto",
+          "complete": true
+        },
+        {
+          "alt": "Two Timeless models photographed from below against a deep blue sky",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fhome-hero.jpg&w=1920&q=75",
+          "sizes": "100vw",
+          "displayWidth": 1440,
+          "displayHeight": 900,
+          "loading": "auto",
+          "priority": "auto",
+          "complete": true
+        },
+        {
+          "alt": "Model wearing the black Timeless Essential Tee on a sunlit court",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=1080&q=75",
+          "sizes": "(max-width: 767px) 100vw, 62vw",
+          "displayWidth": 838.4765625,
+          "displayHeight": 612,
+          "loading": "auto",
+          "priority": "auto",
+          "complete": true
+        },
+        {
+          "alt": "Two friends styling black Timeless tees against the sky",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fidentity-one-piece.jpg&w=1080&q=75",
+          "sizes": "(max-width: 767px) 100vw, 62vw",
+          "displayWidth": 892.8046875,
+          "displayHeight": 900,
+          "loading": "eager",
+          "priority": "auto",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 96,
+      "cls": 0,
+      "requestCount": 6,
+      "payloadBytes": 586142,
+      "transferBytes": 587942,
+      "overflow": false,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=3840&q=75",
+          "start": 16.900000005960464,
+          "end": 35.30000001192093,
+          "duration": 18.400000005960464,
+          "transfer": 94548,
+          "encoded": 94248,
+          "decoded": 94248
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=750&q=75",
+          "start": 17.100000023841858,
+          "end": 31.900000005960464,
+          "duration": 14.799999982118607,
+          "transfer": 57228,
+          "encoded": 56928,
+          "decoded": 56928
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=3840&q=75",
+          "start": 38.60000002384186,
+          "end": 60.400000005960464,
+          "duration": 21.799999982118607,
+          "transfer": 94548,
+          "encoded": 94248,
+          "decoded": 94248
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Fd43c08bda219256df81aee62bee0cc137e5ebcb5-1457x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=750&q=75",
+          "start": 46.60000002384186,
+          "end": 71.80000001192093,
+          "duration": 25.19999998807907,
+          "transfer": 64264,
+          "encoded": 63964,
+          "decoded": 63964
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Fafacb2b9ecf953b89f296be69290fd74043249c3-1730x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=750&q=75",
+          "start": 46.60000002384186,
+          "end": 72.2000000178814,
+          "duration": 25.599999994039536,
+          "transfer": 40090,
+          "encoded": 39790,
+          "decoded": 39790
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2F917223db775b9016547f90fc32c6e48ab87f0b49-1781x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=1080&q=75",
+          "start": 102.80000001192093,
+          "end": 134.80000001192093,
+          "duration": 32,
+          "transfer": 237264,
+          "encoded": 236964,
+          "decoded": 236964
+        }
+      ],
+      "images": [
+        {
+          "alt": "Timeless Wordmark",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=3840&q=75",
+          "sizes": "",
+          "displayWidth": 180,
+          "displayHeight": 62.203125,
+          "loading": "auto",
+          "priority": "auto",
+          "complete": true
+        },
+        {
+          "alt": "Timeless Wordmark",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=3840&q=75",
+          "sizes": "",
+          "displayWidth": 180,
+          "displayHeight": 62.203125,
+          "loading": "auto",
+          "priority": "auto",
+          "complete": true
+        },
+        {
+          "alt": "Model wearing the black Timeless Essential Tee on a sunlit court",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=750&q=75",
+          "sizes": "(max-width: 767px) 100vw, 50vw",
+          "displayWidth": 720,
+          "displayHeight": 900,
+          "loading": "auto",
+          "priority": "auto",
+          "complete": true
+        },
+        {
+          "alt": "Full-length portrait in the black Timeless Essential Tee",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Fd43c08bda219256df81aee62bee0cc137e5ebcb5-1457x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=750&q=75",
+          "sizes": "(max-width: 767px) 100vw, 50vw",
+          "displayWidth": 720,
+          "displayHeight": 864,
+          "loading": "lazy",
+          "priority": "auto",
+          "complete": true
+        },
+        {
+          "alt": "Close detail of the embroidered mark on the black tee",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Fafacb2b9ecf953b89f296be69290fd74043249c3-1730x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=750&q=75",
+          "sizes": "(max-width: 767px) 100vw, 50vw",
+          "displayWidth": 720,
+          "displayHeight": 720,
+          "loading": "lazy",
+          "priority": "auto",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "route": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 316,
+      "cls": 0,
+      "requestCount": 6,
+      "payloadBytes": 153804,
+      "transferBytes": 155604,
+      "overflow": false,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fhome-hero.jpg&w=1920&q=75",
+          "start": 53,
+          "end": 253.7999999821186,
+          "duration": 200.7999999821186,
+          "transfer": 63804,
+          "encoded": 63504,
+          "decoded": 63504
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=256&q=75",
+          "start": 165.90000000596046,
+          "end": 254,
+          "duration": 88.09999999403954,
+          "transfer": 4806,
+          "encoded": 4506,
+          "decoded": 4506
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg&w=384&q=75",
+          "start": 165.90000000596046,
+          "end": 255.2999999821186,
+          "duration": 89.39999997615814,
+          "transfer": 25850,
+          "encoded": 25550,
+          "decoded": 25550
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fidentity-one-piece.jpg&w=384&q=75",
+          "start": 166,
+          "end": 256.19999998807907,
+          "duration": 90.19999998807907,
+          "transfer": 12030,
+          "encoded": 11730,
+          "decoded": 11730
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fidentity-moods.jpg&w=384&q=75",
+          "start": 166,
+          "end": 302.69999998807907,
+          "duration": 136.69999998807907,
+          "transfer": 23834,
+          "encoded": 23534,
+          "decoded": 23534
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fidentity-moments.jpg&w=384&q=75",
+          "start": 166,
+          "end": 303,
+          "duration": 137,
+          "transfer": 25280,
+          "encoded": 24980,
+          "decoded": 24980
+        }
+      ],
+      "images": [
+        {
+          "alt": "Timeless Wordmark",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=256&q=75",
+          "sizes": "180px",
+          "displayWidth": 180,
+          "displayHeight": 61.875,
+          "loading": "lazy",
+          "priority": "auto",
+          "complete": true
+        },
+        {
+          "alt": "Timeless Wordmark",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=256&q=75",
+          "sizes": "180px",
+          "displayWidth": 180,
+          "displayHeight": 61.875,
+          "loading": "lazy",
+          "priority": "auto",
+          "complete": false
+        },
+        {
+          "alt": "Two Timeless models photographed from below against a deep blue sky",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fhome-hero.jpg&w=1920&q=75",
+          "sizes": "max(100vw, 150svh)",
+          "displayWidth": 390,
+          "displayHeight": 844,
+          "loading": "eager",
+          "priority": "high",
+          "complete": true
+        },
+        {
+          "alt": "Model wearing the black Timeless Essential Tee on a sunlit court",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg&w=384&q=75",
+          "sizes": "(max-width: 767px) min(calc(100vw - 2 * clamp(1.25rem, 3vw, 3.5rem)), calc(min(52svh, 32rem) * 0.66227)), calc(63.636vw - 1.273 * clamp(1.25rem, 3vw, 3.5rem) - 22.91px)",
+          "displayWidth": 350,
+          "displayHeight": 438.875,
+          "loading": "lazy",
+          "priority": "auto",
+          "complete": true
+        },
+        {
+          "alt": "Two friends styling black Timeless tees against the sky",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fidentity-one-piece.jpg&w=384&q=75",
+          "sizes": "(max-width: 767px) calc(100vw - 2 * clamp(1.25rem, 3vw, 3.5rem)), 62vw",
+          "displayWidth": 350,
+          "displayHeight": 466.6640625,
+          "loading": "lazy",
+          "priority": "auto",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 96,
+      "cls": 0,
+      "requestCount": 2,
+      "payloadBytes": 30056,
+      "transferBytes": 30656,
+      "overflow": false,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg&w=384&q=75",
+          "start": 15.699999988079071,
+          "end": 30.899999976158142,
+          "duration": 15.199999988079071,
+          "transfer": 25850,
+          "encoded": 25550,
+          "decoded": 25550
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=256&q=75",
+          "start": 50.79999998211861,
+          "end": 60.89999997615814,
+          "duration": 10.099999994039536,
+          "transfer": 4806,
+          "encoded": 4506,
+          "decoded": 4506
+        }
+      ],
+      "images": [
+        {
+          "alt": "Timeless Wordmark",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=256&q=75",
+          "sizes": "180px",
+          "displayWidth": 180,
+          "displayHeight": 61.875,
+          "loading": "lazy",
+          "priority": "auto",
+          "complete": true
+        },
+        {
+          "alt": "Timeless Wordmark",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=256&q=75",
+          "sizes": "180px",
+          "displayWidth": 180,
+          "displayHeight": 61.875,
+          "loading": "lazy",
+          "priority": "auto",
+          "complete": false
+        },
+        {
+          "alt": "Model wearing the black Timeless Essential Tee on a sunlit court",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg&w=384&q=75",
+          "sizes": "(max-width: 767px) min(100vw, calc(min(52svh, 32rem) * 0.66227)), 50vw",
+          "displayWidth": 390,
+          "displayHeight": 438.875,
+          "loading": "eager",
+          "priority": "high",
+          "complete": true
+        },
+        {
+          "alt": "Model wearing the black Timeless Essential Tee on a sunlit court",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg&w=384&q=75",
+          "sizes": "(max-width: 767px) calc(100vw - 2 * clamp(1.25rem, 3vw, 3.5rem)), calc(28.571428571428577vw - 0.5714285714285715 * clamp(1.25rem, 3vw, 3.5rem) - 11.428571428571427px)",
+          "displayWidth": 378,
+          "displayHeight": 503.9970703125,
+          "loading": "lazy",
+          "priority": "auto",
+          "complete": false
+        },
+        {
+          "alt": "Timeless Wordmark",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=256&q=75",
+          "sizes": "180px",
+          "displayWidth": 180,
+          "displayHeight": 61.875,
+          "loading": "lazy",
+          "priority": "auto",
+          "complete": false
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "route": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 96,
+      "cls": 0,
+      "requestCount": 6,
+      "payloadBytes": 416330,
+      "transferBytes": 418130,
+      "overflow": false,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fhome-hero.jpg&w=1920&q=75",
+          "start": 10.400000005960464,
+          "end": 24.099999994039536,
+          "duration": 13.699999988079071,
+          "transfer": 63804,
+          "encoded": 63504,
+          "decoded": 63504
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=256&q=75",
+          "start": 37.400000005960464,
+          "end": 53.69999998807907,
+          "duration": 16.299999982118607,
+          "transfer": 4806,
+          "encoded": 4506,
+          "decoded": 4506
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg&w=1080&q=75",
+          "start": 37.5,
+          "end": 56.099999994039536,
+          "duration": 18.599999994039536,
+          "transfer": 87974,
+          "encoded": 87674,
+          "decoded": 87674
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fidentity-moments.jpg&w=1080&q=75",
+          "start": 37.5,
+          "end": 59.19999998807907,
+          "duration": 21.69999998807907,
+          "transfer": 85544,
+          "encoded": 85244,
+          "decoded": 85244
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fidentity-moods.jpg&w=1080&q=75",
+          "start": 37.5,
+          "end": 60.5,
+          "duration": 23,
+          "transfer": 125026,
+          "encoded": 124726,
+          "decoded": 124726
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fidentity-one-piece.jpg&w=1080&q=75",
+          "start": 37.5,
+          "end": 61.19999998807907,
+          "duration": 23.69999998807907,
+          "transfer": 50976,
+          "encoded": 50676,
+          "decoded": 50676
+        }
+      ],
+      "images": [
+        {
+          "alt": "Timeless Wordmark",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=256&q=75",
+          "sizes": "180px",
+          "displayWidth": 180,
+          "displayHeight": 61.875,
+          "loading": "lazy",
+          "priority": "auto",
+          "complete": true
+        },
+        {
+          "alt": "Timeless Wordmark",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=256&q=75",
+          "sizes": "180px",
+          "displayWidth": 180,
+          "displayHeight": 61.875,
+          "loading": "lazy",
+          "priority": "auto",
+          "complete": false
+        },
+        {
+          "alt": "Two Timeless models photographed from below against a deep blue sky",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fhome-hero.jpg&w=1920&q=75",
+          "sizes": "max(100vw, 150svh)",
+          "displayWidth": 1440,
+          "displayHeight": 900,
+          "loading": "eager",
+          "priority": "high",
+          "complete": true
+        },
+        {
+          "alt": "Model wearing the black Timeless Essential Tee on a sunlit court",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg&w=1080&q=75",
+          "sizes": "(max-width: 767px) min(calc(100vw - 2 * clamp(1.25rem, 3vw, 3.5rem)), calc(min(52svh, 32rem) * 0.66227)), calc(63.636vw - 1.273 * clamp(1.25rem, 3vw, 3.5rem) - 22.91px)",
+          "displayWidth": 838.4765625,
+          "displayHeight": 612,
+          "loading": "lazy",
+          "priority": "auto",
+          "complete": true
+        },
+        {
+          "alt": "Two friends styling black Timeless tees against the sky",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fidentity-one-piece.jpg&w=1080&q=75",
+          "sizes": "(max-width: 767px) calc(100vw - 2 * clamp(1.25rem, 3vw, 3.5rem)), 62vw",
+          "displayWidth": 892.8046875,
+          "displayHeight": 900,
+          "loading": "lazy",
+          "priority": "auto",
+          "complete": true
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 104,
+      "cls": 0,
+      "requestCount": 4,
+      "payloadBytes": 165188,
+      "transferBytes": 166388,
+      "overflow": false,
+      "resources": [
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg&w=750&q=75",
+          "start": 14.699999988079071,
+          "end": 31.599999994039536,
+          "duration": 16.900000005960464,
+          "transfer": 57228,
+          "encoded": 56928,
+          "decoded": 56928
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=256&q=75",
+          "start": 46.69999998807907,
+          "end": 87.7999999821186,
+          "duration": 41.099999994039536,
+          "transfer": 4806,
+          "encoded": 4506,
+          "decoded": 4506
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Fd43c08bda219256df81aee62bee0cc137e5ebcb5-1457x2200.jpg&w=750&q=75",
+          "start": 46.79999998211861,
+          "end": 88.2999999821186,
+          "duration": 41.5,
+          "transfer": 64264,
+          "encoded": 63964,
+          "decoded": 63964
+        },
+        {
+          "url": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Fafacb2b9ecf953b89f296be69290fd74043249c3-1730x2200.jpg&w=750&q=75",
+          "start": 46.79999998211861,
+          "end": 89.59999999403954,
+          "duration": 42.80000001192093,
+          "transfer": 40090,
+          "encoded": 39790,
+          "decoded": 39790
+        }
+      ],
+      "images": [
+        {
+          "alt": "Timeless Wordmark",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=256&q=75",
+          "sizes": "180px",
+          "displayWidth": 180,
+          "displayHeight": 61.875,
+          "loading": "lazy",
+          "priority": "auto",
+          "complete": true
+        },
+        {
+          "alt": "Timeless Wordmark",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=256&q=75",
+          "sizes": "180px",
+          "displayWidth": 180,
+          "displayHeight": 61.875,
+          "loading": "lazy",
+          "priority": "auto",
+          "complete": false
+        },
+        {
+          "alt": "Model wearing the black Timeless Essential Tee on a sunlit court",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg&w=750&q=75",
+          "sizes": "(max-width: 767px) min(100vw, calc(min(52svh, 32rem) * 0.66227)), 50vw",
+          "displayWidth": 720,
+          "displayHeight": 900,
+          "loading": "eager",
+          "priority": "high",
+          "complete": true
+        },
+        {
+          "alt": "Full-length portrait in the black Timeless Essential Tee",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Fd43c08bda219256df81aee62bee0cc137e5ebcb5-1457x2200.jpg&w=750&q=75",
+          "sizes": "(max-width: 767px) 100vw, 50vw",
+          "displayWidth": 720,
+          "displayHeight": 864,
+          "loading": "lazy",
+          "priority": "auto",
+          "complete": true
+        },
+        {
+          "alt": "Close detail of the embroidered mark on the black tee",
+          "currentSrc": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Fafacb2b9ecf953b89f296be69290fd74043249c3-1730x2200.jpg&w=750&q=75",
+          "sizes": "(max-width: 767px) 100vw, 50vw",
+          "displayWidth": 720,
+          "displayHeight": 720,
+          "loading": "lazy",
+          "priority": "auto",
+          "complete": true
+        }
+      ]
+    }
+  ],
+  "httpProbes": [
+    {
+      "phase": "baseline",
+      "viewport": 390,
+      "route": "/",
+      "alt": "Timeless Wordmark",
+      "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=3840&q=75",
+      "dimensions": [
+        3840,
+        1327
+      ],
+      "bytes": 94248,
+      "format": "image/webp",
+      "hasAlpha": true,
+      "optimizerCache": "HIT",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "phase": "baseline",
+      "viewport": 390,
+      "route": "/",
+      "alt": "Two Timeless models photographed from below against a deep blue sky",
+      "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fhome-hero.jpg&w=640&q=75",
+      "dimensions": [
+        640,
+        426
+      ],
+      "bytes": 15914,
+      "format": "image/webp",
+      "hasAlpha": false,
+      "optimizerCache": "HIT",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "phase": "baseline",
+      "viewport": 390,
+      "route": "/shop/essential-tee",
+      "alt": "Timeless Wordmark",
+      "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=3840&q=75",
+      "dimensions": [
+        3840,
+        1327
+      ],
+      "bytes": 94248,
+      "format": "image/webp",
+      "hasAlpha": true,
+      "optimizerCache": "HIT",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "phase": "baseline",
+      "viewport": 390,
+      "route": "/shop/essential-tee",
+      "alt": "Model wearing the black Timeless Essential Tee on a sunlit court",
+      "currentSrc": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=640&q=75",
+      "dimensions": [
+        640,
+        966
+      ],
+      "bytes": 47150,
+      "format": "image/webp",
+      "hasAlpha": false,
+      "optimizerCache": "HIT",
+      "cacheControl": "public, max-age=2592000, must-revalidate"
+    },
+    {
+      "phase": "baseline",
+      "viewport": 390,
+      "route": "/journal/the-making-of-drop-001",
+      "alt": "Timeless Wordmark",
+      "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=3840&q=75",
+      "dimensions": [
+        3840,
+        1327
+      ],
+      "bytes": 94248,
+      "format": "image/webp",
+      "hasAlpha": true,
+      "optimizerCache": "HIT",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "phase": "baseline",
+      "viewport": 390,
+      "route": "/journal/the-making-of-drop-001",
+      "alt": "Close view of the Timeless mark embroidered on black cotton",
+      "currentSrc": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2F917223db775b9016547f90fc32c6e48ab87f0b49-1781x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=640&q=75",
+      "dimensions": [
+        640,
+        791
+      ],
+      "bytes": 79906,
+      "format": "image/webp",
+      "hasAlpha": false,
+      "optimizerCache": "HIT",
+      "cacheControl": "public, max-age=2592000, must-revalidate"
+    },
+    {
+      "phase": "baseline",
+      "viewport": 1440,
+      "route": "/",
+      "alt": "Timeless Wordmark",
+      "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=3840&q=75",
+      "dimensions": [
+        3840,
+        1327
+      ],
+      "bytes": 94248,
+      "format": "image/webp",
+      "hasAlpha": true,
+      "optimizerCache": "HIT",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "phase": "baseline",
+      "viewport": 1440,
+      "route": "/",
+      "alt": "Two Timeless models photographed from below against a deep blue sky",
+      "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fhome-hero.jpg&w=1920&q=75",
+      "dimensions": [
+        1920,
+        1279
+      ],
+      "bytes": 63504,
+      "format": "image/webp",
+      "hasAlpha": false,
+      "optimizerCache": "HIT",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "phase": "baseline",
+      "viewport": 1440,
+      "route": "/shop/essential-tee",
+      "alt": "Timeless Wordmark",
+      "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=3840&q=75",
+      "dimensions": [
+        3840,
+        1327
+      ],
+      "bytes": 94248,
+      "format": "image/webp",
+      "hasAlpha": true,
+      "optimizerCache": "HIT",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "phase": "baseline",
+      "viewport": 1440,
+      "route": "/shop/essential-tee",
+      "alt": "Model wearing the black Timeless Essential Tee on a sunlit court",
+      "currentSrc": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=750&q=75",
+      "dimensions": [
+        750,
+        1132
+      ],
+      "bytes": 56928,
+      "format": "image/webp",
+      "hasAlpha": false,
+      "optimizerCache": "HIT",
+      "cacheControl": "public, max-age=2592000, must-revalidate"
+    },
+    {
+      "phase": "baseline",
+      "viewport": 1440,
+      "route": "/journal/the-making-of-drop-001",
+      "alt": "Timeless Wordmark",
+      "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=3840&q=75",
+      "dimensions": [
+        3840,
+        1327
+      ],
+      "bytes": 94248,
+      "format": "image/webp",
+      "hasAlpha": true,
+      "optimizerCache": "HIT",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "phase": "baseline",
+      "viewport": 1440,
+      "route": "/journal/the-making-of-drop-001",
+      "alt": "Close view of the Timeless mark embroidered on black cotton",
+      "currentSrc": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2F917223db775b9016547f90fc32c6e48ab87f0b49-1781x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=1920&q=75",
+      "dimensions": [
+        1781,
+        2200
+      ],
+      "bytes": 618960,
+      "format": "image/webp",
+      "hasAlpha": false,
+      "optimizerCache": "HIT",
+      "cacheControl": "public, max-age=2592000, must-revalidate"
+    },
+    {
+      "phase": "after-final",
+      "viewport": 390,
+      "route": "/",
+      "alt": "Timeless Wordmark",
+      "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=256&q=75",
+      "dimensions": [
+        256,
+        88
+      ],
+      "bytes": 4506,
+      "format": "image/webp",
+      "hasAlpha": true,
+      "optimizerCache": "HIT",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "phase": "after-final",
+      "viewport": 390,
+      "route": "/",
+      "alt": "Two Timeless models photographed from below against a deep blue sky",
+      "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fhome-hero.jpg&w=1920&q=75",
+      "dimensions": [
+        1920,
+        1279
+      ],
+      "bytes": 63504,
+      "format": "image/webp",
+      "hasAlpha": false,
+      "optimizerCache": "HIT",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "phase": "after-final",
+      "viewport": 390,
+      "route": "/shop/essential-tee",
+      "alt": "Timeless Wordmark",
+      "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=256&q=75",
+      "dimensions": [
+        256,
+        88
+      ],
+      "bytes": 4506,
+      "format": "image/webp",
+      "hasAlpha": true,
+      "optimizerCache": "HIT",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "phase": "after-final",
+      "viewport": 390,
+      "route": "/shop/essential-tee",
+      "alt": "Model wearing the black Timeless Essential Tee on a sunlit court",
+      "currentSrc": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg&w=384&q=75",
+      "dimensions": [
+        384,
+        580
+      ],
+      "bytes": 25550,
+      "format": "image/webp",
+      "hasAlpha": false,
+      "optimizerCache": "HIT",
+      "cacheControl": "public, max-age=2592000, must-revalidate"
+    },
+    {
+      "phase": "after-final",
+      "viewport": 390,
+      "route": "/journal/the-making-of-drop-001",
+      "alt": "Timeless Wordmark",
+      "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=256&q=75",
+      "dimensions": [
+        256,
+        88
+      ],
+      "bytes": 4506,
+      "format": "image/webp",
+      "hasAlpha": true,
+      "optimizerCache": "HIT",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "phase": "after-final",
+      "viewport": 390,
+      "route": "/journal/the-making-of-drop-001",
+      "alt": "Close view of the Timeless mark embroidered on black cotton",
+      "currentSrc": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2F917223db775b9016547f90fc32c6e48ab87f0b49-1781x2200.jpg&w=384&q=75",
+      "dimensions": [
+        384,
+        475
+      ],
+      "bytes": 24880,
+      "format": "image/webp",
+      "hasAlpha": false,
+      "optimizerCache": "HIT",
+      "cacheControl": "public, max-age=2592000, must-revalidate"
+    },
+    {
+      "phase": "after-final",
+      "viewport": 1440,
+      "route": "/",
+      "alt": "Timeless Wordmark",
+      "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=256&q=75",
+      "dimensions": [
+        256,
+        88
+      ],
+      "bytes": 4506,
+      "format": "image/webp",
+      "hasAlpha": true,
+      "optimizerCache": "HIT",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "phase": "after-final",
+      "viewport": 1440,
+      "route": "/",
+      "alt": "Two Timeless models photographed from below against a deep blue sky",
+      "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Ftimeless%2Fsite%2Fhome-hero.jpg&w=1920&q=75",
+      "dimensions": [
+        1920,
+        1279
+      ],
+      "bytes": 63504,
+      "format": "image/webp",
+      "hasAlpha": false,
+      "optimizerCache": "HIT",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "phase": "after-final",
+      "viewport": 1440,
+      "route": "/shop/essential-tee",
+      "alt": "Timeless Wordmark",
+      "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=256&q=75",
+      "dimensions": [
+        256,
+        88
+      ],
+      "bytes": 4506,
+      "format": "image/webp",
+      "hasAlpha": true,
+      "optimizerCache": "HIT",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "phase": "after-final",
+      "viewport": 1440,
+      "route": "/shop/essential-tee",
+      "alt": "Model wearing the black Timeless Essential Tee on a sunlit court",
+      "currentSrc": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg&w=750&q=75",
+      "dimensions": [
+        750,
+        1132
+      ],
+      "bytes": 56928,
+      "format": "image/webp",
+      "hasAlpha": false,
+      "optimizerCache": "HIT",
+      "cacheControl": "public, max-age=2592000, must-revalidate"
+    },
+    {
+      "phase": "after-final",
+      "viewport": 1440,
+      "route": "/journal/the-making-of-drop-001",
+      "alt": "Timeless Wordmark",
+      "currentSrc": "http://127.0.0.1:3101/_next/image?url=%2Fimages%2Fbrand%2Flogo-white.png&w=256&q=75",
+      "dimensions": [
+        256,
+        88
+      ],
+      "bytes": 4506,
+      "format": "image/webp",
+      "hasAlpha": true,
+      "optimizerCache": "HIT",
+      "cacheControl": "public, max-age=14400, must-revalidate"
+    },
+    {
+      "phase": "after-final",
+      "viewport": 1440,
+      "route": "/journal/the-making-of-drop-001",
+      "alt": "Close view of the Timeless mark embroidered on black cotton",
+      "currentSrc": "http://127.0.0.1:3101/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2F917223db775b9016547f90fc32c6e48ab87f0b49-1781x2200.jpg&w=1920&q=75",
+      "dimensions": [
+        1781,
+        2200
+      ],
+      "bytes": 618960,
+      "format": "image/webp",
+      "hasAlpha": false,
+      "optimizerCache": "HIT",
+      "cacheControl": "public, max-age=2592000, must-revalidate"
+    },
+    {
+      "phase": "density-probe",
+      "role": "product-3x",
+      "dimensions": [
+        1080,
+        1631
+      ],
+      "bytes": 87674,
+      "format": "image/webp",
+      "optimizerCache": "HIT"
+    },
+    {
+      "phase": "density-probe",
+      "role": "hero-3x",
+      "dimensions": [
+        2200,
+        1466
+      ],
+      "bytes": 77820,
+      "format": "image/webp",
+      "optimizerCache": "MISS"
+    },
+    {
+      "phase": "density-probe",
+      "role": "wordmark-3x",
+      "dimensions": [
+        640,
+        221
+      ],
+      "bytes": 13228,
+      "format": "image/webp",
+      "optimizerCache": "HIT"
+    },
+    {
+      "phase": "density-probe",
+      "role": "viewer",
+      "dimensions": [
+        1457,
+        2200
+      ],
+      "bytes": 200172,
+      "format": "image/webp",
+      "optimizerCache": "HIT"
+    }
+  ],
+  "localDeliveryBenchmark": [
+    {
+      "mode": "next",
+      "q": 75,
+      "width": 640,
+      "trial": 0,
+      "ms": 33.58458400000001,
+      "bytes": 47150,
+      "format": "image/webp",
+      "cache": "HIT",
+      "age": null,
+      "cacheControl": "public, max-age=2592000, must-revalidate",
+      "dimensions": [
+        640,
+        966
+      ]
+    },
+    {
+      "mode": "next",
+      "q": 75,
+      "width": 640,
+      "trial": 1,
+      "ms": 2.8555000000000064,
+      "bytes": 47150,
+      "format": "image/webp",
+      "cache": "HIT",
+      "age": null,
+      "cacheControl": "public, max-age=2592000, must-revalidate",
+      "dimensions": [
+        640,
+        966
+      ]
+    },
+    {
+      "mode": "next",
+      "q": 75,
+      "width": 640,
+      "trial": 2,
+      "ms": 1.591667000000001,
+      "bytes": 47150,
+      "format": "image/webp",
+      "cache": "HIT",
+      "age": null,
+      "cacheControl": "public, max-age=2592000, must-revalidate",
+      "dimensions": [
+        640,
+        966
+      ]
+    },
+    {
+      "mode": "direct",
+      "q": 75,
+      "width": 640,
+      "trial": 0,
+      "ms": 1125.512084,
+      "bytes": 44906,
+      "format": "image/webp",
+      "cache": null,
+      "age": null,
+      "cacheControl": "public, max-age=31536000, s-maxage=10",
+      "dimensions": [
+        640,
+        966
+      ]
+    },
+    {
+      "mode": "direct",
+      "q": 75,
+      "width": 640,
+      "trial": 1,
+      "ms": 345.47675000000004,
+      "bytes": 44906,
+      "format": "image/webp",
+      "cache": null,
+      "age": "0",
+      "cacheControl": "public, max-age=31536000, s-maxage=10",
+      "dimensions": [
+        640,
+        966
+      ]
+    },
+    {
+      "mode": "direct",
+      "q": 75,
+      "width": 640,
+      "trial": 2,
+      "ms": 440.22145799999976,
+      "bytes": 44906,
+      "format": "image/webp",
+      "cache": null,
+      "age": "1",
+      "cacheControl": "public, max-age=31536000, s-maxage=10",
+      "dimensions": [
+        640,
+        966
+      ]
+    },
+    {
+      "mode": "direct",
+      "q": 80,
+      "width": 640,
+      "trial": 0,
+      "ms": 632.4259160000001,
+      "bytes": 55736,
+      "format": "image/webp",
+      "cache": null,
+      "age": null,
+      "cacheControl": "public, max-age=31536000, s-maxage=10",
+      "dimensions": [
+        640,
+        966
+      ]
+    },
+    {
+      "mode": "direct",
+      "q": 80,
+      "width": 640,
+      "trial": 1,
+      "ms": 346.50616599999967,
+      "bytes": 55736,
+      "format": "image/webp",
+      "cache": null,
+      "age": "1",
+      "cacheControl": "public, max-age=31536000, s-maxage=10",
+      "dimensions": [
+        640,
+        966
+      ]
+    },
+    {
+      "mode": "direct",
+      "q": 80,
+      "width": 640,
+      "trial": 2,
+      "ms": 242.58604100000002,
+      "bytes": 55736,
+      "format": "image/webp",
+      "cache": null,
+      "age": "1",
+      "cacheControl": "public, max-age=31536000, s-maxage=10",
+      "dimensions": [
+        640,
+        966
+      ]
+    },
+    {
+      "mode": "next",
+      "q": 75,
+      "width": 1080,
+      "trial": 0,
+      "ms": 1301.0211669999999,
+      "bytes": 87674,
+      "format": "image/webp",
+      "cache": "MISS",
+      "age": null,
+      "cacheControl": "public, max-age=2592000, must-revalidate",
+      "dimensions": [
+        1080,
+        1631
+      ]
+    },
+    {
+      "mode": "next",
+      "q": 75,
+      "width": 1080,
+      "trial": 1,
+      "ms": 1.4482090000001335,
+      "bytes": 87674,
+      "format": "image/webp",
+      "cache": "HIT",
+      "age": null,
+      "cacheControl": "public, max-age=2592000, must-revalidate",
+      "dimensions": [
+        1080,
+        1631
+      ]
+    },
+    {
+      "mode": "next",
+      "q": 75,
+      "width": 1080,
+      "trial": 2,
+      "ms": 0.9963339999994787,
+      "bytes": 87674,
+      "format": "image/webp",
+      "cache": "HIT",
+      "age": null,
+      "cacheControl": "public, max-age=2592000, must-revalidate",
+      "dimensions": [
+        1080,
+        1631
+      ]
+    },
+    {
+      "mode": "direct",
+      "q": 75,
+      "width": 1080,
+      "trial": 0,
+      "ms": 847.8057500000004,
+      "bytes": 85030,
+      "format": "image/webp",
+      "cache": null,
+      "age": null,
+      "cacheControl": "public, max-age=31536000, s-maxage=10",
+      "dimensions": [
+        1080,
+        1631
+      ]
+    },
+    {
+      "mode": "direct",
+      "q": 75,
+      "width": 1080,
+      "trial": 1,
+      "ms": 380.9694580000005,
+      "bytes": 85030,
+      "format": "image/webp",
+      "cache": null,
+      "age": "0",
+      "cacheControl": "public, max-age=31536000, s-maxage=10",
+      "dimensions": [
+        1080,
+        1631
+      ]
+    },
+    {
+      "mode": "direct",
+      "q": 75,
+      "width": 1080,
+      "trial": 2,
+      "ms": 344.48604199999954,
+      "bytes": 85030,
+      "format": "image/webp",
+      "cache": null,
+      "age": "1",
+      "cacheControl": "public, max-age=31536000, s-maxage=10",
+      "dimensions": [
+        1080,
+        1631
+      ]
+    },
+    {
+      "mode": "direct",
+      "q": 80,
+      "width": 1080,
+      "trial": 0,
+      "ms": 899.9637089999997,
+      "bytes": 102948,
+      "format": "image/webp",
+      "cache": null,
+      "age": null,
+      "cacheControl": "public, max-age=31536000, s-maxage=10",
+      "dimensions": [
+        1080,
+        1631
+      ]
+    },
+    {
+      "mode": "direct",
+      "q": 80,
+      "width": 1080,
+      "trial": 1,
+      "ms": 213.35066600000027,
+      "bytes": 102948,
+      "format": "image/webp",
+      "cache": null,
+      "age": "0",
+      "cacheControl": "public, max-age=31536000, s-maxage=10",
+      "dimensions": [
+        1080,
+        1631
+      ]
+    },
+    {
+      "mode": "direct",
+      "q": 80,
+      "width": 1080,
+      "trial": 2,
+      "ms": 233.04508299999998,
+      "bytes": 102948,
+      "format": "image/webp",
+      "cache": null,
+      "age": "0",
+      "cacheControl": "public, max-age=31536000, s-maxage=10",
+      "dimensions": [
+        1080,
+        1631
+      ]
+    },
+    {
+      "mode": "next",
+      "q": 75,
+      "width": 1200,
+      "trial": 0,
+      "ms": 610.4619169999996,
+      "bytes": 99816,
+      "format": "image/webp",
+      "cache": "MISS",
+      "age": null,
+      "cacheControl": "public, max-age=2592000, must-revalidate",
+      "dimensions": [
+        1200,
+        1812
+      ]
+    },
+    {
+      "mode": "next",
+      "q": 75,
+      "width": 1200,
+      "trial": 1,
+      "ms": 1.4859999999989668,
+      "bytes": 99816,
+      "format": "image/webp",
+      "cache": "HIT",
+      "age": null,
+      "cacheControl": "public, max-age=2592000, must-revalidate",
+      "dimensions": [
+        1200,
+        1812
+      ]
+    },
+    {
+      "mode": "next",
+      "q": 75,
+      "width": 1200,
+      "trial": 2,
+      "ms": 1.1099580000009155,
+      "bytes": 99816,
+      "format": "image/webp",
+      "cache": "HIT",
+      "age": null,
+      "cacheControl": "public, max-age=2592000, must-revalidate",
+      "dimensions": [
+        1200,
+        1812
+      ]
+    },
+    {
+      "mode": "direct",
+      "q": 75,
+      "width": 1200,
+      "trial": 0,
+      "ms": 797.8929590000007,
+      "bytes": 100262,
+      "format": "image/webp",
+      "cache": null,
+      "age": null,
+      "cacheControl": "public, max-age=31536000, s-maxage=10",
+      "dimensions": [
+        1200,
+        1812
+      ]
+    },
+    {
+      "mode": "direct",
+      "q": 75,
+      "width": 1200,
+      "trial": 1,
+      "ms": 320.311083999999,
+      "bytes": 100262,
+      "format": "image/webp",
+      "cache": null,
+      "age": "0",
+      "cacheControl": "public, max-age=31536000, s-maxage=10",
+      "dimensions": [
+        1200,
+        1812
+      ]
+    },
+    {
+      "mode": "direct",
+      "q": 75,
+      "width": 1200,
+      "trial": 2,
+      "ms": 294.04166599999917,
+      "bytes": 100262,
+      "format": "image/webp",
+      "cache": null,
+      "age": "0",
+      "cacheControl": "public, max-age=31536000, s-maxage=10",
+      "dimensions": [
+        1200,
+        1812
+      ]
+    },
+    {
+      "mode": "direct",
+      "q": 80,
+      "width": 1200,
+      "trial": 0,
+      "ms": 805.8288749999992,
+      "bytes": 120446,
+      "format": "image/webp",
+      "cache": null,
+      "age": null,
+      "cacheControl": "public, max-age=31536000, s-maxage=10",
+      "dimensions": [
+        1200,
+        1812
+      ]
+    },
+    {
+      "mode": "direct",
+      "q": 80,
+      "width": 1200,
+      "trial": 1,
+      "ms": 379.0326669999995,
+      "bytes": 120446,
+      "format": "image/webp",
+      "cache": null,
+      "age": "0",
+      "cacheControl": "public, max-age=31536000, s-maxage=10",
+      "dimensions": [
+        1200,
+        1812
+      ]
+    },
+    {
+      "mode": "direct",
+      "q": 80,
+      "width": 1200,
+      "trial": 2,
+      "ms": 289.6536670000005,
+      "bytes": 120446,
+      "format": "image/webp",
+      "cache": null,
+      "age": "1",
+      "cacheControl": "public, max-age=31536000, s-maxage=10",
+      "dimensions": [
+        1200,
+        1812
+      ]
+    }
+  ],
+  "originalSourceOptimizerBenchmark": [
+    {
+      "width": 640,
+      "trial": 0,
+      "ms": 1633.532125,
+      "bytes": 47150,
+      "cache": "MISS",
+      "format": "image/webp",
+      "dimensions": [
+        640,
+        966
+      ]
+    },
+    {
+      "width": 640,
+      "trial": 1,
+      "ms": 1.7672919999999976,
+      "bytes": 47150,
+      "cache": "HIT",
+      "format": "image/webp",
+      "dimensions": [
+        640,
+        966
+      ]
+    },
+    {
+      "width": 640,
+      "trial": 2,
+      "ms": 1.7953330000000278,
+      "bytes": 47150,
+      "cache": "HIT",
+      "format": "image/webp",
+      "dimensions": [
+        640,
+        966
+      ]
+    },
+    {
+      "width": 1080,
+      "trial": 0,
+      "ms": 637.374125,
+      "bytes": 87674,
+      "cache": "MISS",
+      "format": "image/webp",
+      "dimensions": [
+        1080,
+        1631
+      ]
+    },
+    {
+      "width": 1080,
+      "trial": 1,
+      "ms": 1.885124999999789,
+      "bytes": 87674,
+      "cache": "HIT",
+      "format": "image/webp",
+      "dimensions": [
+        1080,
+        1631
+      ]
+    },
+    {
+      "width": 1080,
+      "trial": 2,
+      "ms": 1.6285000000002583,
+      "bytes": 87674,
+      "cache": "HIT",
+      "format": "image/webp",
+      "dimensions": [
+        1080,
+        1631
+      ]
+    },
+    {
+      "width": 1200,
+      "trial": 0,
+      "ms": 451.4943750000002,
+      "bytes": 99816,
+      "cache": "MISS",
+      "format": "image/webp",
+      "dimensions": [
+        1200,
+        1812
+      ]
+    },
+    {
+      "width": 1200,
+      "trial": 1,
+      "ms": 1.4855419999998958,
+      "bytes": 99816,
+      "cache": "HIT",
+      "format": "image/webp",
+      "dimensions": [
+        1200,
+        1812
+      ]
+    },
+    {
+      "width": 1200,
+      "trial": 2,
+      "ms": 2.670332999999573,
+      "bytes": 99816,
+      "cache": "HIT",
+      "format": "image/webp",
+      "dimensions": [
+        1200,
+        1812
+      ]
+    }
+  ],
+  "deployedDeliveryBenchmark": [
+    {
+      "width": 640,
+      "mode": "deployed-next",
+      "trial": 0,
+      "status": 200,
+      "ms": 633.107042,
+      "bytes": 44624,
+      "format": "image/webp",
+      "cache": "HIT",
+      "age": "2135"
+    },
+    {
+      "width": 640,
+      "mode": "deployed-next",
+      "trial": 1,
+      "status": 200,
+      "ms": 433.8074579999999,
+      "bytes": 44624,
+      "format": "image/webp",
+      "cache": "HIT",
+      "age": "2136"
+    },
+    {
+      "width": 640,
+      "mode": "deployed-next",
+      "trial": 2,
+      "status": 200,
+      "ms": 161.93183299999987,
+      "bytes": 44624,
+      "format": "image/webp",
+      "cache": "HIT",
+      "age": "2136"
+    },
+    {
+      "width": 640,
+      "mode": "direct-sanity",
+      "trial": 0,
+      "status": 200,
+      "ms": 812.3849579999999,
+      "bytes": 44297,
+      "format": "image/avif",
+      "cache": null,
+      "age": null
+    },
+    {
+      "width": 640,
+      "mode": "direct-sanity",
+      "trial": 1,
+      "status": 200,
+      "ms": 710.606875,
+      "bytes": 44297,
+      "format": "image/avif",
+      "cache": null,
+      "age": "1"
+    },
+    {
+      "width": 640,
+      "mode": "direct-sanity",
+      "trial": 2,
+      "status": 200,
+      "ms": 230.20824999999968,
+      "bytes": 44297,
+      "format": "image/avif",
+      "cache": null,
+      "age": "1"
+    },
+    {
+      "width": 1080,
+      "mode": "deployed-next",
+      "trial": 0,
+      "status": 200,
+      "ms": 213.17162499999995,
+      "bytes": 84170,
+      "format": "image/webp",
+      "cache": "HIT",
+      "age": "8210"
+    },
+    {
+      "width": 1080,
+      "mode": "deployed-next",
+      "trial": 1,
+      "status": 200,
+      "ms": 181.291334,
+      "bytes": 84170,
+      "format": "image/webp",
+      "cache": "HIT",
+      "age": "8210"
+    },
+    {
+      "width": 1080,
+      "mode": "deployed-next",
+      "trial": 2,
+      "status": 200,
+      "ms": 210.41154199999983,
+      "bytes": 84170,
+      "format": "image/webp",
+      "cache": "HIT",
+      "age": "8211"
+    },
+    {
+      "width": 1080,
+      "mode": "direct-sanity",
+      "trial": 0,
+      "status": 200,
+      "ms": 514.2915420000004,
+      "bytes": 87777,
+      "format": "image/avif",
+      "cache": null,
+      "age": null
+    },
+    {
+      "width": 1080,
+      "mode": "direct-sanity",
+      "trial": 1,
+      "status": 200,
+      "ms": 337.8245419999994,
+      "bytes": 87777,
+      "format": "image/avif",
+      "cache": null,
+      "age": "0"
+    },
+    {
+      "width": 1080,
+      "mode": "direct-sanity",
+      "trial": 2,
+      "status": 200,
+      "ms": 218.05066699999952,
+      "bytes": 87777,
+      "format": "image/avif",
+      "cache": null,
+      "age": "1"
+    },
+    {
+      "width": 1200,
+      "mode": "deployed-next",
+      "trial": 0,
+      "status": 200,
+      "ms": 547.0867500000004,
+      "bytes": 90552,
+      "format": "image/webp",
+      "cache": "HIT",
+      "age": "539358"
+    },
+    {
+      "width": 1200,
+      "mode": "deployed-next",
+      "trial": 1,
+      "status": 200,
+      "ms": 217.1001670000005,
+      "bytes": 90552,
+      "format": "image/webp",
+      "cache": "HIT",
+      "age": "539358"
+    },
+    {
+      "width": 1200,
+      "mode": "deployed-next",
+      "trial": 2,
+      "status": 200,
+      "ms": 170.8341250000003,
+      "bytes": 90552,
+      "format": "image/webp",
+      "cache": "HIT",
+      "age": "539358"
+    },
+    {
+      "width": 1200,
+      "mode": "direct-sanity",
+      "trial": 0,
+      "status": 200,
+      "ms": 328.52958300000046,
+      "bytes": 104729,
+      "format": "image/avif",
+      "cache": null,
+      "age": null
+    },
+    {
+      "width": 1200,
+      "mode": "direct-sanity",
+      "trial": 1,
+      "status": 200,
+      "ms": 234.33854200000042,
+      "bytes": 104729,
+      "format": "image/avif",
+      "cache": null,
+      "age": "0"
+    },
+    {
+      "width": 1200,
+      "mode": "direct-sanity",
+      "trial": 2,
+      "status": 200,
+      "ms": 200.17975000000024,
+      "bytes": 104729,
+      "format": "image/avif",
+      "cache": null,
+      "age": "0"
+    }
+  ],
+  "deployedBeforeSamples": [
+    {
+      "phase": "deployed-before",
+      "route": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 1448,
+      "cls": 0,
+      "requestCount": 17,
+      "payloadBytes": 2387653,
+      "transferBytes": 2392753,
+      "overflow": true
+    },
+    {
+      "phase": "deployed-before",
+      "route": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 1208,
+      "cls": 0,
+      "requestCount": 11,
+      "payloadBytes": 1314335,
+      "transferBytes": 1317635,
+      "overflow": false
+    },
+    {
+      "phase": "deployed-before",
+      "route": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 792,
+      "cls": 0,
+      "requestCount": 12,
+      "payloadBytes": 1368368,
+      "transferBytes": 1371968,
+      "overflow": false
+    },
+    {
+      "phase": "deployed-before",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 1952,
+      "cls": 0,
+      "requestCount": 5,
+      "payloadBytes": 405685,
+      "transferBytes": 407185,
+      "overflow": false
+    },
+    {
+      "phase": "deployed-before",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 716,
+      "cls": 0,
+      "requestCount": 5,
+      "payloadBytes": 405685,
+      "transferBytes": 407185,
+      "overflow": false
+    },
+    {
+      "phase": "deployed-before",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 508,
+      "cls": 0,
+      "requestCount": 5,
+      "payloadBytes": 405685,
+      "transferBytes": 407185,
+      "overflow": false
+    },
+    {
+      "phase": "deployed-before",
+      "route": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 1092,
+      "cls": 0,
+      "requestCount": 7,
+      "payloadBytes": 294386,
+      "transferBytes": 296486,
+      "overflow": false
+    },
+    {
+      "phase": "deployed-before",
+      "route": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 1120,
+      "cls": 0,
+      "requestCount": 6,
+      "payloadBytes": 240353,
+      "transferBytes": 242153,
+      "overflow": false
+    },
+    {
+      "phase": "deployed-before",
+      "route": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 580,
+      "cls": 0,
+      "requestCount": 6,
+      "payloadBytes": 240353,
+      "transferBytes": 242153,
+      "overflow": false
+    },
+    {
+      "phase": "deployed-before",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 0,
+      "browserCache": "bypassed",
+      "lcpMs": 772,
+      "cls": 0,
+      "requestCount": 2,
+      "payloadBytes": 98657,
+      "transferBytes": 99257,
+      "overflow": false
+    },
+    {
+      "phase": "deployed-before",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 1,
+      "browserCache": "bypassed",
+      "lcpMs": 1016,
+      "cls": 0,
+      "requestCount": 2,
+      "payloadBytes": 98657,
+      "transferBytes": 99257,
+      "overflow": false
+    },
+    {
+      "phase": "deployed-before",
+      "route": "/shop/essential-tee",
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "trial": 2,
+      "browserCache": "bypassed",
+      "lcpMs": 612,
+      "cls": 0,
+      "requestCount": 2,
+      "payloadBytes": 98657,
+      "transferBytes": 99257,
+      "overflow": false
+    }
+  ],
+  "colourBefore": [
+    {
+      "label": "White",
+      "ms": 1301.2000000178814,
+      "src": "http://127.0.0.1:3102/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Fbc7338b027137531e329a2cb5dcd4dbd6ab9d3c6-1657x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=750&q=75"
+    },
+    {
+      "label": "Cream",
+      "ms": 546.9000000059605,
+      "src": "http://127.0.0.1:3102/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Fa011e9676e9adc4a60056ff2612353cf10318d23-1457x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=750&q=75"
+    },
+    {
+      "label": "Black",
+      "ms": 41.80000001192093,
+      "src": "http://127.0.0.1:3102/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=1080&q=75"
+    },
+    {
+      "label": "White",
+      "ms": 25.900000005960464,
+      "src": "http://127.0.0.1:3102/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Fbc7338b027137531e329a2cb5dcd4dbd6ab9d3c6-1657x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=750&q=75"
+    },
+    {
+      "label": "Cream",
+      "ms": 25,
+      "src": "http://127.0.0.1:3102/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Fa011e9676e9adc4a60056ff2612353cf10318d23-1457x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=750&q=75"
+    },
+    {
+      "label": "Black",
+      "ms": 17.599999994039536,
+      "src": "http://127.0.0.1:3102/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=1080&q=75"
+    },
+    {
+      "label": "White",
+      "ms": 17.5,
+      "src": "http://127.0.0.1:3102/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Fbc7338b027137531e329a2cb5dcd4dbd6ab9d3c6-1657x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=750&q=75"
+    },
+    {
+      "label": "Cream",
+      "ms": 17.69999998807907,
+      "src": "http://127.0.0.1:3102/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Fa011e9676e9adc4a60056ff2612353cf10318d23-1457x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=750&q=75"
+    },
+    {
+      "label": "Black",
+      "ms": 17.799999982118607,
+      "src": "http://127.0.0.1:3102/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=1080&q=75"
+    },
+    {
+      "label": "White",
+      "ms": 17.599999994039536,
+      "src": "http://127.0.0.1:3102/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Fbc7338b027137531e329a2cb5dcd4dbd6ab9d3c6-1657x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=750&q=75"
+    },
+    {
+      "label": "Cream",
+      "ms": 18,
+      "src": "http://127.0.0.1:3102/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Fa011e9676e9adc4a60056ff2612353cf10318d23-1457x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=750&q=75"
+    },
+    {
+      "label": "Black",
+      "ms": 17.5,
+      "src": "http://127.0.0.1:3102/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg%3Fw%3D2400%26fit%3Dmax%26auto%3Dformat&w=1080&q=75"
+    }
+  ],
+  "colourAfter": {
+    "cold": [
+      {
+        "label": "White",
+        "ms": 1393.300000011921,
+        "src": "http://127.0.0.1:3102/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Fbc7338b027137531e329a2cb5dcd4dbd6ab9d3c6-1657x2200.jpg&w=750&q=75"
+      },
+      {
+        "label": "Cream",
+        "ms": 657.6999999880791,
+        "src": "http://127.0.0.1:3102/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Fa011e9676e9adc4a60056ff2612353cf10318d23-1457x2200.jpg&w=750&q=75"
+      },
+      {
+        "label": "Black",
+        "ms": 16.80000001192093,
+        "src": "http://127.0.0.1:3102/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg&w=1080&q=75"
+      }
+    ],
+    "warm": [
+      {
+        "label": "White",
+        "ms": 18.299999982118607,
+        "src": "http://127.0.0.1:3102/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Fbc7338b027137531e329a2cb5dcd4dbd6ab9d3c6-1657x2200.jpg&w=750&q=75",
+        "trial": 0
+      },
+      {
+        "label": "Cream",
+        "ms": 17.5,
+        "src": "http://127.0.0.1:3102/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Fa011e9676e9adc4a60056ff2612353cf10318d23-1457x2200.jpg&w=750&q=75",
+        "trial": 0
+      },
+      {
+        "label": "Black",
+        "ms": 17.5,
+        "src": "http://127.0.0.1:3102/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg&w=1080&q=75",
+        "trial": 0
+      },
+      {
+        "label": "White",
+        "ms": 18.30000001192093,
+        "src": "http://127.0.0.1:3102/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Fbc7338b027137531e329a2cb5dcd4dbd6ab9d3c6-1657x2200.jpg&w=750&q=75",
+        "trial": 1
+      },
+      {
+        "label": "Cream",
+        "ms": 17.899999976158142,
+        "src": "http://127.0.0.1:3102/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Fa011e9676e9adc4a60056ff2612353cf10318d23-1457x2200.jpg&w=750&q=75",
+        "trial": 1
+      },
+      {
+        "label": "Black",
+        "ms": 17.19999998807907,
+        "src": "http://127.0.0.1:3102/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg&w=1080&q=75",
+        "trial": 1
+      },
+      {
+        "label": "White",
+        "ms": 17.80000001192093,
+        "src": "http://127.0.0.1:3102/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Fbc7338b027137531e329a2cb5dcd4dbd6ab9d3c6-1657x2200.jpg&w=750&q=75",
+        "trial": 2
+      },
+      {
+        "label": "Cream",
+        "ms": 18.19999998807907,
+        "src": "http://127.0.0.1:3102/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Fa011e9676e9adc4a60056ff2612353cf10318d23-1457x2200.jpg&w=750&q=75",
+        "trial": 2
+      },
+      {
+        "label": "Black",
+        "ms": 17.5,
+        "src": "http://127.0.0.1:3102/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ft0ywd1qv%2Fproduction%2Ff0208f87213a2c3191f9ce7014fe7bedaa7cafcf-1457x2200.jpg&w=1080&q=75",
+        "trial": 2
+      }
+    ]
+  }
+}
