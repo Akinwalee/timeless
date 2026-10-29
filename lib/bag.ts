@@ -20,24 +20,26 @@ export type BagItem = {
 
 export type AddBagItem = Omit<BagItem, "key" | "quantity"> & { quantity?: number };
 
-export type BagState = { items: BagItem[]; hydrated: boolean };
+export type BagState = { items: BagItem[]; hydrated: boolean; persistent: boolean };
 
 export type BagAction =
-  | { type: "hydrate"; items: BagItem[] }
+  | { type: "hydrate"; items: BagItem[]; persistent?: boolean }
+  | { type: "storage"; available: boolean }
   | { type: "add"; item: AddBagItem }
   | { type: "quantity"; key: string; quantity: number }
   | { type: "remove"; key: string }
   | { type: "clear" };
 
-export const initialBagState: BagState = { items: [], hydrated: false };
+export const initialBagState: BagState = { items: [], hydrated: false, persistent: true };
 
 export function bagItemKey(item: Pick<BagItem, "productId" | "variantId" | "size">) {
   return `${item.productId}:${item.variantId}:${item.size}`;
 }
 
 export function bagReducer(state: BagState, action: BagAction): BagState {
-  if (action.type === "hydrate") return { items: action.items, hydrated: true };
-  if (action.type === "clear") return { items: [], hydrated: state.hydrated };
+  if (action.type === "hydrate") return { items: action.items, hydrated: true, persistent: action.persistent ?? state.persistent };
+  if (action.type === "storage") return { ...state, persistent: action.available };
+  if (action.type === "clear") return { ...state, items: [] };
   if (action.type === "remove") return { ...state, items: state.items.filter((item) => item.key !== action.key) };
   if (action.type === "quantity") {
     if (action.quantity < 1) return { ...state, items: state.items.filter((item) => item.key !== action.key) };
@@ -76,14 +78,22 @@ export function parseStoredBag(value: string | null): BagItem[] {
   try {
     const parsed = JSON.parse(value) as { version?: number; items?: unknown };
     if (parsed.version !== BAG_STORAGE_VERSION || !Array.isArray(parsed.items)) return [];
-    return parsed.items.flatMap((candidate) => {
+    return parsed.items.slice(0, 100).flatMap((candidate) => {
       if (!candidate || typeof candidate !== "object") return [];
       const item = candidate as Partial<BagItem>;
-      if (
-        !item.productId || !item.productSlug || !item.name || !item.variantId ||
-        !item.colour || !item.size || !item.image || !item.imageAlt ||
-        typeof item.price !== "number" || !item.currency || typeof item.quantity !== "number"
-      ) return [];
+      const textFields = [item.productId, item.productSlug, item.name, item.variantId, item.colour, item.size, item.imageAlt];
+      if (textFields.some((value) => typeof value !== "string" || !value.trim() || value.length > 500)) return [];
+      if (typeof item.image !== "string" || item.image.length > 2000) return [];
+      const localImage = item.image.startsWith("/") && !item.image.startsWith("//");
+      let sanityImage = false;
+      try {
+        const url = new URL(item.image);
+        sanityImage = url.protocol === "https:" && url.hostname === "cdn.sanity.io";
+      } catch { /* A local image does not need a URL origin. */ }
+      if (!localImage && !sanityImage) return [];
+      if (!Number.isSafeInteger(item.price) || item.price! < 0 ||
+          typeof item.currency !== "string" || !/^[A-Z]{3}$/.test(item.currency) ||
+          typeof item.quantity !== "number" || !Number.isFinite(item.quantity)) return [];
       return [{
         ...item,
         key: bagItemKey(item as BagItem),
@@ -122,7 +132,7 @@ export function buildWhatsAppMessage(items: BagItem[]) {
       "",
     );
   });
-  lines.push(`ORDER TOTAL: ${formatMoney(bagTotal(items), currency)}`);
+  lines.push(`ORDER TOTAL: ${formatMoney(bagTotal(items), currency)}`, "", "Shipping is additional and will be quoted after I share my delivery address.", "Please confirm current availability and the final total before payment.");
   return lines.join("\n");
 }
 

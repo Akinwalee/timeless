@@ -232,8 +232,11 @@ export const fallbackSettings: GlobalSettings = {
     { href: "/journal", label: "Journal" },
     { href: "/about", label: "About" },
   ],
-  socialLinks: [{ href: "#", label: "Instagram", external: true }],
-  contactEmail: "hello@timeless.ng",
+  socialLinks: [
+    { href: "https://www.instagram.com/iweartimeless", label: "Instagram", external: true },
+    { href: "https://www.tiktok.com/@iweartimeless", label: "TikTok", external: true },
+  ],
+  contactEmail: process.env.NEXT_PUBLIC_SUPPORT_EMAIL || "Iweartimeless@gmail.com",
   homepageProductSlug: "essential-tee",
   homepageInTheWildSlugs: fallbackInTheWild.map((entry) => entry.slug),
   homepageJournalSlugs: ["the-making-of-drop-001"],

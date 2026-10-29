@@ -11,8 +11,8 @@ export function JournalBody({ blocks }: { blocks: JournalBlock[] }) {
         if (block._type === "text") {
           return (
             <section key={block._key} className="site-shell grid gap-10 py-[var(--section)] md:grid-cols-[.55fr_1.45fr]">
-              <p className="eyebrow pt-2 text-black/40">Field note</p>
-              <div>{block.heading && <h2 className="mb-10 text-[clamp(2.4rem,4.5vw,5rem)] leading-[1] tracking-[-.055em]">{block.heading}</h2>}<div className="grid gap-10 text-lg leading-relaxed text-black/58 md:grid-cols-2">{block.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div></div>
+              <p className="eyebrow pt-2 text-muted">Field note</p>
+              <div>{block.heading && <h2 className="mb-10 text-[clamp(2.4rem,4.5vw,5rem)] leading-[1] tracking-[-.055em]">{block.heading}</h2>}<div className="grid gap-10 text-lg leading-relaxed text-muted md:grid-cols-2">{block.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div></div>
             </section>
           );
         }
@@ -26,10 +26,10 @@ export function JournalBody({ blocks }: { blocks: JournalBlock[] }) {
           return <section key={block._key} className="site-shell grid gap-4 py-[var(--section)] md:grid-cols-[1.1fr_.9fr]"><ImageReveal className="aspect-[4/5]"><ResponsiveImage image={block.left} frame={{ mobile: .8, desktop: .8 }} sizes={IMAGE_SIZES.pairLeft} /></ImageReveal><ImageReveal className="aspect-[4/5] md:mt-36"><ResponsiveImage image={block.right} frame={{ mobile: .8, desktop: .8 }} sizes={IMAGE_SIZES.pairRight} /></ImageReveal></section>;
         }
         if (block._type === "quote") {
-          return <section key={block._key} className="flex min-h-[70svh] items-center bg-black px-[var(--gutter)] py-[var(--section)] text-white"><Reveal><p className="eyebrow text-white/40">Field note</p><blockquote className="display mt-8 max-w-[13ch] text-[clamp(4.2rem,10vw,11rem)]">“{block.quote}”</blockquote>{block.attribution && <p className="mt-8 text-sm text-white/50">{block.attribution}</p>}</Reveal></section>;
+          return <section key={block._key} className="flex min-h-[70svh] items-center bg-black px-[var(--gutter)] py-[var(--section)] text-white"><Reveal><p className="eyebrow text-white/75">Field note</p><blockquote className="display mt-8 max-w-[13ch] text-[clamp(4.2rem,10vw,11rem)]">“{block.quote}”</blockquote>{block.attribution && <p className="mt-8 text-sm text-white/75">{block.attribution}</p>}</Reveal></section>;
         }
         if (block._type === "video") {
-          return <section key={block._key} className="site-shell py-[var(--section)]"><video controls playsInline preload="metadata" poster={block.poster ? videoPosterUrl(block.poster) : undefined} className="aspect-video w-full bg-black"><source src={block.url} /></video>{block.caption && <p className="mt-4 text-sm text-black/50">{block.caption}</p>}</section>;
+          return <section key={block._key} className="site-shell py-[var(--section)]"><video controls playsInline preload="metadata" poster={block.poster ? videoPosterUrl(block.poster) : undefined} className="aspect-video w-full bg-black"><source src={block.url} /></video>{block.caption && <p className="mt-4 text-sm text-muted">{block.caption}</p>}</section>;
         }
         return null;
       })}

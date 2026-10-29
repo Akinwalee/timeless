@@ -18,7 +18,7 @@ export function ProductColourSelector({
   return (
     <fieldset className={`product-colour-selector ${className}`}>
       <legend className="mb-3 text-xs uppercase tracking-[.12em]">
-        Colour <span className="ml-3 normal-case tracking-normal text-black/50">{selected?.name}</span>
+        Colour <span className="ml-3 normal-case tracking-normal text-muted">{selected?.name}</span>
       </legend>
       <div className="flex flex-wrap gap-2">
         {variants.map((variant) => (

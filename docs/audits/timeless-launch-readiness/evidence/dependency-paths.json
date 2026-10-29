@@ -1,0 +1,414 @@
+{
+  "version": "0.1.0",
+  "name": "timeless",
+  "dependencies": {
+    "next-sanity": {
+      "version": "13.3.4",
+      "resolved": "https://registry.npmjs.org/next-sanity/-/next-sanity-13.3.4.tgz",
+      "overridden": false,
+      "dependencies": {
+        "@sanity/visual-editing": {
+          "version": "6.1.2",
+          "resolved": "https://registry.npmjs.org/@sanity/visual-editing/-/visual-editing-6.1.2.tgz",
+          "overridden": false,
+          "dependencies": {
+            "next": {
+              "version": "16.2.6"
+            }
+          }
+        },
+        "next": {
+          "version": "16.2.6"
+        }
+      }
+    },
+    "next": {
+      "version": "16.2.6",
+      "resolved": "https://registry.npmjs.org/next/-/next-16.2.6.tgz",
+      "overridden": false,
+      "dependencies": {
+        "sharp": {
+          "version": "0.34.5",
+          "resolved": "https://registry.npmjs.org/sharp/-/sharp-0.34.5.tgz",
+          "overridden": false
+        }
+      }
+    },
+    "sanity": {
+      "version": "6.15.0",
+      "resolved": "https://registry.npmjs.org/sanity/-/sanity-6.15.0.tgz",
+      "overridden": false,
+      "dependencies": {
+        "@sanity/access-ui": {
+          "version": "6.15.0",
+          "resolved": "https://registry.npmjs.org/@sanity/access-ui/-/access-ui-6.15.0.tgz",
+          "overridden": false,
+          "dependencies": {
+            "@sanity/client": {
+              "version": "8.6.2",
+              "resolved": "https://registry.npmjs.org/@sanity/client/-/client-8.6.2.tgz",
+              "overridden": false,
+              "dependencies": {
+                "get-it": {
+                  "version": "9.5.4",
+                  "resolved": "https://registry.npmjs.org/get-it/-/get-it-9.5.4.tgz",
+                  "overridden": false,
+                  "dependencies": {
+                    "undici": {
+                      "version": "7.29.0"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "@sanity/cli": {
+          "version": "8.11.0",
+          "resolved": "https://registry.npmjs.org/@sanity/cli/-/cli-8.11.0.tgz",
+          "overridden": false,
+          "dependencies": {
+            "@sanity/cli-build": {
+              "version": "6.3.1",
+              "resolved": "https://registry.npmjs.org/@sanity/cli-build/-/cli-build-6.3.1.tgz",
+              "overridden": false,
+              "dependencies": {
+                "dompurify": {
+                  "version": "3.4.15"
+                }
+              }
+            },
+            "@sanity/cli-core": {
+              "version": "3.7.0",
+              "resolved": "https://registry.npmjs.org/@sanity/cli-core/-/cli-core-3.7.0.tgz",
+              "overridden": false,
+              "dependencies": {
+                "get-it": {
+                  "version": "9.5.4",
+                  "resolved": "https://registry.npmjs.org/get-it/-/get-it-9.5.4.tgz",
+                  "overridden": false,
+                  "dependencies": {
+                    "undici": {
+                      "version": "7.29.0"
+                    }
+                  }
+                }
+              }
+            },
+            "@sanity/client": {
+              "version": "8.6.2",
+              "resolved": "https://registry.npmjs.org/@sanity/client/-/client-8.6.2.tgz",
+              "overridden": false,
+              "dependencies": {
+                "get-it": {
+                  "version": "9.5.4",
+                  "resolved": "https://registry.npmjs.org/get-it/-/get-it-9.5.4.tgz",
+                  "overridden": false,
+                  "dependencies": {
+                    "undici": {
+                      "version": "7.29.0"
+                    }
+                  }
+                }
+              }
+            },
+            "@sanity/import": {
+              "version": "7.0.3",
+              "resolved": "https://registry.npmjs.org/@sanity/import/-/import-7.0.3.tgz",
+              "overridden": false,
+              "dependencies": {
+                "get-it": {
+                  "version": "9.5.4",
+                  "resolved": "https://registry.npmjs.org/get-it/-/get-it-9.5.4.tgz",
+                  "overridden": false,
+                  "dependencies": {
+                    "undici": {
+                      "version": "7.29.0"
+                    }
+                  }
+                }
+              }
+            },
+            "@sanity/runtime-cli": {
+              "version": "17.14.0",
+              "resolved": "https://registry.npmjs.org/@sanity/runtime-cli/-/runtime-cli-17.14.0.tgz",
+              "overridden": false,
+              "dependencies": {
+                "@sanity/client": {
+                  "version": "8.6.2",
+                  "resolved": "https://registry.npmjs.org/@sanity/client/-/client-8.6.2.tgz",
+                  "overridden": false,
+                  "dependencies": {
+                    "get-it": {
+                      "version": "9.5.4",
+                      "resolved": "https://registry.npmjs.org/get-it/-/get-it-9.5.4.tgz",
+                      "overridden": false,
+                      "dependencies": {
+                        "undici": {
+                          "version": "7.29.0"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "@sanity/workbench-cli": {
+              "version": "2.5.1",
+              "resolved": "https://registry.npmjs.org/@sanity/workbench-cli/-/workbench-cli-2.5.1.tgz",
+              "overridden": false,
+              "dependencies": {
+                "@module-federation/vite": {
+                  "version": "1.21.0",
+                  "resolved": "https://registry.npmjs.org/@module-federation/vite/-/vite-1.21.0.tgz",
+                  "overridden": false,
+                  "dependencies": {
+                    "@module-federation/dts-plugin": {
+                      "version": "2.9.0",
+                      "resolved": "https://registry.npmjs.org/@module-federation/dts-plugin/-/dts-plugin-2.9.0.tgz",
+                      "overridden": false,
+                      "dependencies": {
+                        "undici": {
+                          "version": "7.29.0"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "@sanity/client": {
+          "version": "8.6.2",
+          "resolved": "https://registry.npmjs.org/@sanity/client/-/client-8.6.2.tgz",
+          "overridden": false,
+          "dependencies": {
+            "get-it": {
+              "version": "9.5.4",
+              "resolved": "https://registry.npmjs.org/get-it/-/get-it-9.5.4.tgz",
+              "overridden": false,
+              "dependencies": {
+                "undici": {
+                  "version": "7.29.0"
+                }
+              }
+            }
+          }
+        },
+        "@sanity/migrate": {
+          "version": "8.0.4",
+          "resolved": "https://registry.npmjs.org/@sanity/migrate/-/migrate-8.0.4.tgz",
+          "overridden": false,
+          "dependencies": {
+            "get-it": {
+              "version": "9.5.4",
+              "resolved": "https://registry.npmjs.org/get-it/-/get-it-9.5.4.tgz",
+              "overridden": false,
+              "dependencies": {
+                "undici": {
+                  "version": "7.29.0"
+                }
+              }
+            }
+          }
+        },
+        "@sanity/mutate": {
+          "version": "0.18.2",
+          "resolved": "https://registry.npmjs.org/@sanity/mutate/-/mutate-0.18.2.tgz",
+          "overridden": false,
+          "dependencies": {
+            "@sanity/client": {
+              "version": "8.6.2",
+              "resolved": "https://registry.npmjs.org/@sanity/client/-/client-8.6.2.tgz",
+              "overridden": false,
+              "dependencies": {
+                "get-it": {
+                  "version": "9.5.4",
+                  "resolved": "https://registry.npmjs.org/get-it/-/get-it-9.5.4.tgz",
+                  "overridden": false,
+                  "dependencies": {
+                    "undici": {
+                      "version": "7.29.0"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "@sanity/schema": {
+          "version": "6.15.0",
+          "resolved": "https://registry.npmjs.org/@sanity/schema/-/schema-6.15.0.tgz",
+          "overridden": false,
+          "dependencies": {
+            "get-it": {
+              "version": "9.5.4",
+              "resolved": "https://registry.npmjs.org/get-it/-/get-it-9.5.4.tgz",
+              "overridden": false,
+              "dependencies": {
+                "undici": {
+                  "version": "7.29.0"
+                }
+              }
+            }
+          }
+        },
+        "@sanity/sdk-react": {
+          "version": "3.3.0",
+          "resolved": "https://registry.npmjs.org/@sanity/sdk-react/-/sdk-react-3.3.0.tgz",
+          "overridden": false,
+          "dependencies": {
+            "@sanity/client": {
+              "version": "8.6.2",
+              "resolved": "https://registry.npmjs.org/@sanity/client/-/client-8.6.2.tgz",
+              "overridden": false,
+              "dependencies": {
+                "get-it": {
+                  "version": "9.5.4",
+                  "resolved": "https://registry.npmjs.org/get-it/-/get-it-9.5.4.tgz",
+                  "overridden": false,
+                  "dependencies": {
+                    "undici": {
+                      "version": "7.29.0"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "@sanity/sdk": {
+          "version": "3.3.0",
+          "resolved": "https://registry.npmjs.org/@sanity/sdk/-/sdk-3.3.0.tgz",
+          "overridden": false,
+          "dependencies": {
+            "@sanity/client": {
+              "version": "8.6.2",
+              "resolved": "https://registry.npmjs.org/@sanity/client/-/client-8.6.2.tgz",
+              "overridden": false,
+              "dependencies": {
+                "get-it": {
+                  "version": "9.5.4",
+                  "resolved": "https://registry.npmjs.org/get-it/-/get-it-9.5.4.tgz",
+                  "overridden": false,
+                  "dependencies": {
+                    "undici": {
+                      "version": "7.29.0"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "@sanity/types": {
+          "version": "6.15.0",
+          "resolved": "https://registry.npmjs.org/@sanity/types/-/types-6.15.0.tgz",
+          "overridden": false,
+          "dependencies": {
+            "@sanity/client": {
+              "version": "8.6.2",
+              "resolved": "https://registry.npmjs.org/@sanity/client/-/client-8.6.2.tgz",
+              "overridden": false,
+              "dependencies": {
+                "get-it": {
+                  "version": "9.5.4",
+                  "resolved": "https://registry.npmjs.org/get-it/-/get-it-9.5.4.tgz",
+                  "overridden": false,
+                  "dependencies": {
+                    "undici": {
+                      "version": "7.29.0"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "@sanity/util": {
+          "version": "6.15.0",
+          "resolved": "https://registry.npmjs.org/@sanity/util/-/util-6.15.0.tgz",
+          "overridden": false,
+          "dependencies": {
+            "get-it": {
+              "version": "9.5.4",
+              "resolved": "https://registry.npmjs.org/get-it/-/get-it-9.5.4.tgz",
+              "overridden": false,
+              "dependencies": {
+                "undici": {
+                  "version": "7.29.0"
+                }
+              }
+            }
+          }
+        },
+        "@sanity/validation": {
+          "version": "6.15.0",
+          "resolved": "https://registry.npmjs.org/@sanity/validation/-/validation-6.15.0.tgz",
+          "overridden": false,
+          "dependencies": {
+            "@sanity/client": {
+              "version": "8.6.2",
+              "resolved": "https://registry.npmjs.org/@sanity/client/-/client-8.6.2.tgz",
+              "overridden": false,
+              "dependencies": {
+                "get-it": {
+                  "version": "9.5.4",
+                  "resolved": "https://registry.npmjs.org/get-it/-/get-it-9.5.4.tgz",
+                  "overridden": false,
+                  "dependencies": {
+                    "undici": {
+                      "version": "7.29.0"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "isomorphic-dompurify": {
+          "version": "2.36.0",
+          "resolved": "https://registry.npmjs.org/isomorphic-dompurify/-/isomorphic-dompurify-2.36.0.tgz",
+          "overridden": false,
+          "dependencies": {
+            "dompurify": {
+              "version": "3.4.15",
+              "resolved": "https://registry.npmjs.org/dompurify/-/dompurify-3.4.15.tgz",
+              "overridden": false
+            },
+            "jsdom": {
+              "version": "28.1.0",
+              "resolved": "https://registry.npmjs.org/jsdom/-/jsdom-28.1.0.tgz",
+              "overridden": false,
+              "dependencies": {
+                "undici": {
+                  "version": "7.29.0"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "vitest": {
+      "version": "5.0.1",
+      "resolved": "https://registry.npmjs.org/vitest/-/vitest-5.0.1.tgz",
+      "overridden": false,
+      "dependencies": {
+        "jsdom": {
+          "version": "29.1.1",
+          "resolved": "https://registry.npmjs.org/jsdom/-/jsdom-29.1.1.tgz",
+          "overridden": false,
+          "dependencies": {
+            "undici": {
+              "version": "7.29.0",
+              "resolved": "https://registry.npmjs.org/undici/-/undici-7.29.0.tgz",
+              "overridden": false
+            }
+          }
+        }
+      }
+    }
+  }
+}

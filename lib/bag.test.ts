@@ -69,4 +69,11 @@ describe("bag", () => {
     expect(buildWhatsAppUrl([{ ...item, key: "key", quantity: 1 }], "123")).toBeNull();
     expect(buildWhatsAppUrl([], "+2348001234567")).toBeNull();
   });
+
+  it("rejects corrupt persisted fields rather than crashing the bag", () => {
+    const stored = { ...item, key: "old", quantity: 1 };
+    for (const changed of [{ name: {} }, { price: -1 }, { currency: "bad-currency" }, { image: "https://other.invalid/a.jpg" }, { quantity: null }]) {
+      expect(parseStoredBag(JSON.stringify({ version: 1, items: [{ ...stored, ...changed }] }))).toEqual([]);
+    }
+  });
 });

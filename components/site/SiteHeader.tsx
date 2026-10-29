@@ -39,7 +39,8 @@ export function SiteHeader({
     let previous = window.scrollY;
     const onScroll = () => {
       const next = window.scrollY;
-      setHidden(next > previous && next > 100 && !open);
+      const headerHasFocus = document.activeElement?.closest("header");
+      setHidden(next > previous && next > 100 && !open && !headerHasFocus);
       setOverHomeHero(pathname === "/" && next < window.innerHeight * 0.82);
       previous = next;
     };
@@ -71,16 +72,16 @@ export function SiteHeader({
 
   return (
     <>
-      <header className={`fixed inset-x-0 top-0 z-[80] text-white transition-transform duration-500 ${overHomeHero ? "" : "mix-blend-difference"} ${hidden ? "-translate-y-full" : "translate-y-0"}`}>
+      <header onFocusCapture={() => setHidden(false)} className={`fixed inset-x-0 top-0 z-[80] text-white transition-transform duration-500 focus-within:translate-y-0 focus-within:transition-none ${overHomeHero ? "" : "mix-blend-difference"} ${hidden ? "-translate-y-full" : "translate-y-0"}`}>
         <nav className="site-shell flex h-20 items-center justify-between" aria-label="Primary navigation">
           <Wordmark className="relative z-10" />
           <div className="hidden items-center gap-8 text-[.72rem] uppercase tracking-[.13em] md:flex">
-            {links.map((link) => <Link key={link.href} className="transition-opacity hover:opacity-50" href={link.href} target={link.external ? "_blank" : undefined}>{link.label}</Link>)}
+            {links.map((link) => <Link key={link.href} className="transition-opacity hover:opacity-75" href={link.href} target={link.external ? "_blank" : undefined}>{link.label}</Link>)}
             <BagButton className="uppercase tracking-[.13em]" />
           </div>
           <div className="flex items-center gap-5 text-[.7rem] uppercase tracking-[.12em] md:hidden">
             <BagButton />
-            <button ref={menuButton} type="button" onClick={() => setOpen(true)} aria-label="Open menu" aria-expanded={open}><Menu size={22} strokeWidth={1.4} /></button>
+            <button ref={menuButton} type="button" className="grid h-11 w-11 place-items-center" onClick={() => setOpen(true)} aria-label="Open menu" aria-expanded={open}><Menu size={22} strokeWidth={1.4} /></button>
           </div>
         </nav>
       </header>
@@ -96,7 +97,7 @@ export function SiteHeader({
                 <span className="mr-4 align-top text-[.65rem] tracking-normal">0{index + 1}</span>{link.label}
               </Link>
             ))}
-            <div className="mt-10 flex flex-wrap gap-x-7 gap-y-3 text-[.68rem] uppercase tracking-[.12em] text-white/65">
+            <div className="mt-10 flex flex-wrap gap-x-7 gap-y-3 text-[.68rem] uppercase tracking-[.12em] text-white/75">
               {socialLinks.map((link) => <a key={link.href} href={link.href} target="_blank" rel="noreferrer">{link.label}</a>)}
               <a href={`mailto:${contactEmail}`}>Contact</a>
             </div>

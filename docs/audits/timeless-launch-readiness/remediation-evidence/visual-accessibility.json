@@ -1,0 +1,829 @@
+[
+  {
+    "path": "/",
+    "width": 375,
+    "status": 200,
+    "errors": [],
+    "scrollWidth": 375,
+    "h1": [
+      "Make your style move without permission."
+    ],
+    "images": [
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": false,
+        "natural": 180
+      },
+      {
+        "alt": "Two Timeless models photographed from below against a deep blue sky",
+        "loaded": true,
+        "natural": 1350
+      }
+    ],
+    "canonical": "https://weartimeless.xyz/",
+    "violations": []
+  },
+  {
+    "path": "/shop",
+    "width": 375,
+    "status": 200,
+    "errors": [],
+    "scrollWidth": 375,
+    "h1": [
+      "The First Drop"
+    ],
+    "images": [
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "The First Drop cast assembled on the court",
+        "loaded": true,
+        "natural": 638
+      }
+    ],
+    "canonical": "https://weartimeless.xyz/shop",
+    "violations": []
+  },
+  {
+    "path": "/shop/essential-tee",
+    "width": 375,
+    "status": 200,
+    "errors": [],
+    "scrollWidth": 375,
+    "h1": [
+      "Timeless Essential Tee"
+    ],
+    "images": [
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Model wearing the black Timeless Essential Tee on a sunlit court",
+        "loaded": true,
+        "natural": 310
+      }
+    ],
+    "canonical": "https://weartimeless.xyz/shop/essential-tee",
+    "violations": []
+  },
+  {
+    "path": "/about",
+    "width": 375,
+    "status": 200,
+    "errors": [],
+    "scrollWidth": 375,
+    "h1": [
+      "Identity over imitation."
+    ],
+    "images": [
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Three Timeless models assembled on the painted court",
+        "loaded": true,
+        "natural": 1107
+      }
+    ],
+    "canonical": "https://weartimeless.xyz/about",
+    "violations": []
+  },
+  {
+    "path": "/journal",
+    "width": 375,
+    "status": 200,
+    "errors": [],
+    "scrollWidth": 375,
+    "h1": [
+      "Journal"
+    ],
+    "images": [
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Close view of the Timeless mark embroidered on black cotton",
+        "loaded": true,
+        "natural": 338
+      }
+    ],
+    "canonical": "https://weartimeless.xyz/journal",
+    "violations": []
+  },
+  {
+    "path": "/journal/the-making-of-drop-001",
+    "width": 375,
+    "status": 200,
+    "errors": [],
+    "scrollWidth": 375,
+    "h1": [
+      "The weight of a simple thing"
+    ],
+    "images": [
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Close view of the Timeless mark embroidered on black cotton",
+        "loaded": true,
+        "natural": 338
+      }
+    ],
+    "canonical": "https://weartimeless.xyz/journal/the-making-of-drop-001",
+    "violations": []
+  },
+  {
+    "path": "/in-the-wild",
+    "width": 375,
+    "status": 200,
+    "errors": [],
+    "scrollWidth": 375,
+    "h1": [
+      "In the Wild"
+    ],
+    "images": [
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Three friends wearing Timeless tees on a painted court",
+        "loaded": true,
+        "natural": 514
+      }
+    ],
+    "canonical": "https://weartimeless.xyz/in-the-wild",
+    "violations": []
+  },
+  {
+    "path": "/",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "scrollWidth": 768,
+    "h1": [
+      "Make your style move without permission."
+    ],
+    "images": [
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": false,
+        "natural": 180
+      },
+      {
+        "alt": "Two Timeless models photographed from below against a deep blue sky",
+        "loaded": true,
+        "natural": 1536
+      }
+    ],
+    "canonical": "https://weartimeless.xyz/",
+    "violations": []
+  },
+  {
+    "path": "/shop",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "scrollWidth": 768,
+    "h1": [
+      "The First Drop"
+    ],
+    "images": [
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "The First Drop cast assembled on the court",
+        "loaded": true,
+        "natural": 721
+      },
+      {
+        "alt": "Model wearing the black Timeless Essential Tee on a sunlit court",
+        "loaded": true,
+        "natural": 367
+      }
+    ],
+    "canonical": "https://weartimeless.xyz/shop",
+    "violations": []
+  },
+  {
+    "path": "/shop/essential-tee",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "scrollWidth": 768,
+    "h1": [
+      "Timeless Essential Tee"
+    ],
+    "images": [
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Model wearing the black Timeless Essential Tee on a sunlit court",
+        "loaded": true,
+        "natural": 384
+      },
+      {
+        "alt": "Full-length portrait in the black Timeless Essential Tee",
+        "loaded": true,
+        "natural": 384
+      }
+    ],
+    "canonical": "https://weartimeless.xyz/shop/essential-tee",
+    "violations": []
+  },
+  {
+    "path": "/about",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "scrollWidth": 768,
+    "h1": [
+      "Identity over imitation."
+    ],
+    "images": [
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Three Timeless models assembled on the painted court",
+        "loaded": true,
+        "natural": 1259
+      }
+    ],
+    "canonical": "https://weartimeless.xyz/about",
+    "violations": []
+  },
+  {
+    "path": "/journal",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "scrollWidth": 768,
+    "h1": [
+      "Journal"
+    ],
+    "images": [
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Close view of the Timeless mark embroidered on black cotton",
+        "loaded": true,
+        "natural": 468
+      },
+      {
+        "alt": "Low-angle portrait in a Timeless tee rendered in monochrome",
+        "loaded": true,
+        "natural": 578
+      }
+    ],
+    "canonical": "https://weartimeless.xyz/journal",
+    "violations": []
+  },
+  {
+    "path": "/journal/the-making-of-drop-001",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "scrollWidth": 768,
+    "h1": [
+      "The weight of a simple thing"
+    ],
+    "images": [
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Close view of the Timeless mark embroidered on black cotton",
+        "loaded": true,
+        "natural": 721
+      }
+    ],
+    "canonical": "https://weartimeless.xyz/journal/the-making-of-drop-001",
+    "violations": []
+  },
+  {
+    "path": "/in-the-wild",
+    "width": 768,
+    "status": 200,
+    "errors": [],
+    "scrollWidth": 768,
+    "h1": [
+      "In the Wild"
+    ],
+    "images": [
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Three friends wearing Timeless tees on a painted court",
+        "loaded": true,
+        "natural": 414
+      },
+      {
+        "alt": "A wider group portrait on the court",
+        "loaded": true,
+        "natural": 342
+      },
+      {
+        "alt": "Three friends sharing a candid moment",
+        "loaded": true,
+        "natural": 106
+      }
+    ],
+    "canonical": "https://weartimeless.xyz/in-the-wild",
+    "violations": []
+  },
+  {
+    "path": "/",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "scrollWidth": 1440,
+    "h1": [
+      "Make your style move without permission."
+    ],
+    "images": [
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": false,
+        "natural": 180
+      },
+      {
+        "alt": "Two Timeless models photographed from below against a deep blue sky",
+        "loaded": true,
+        "natural": 1440
+      }
+    ],
+    "canonical": "https://weartimeless.xyz/",
+    "violations": []
+  },
+  {
+    "path": "/shop",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "scrollWidth": 1440,
+    "h1": [
+      "The First Drop"
+    ],
+    "images": [
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "The First Drop cast assembled on the court",
+        "loaded": true,
+        "natural": 1353
+      }
+    ],
+    "canonical": "https://weartimeless.xyz/shop",
+    "violations": []
+  },
+  {
+    "path": "/shop/essential-tee",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "scrollWidth": 1440,
+    "h1": [
+      "Timeless Essential Tee"
+    ],
+    "images": [
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Model wearing the black Timeless Essential Tee on a sunlit court",
+        "loaded": true,
+        "natural": 720
+      }
+    ],
+    "canonical": "https://weartimeless.xyz/shop/essential-tee",
+    "violations": []
+  },
+  {
+    "path": "/about",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "scrollWidth": 1440,
+    "h1": [
+      "Identity over imitation."
+    ],
+    "images": [
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Three Timeless models assembled on the painted court",
+        "loaded": true,
+        "natural": 1440
+      }
+    ],
+    "canonical": "https://weartimeless.xyz/about",
+    "violations": []
+  },
+  {
+    "path": "/journal",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "scrollWidth": 1440,
+    "h1": [
+      "Journal"
+    ],
+    "images": [
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Close view of the Timeless mark embroidered on black cotton",
+        "loaded": true,
+        "natural": 894
+      }
+    ],
+    "canonical": "https://weartimeless.xyz/journal",
+    "violations": []
+  },
+  {
+    "path": "/journal/the-making-of-drop-001",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "scrollWidth": 1440,
+    "h1": [
+      "The weight of a simple thing"
+    ],
+    "images": [
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Close view of the Timeless mark embroidered on black cotton",
+        "loaded": true,
+        "natural": 1255
+      }
+    ],
+    "canonical": "https://weartimeless.xyz/journal/the-making-of-drop-001",
+    "violations": []
+  },
+  {
+    "path": "/in-the-wild",
+    "width": 1440,
+    "status": 200,
+    "errors": [],
+    "scrollWidth": 1440,
+    "h1": [
+      "In the Wild"
+    ],
+    "images": [
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      }
+    ],
+    "canonical": "https://weartimeless.xyz/in-the-wild",
+    "violations": []
+  },
+  {
+    "path": "/",
+    "width": 1920,
+    "status": 200,
+    "errors": [],
+    "scrollWidth": 1920,
+    "h1": [
+      "Make your style move without permission."
+    ],
+    "images": [
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": false,
+        "natural": 180
+      },
+      {
+        "alt": "Two Timeless models photographed from below against a deep blue sky",
+        "loaded": true,
+        "natural": 1920
+      }
+    ],
+    "canonical": "https://weartimeless.xyz/",
+    "violations": []
+  },
+  {
+    "path": "/shop",
+    "width": 1920,
+    "status": 200,
+    "errors": [],
+    "scrollWidth": 1920,
+    "h1": [
+      "The First Drop"
+    ],
+    "images": [
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "The First Drop cast assembled on the court",
+        "loaded": true,
+        "natural": 1808
+      }
+    ],
+    "canonical": "https://weartimeless.xyz/shop",
+    "violations": []
+  },
+  {
+    "path": "/shop/essential-tee",
+    "width": 1920,
+    "status": 200,
+    "errors": [],
+    "scrollWidth": 1920,
+    "h1": [
+      "Timeless Essential Tee"
+    ],
+    "images": [
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Model wearing the black Timeless Essential Tee on a sunlit court",
+        "loaded": true,
+        "natural": 960
+      }
+    ],
+    "canonical": "https://weartimeless.xyz/shop/essential-tee",
+    "violations": []
+  },
+  {
+    "path": "/about",
+    "width": 1920,
+    "status": 200,
+    "errors": [],
+    "scrollWidth": 1920,
+    "h1": [
+      "Identity over imitation."
+    ],
+    "images": [
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Three Timeless models assembled on the painted court",
+        "loaded": true,
+        "natural": 1920
+      }
+    ],
+    "canonical": "https://weartimeless.xyz/about",
+    "violations": []
+  },
+  {
+    "path": "/journal",
+    "width": 1920,
+    "status": 200,
+    "errors": [],
+    "scrollWidth": 1920,
+    "h1": [
+      "Journal"
+    ],
+    "images": [
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Close view of the Timeless mark embroidered on black cotton",
+        "loaded": true,
+        "natural": 1114
+      }
+    ],
+    "canonical": "https://weartimeless.xyz/journal",
+    "violations": []
+  },
+  {
+    "path": "/journal/the-making-of-drop-001",
+    "width": 1920,
+    "status": 200,
+    "errors": [],
+    "scrollWidth": 1920,
+    "h1": [
+      "The weight of a simple thing"
+    ],
+    "images": [
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Close view of the Timeless mark embroidered on black cotton",
+        "loaded": true,
+        "natural": 1677
+      }
+    ],
+    "canonical": "https://weartimeless.xyz/journal/the-making-of-drop-001",
+    "violations": []
+  },
+  {
+    "path": "/in-the-wild",
+    "width": 1920,
+    "status": 200,
+    "errors": [],
+    "scrollWidth": 1920,
+    "h1": [
+      "In the Wild"
+    ],
+    "images": [
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      },
+      {
+        "alt": "Timeless Wordmark",
+        "loaded": true,
+        "natural": 180
+      }
+    ],
+    "canonical": "https://weartimeless.xyz/in-the-wild",
+    "violations": []
+  }
+]

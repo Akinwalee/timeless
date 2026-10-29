@@ -7,12 +7,22 @@ import { useEffect, useRef, useState } from "react";
 import { buildWhatsAppUrl } from "@/lib/bag";
 import { formatMoney } from "@/lib/money";
 import { useBag } from "./BagProvider";
+import { trackEvent } from "@/lib/analytics";
 
 export function BagDrawer({ whatsappNumber }: { whatsappNumber?: string }) {
   const dialog = useRef<HTMLDialogElement>(null);
   const [confirmingClear, setConfirmingClear] = useState(false);
-  const { items, total, open, closeBag, setQuantity, removeItem, clearBag } = useBag();
+  const { items, total, open, persistent, closeBag, setQuantity, removeItem, clearBag } = useBag();
   const checkoutUrl = buildWhatsAppUrl(items, whatsappNumber);
+  const reportedOpen = useRef(false);
+
+  useEffect(() => {
+    if (!open) { reportedOpen.current = false; return; }
+    if (reportedOpen.current) return;
+    reportedOpen.current = true;
+    trackEvent("view_bag", { item_count: items.reduce((sum, item) => sum + item.quantity, 0), value: total / 100, currency: items[0]?.currency || "NGN" });
+    if (items.length && !checkoutUrl) trackEvent("checkout_unavailable", { reason: "not_configured", placement: "bag" });
+  }, [open, items, total, checkoutUrl]);
 
   useEffect(() => {
     const node = dialog.current;
@@ -31,10 +41,11 @@ export function BagDrawer({ whatsappNumber }: { whatsappNumber?: string }) {
       onClick={(event) => { if (event.target === dialog.current) closeBag(); }}
     >
       <div className="flex h-full flex-col">
+        {!persistent && <p role="status" className="border-b border-black/15 px-5 py-3 text-sm">Your bag works for this visit. This browser cannot save it for later.</p>}
         <header className="flex h-20 shrink-0 items-center justify-between border-b border-black/15 px-5 md:px-8">
           <div>
             <p id="bag-title" className="text-sm uppercase tracking-[.14em]">Your bag</p>
-            <p className="mt-1 text-[.65rem] text-black/45">{items.length} {items.length === 1 ? "selection" : "selections"}</p>
+            <p className="mt-1 text-[.65rem] text-muted">{items.length} {items.length === 1 ? "selection" : "selections"}</p>
           </div>
           <button autoFocus type="button" onClick={closeBag} className="grid h-11 w-11 place-items-center" aria-label="Close bag">
             <X size={22} strokeWidth={1.3} />
@@ -44,7 +55,7 @@ export function BagDrawer({ whatsappNumber }: { whatsappNumber?: string }) {
         {items.length === 0 ? (
           <div className="flex flex-1 flex-col items-center justify-center px-8 text-center">
             <p className="display text-6xl">Nothing here yet.</p>
-            <p className="mt-6 max-w-sm text-sm leading-relaxed text-black/50">Choose a colour and size, then add the piece to begin your order.</p>
+            <p className="mt-6 max-w-sm text-sm leading-relaxed text-muted">Choose a colour and size, then add the piece to begin your order.</p>
             <Link href="/shop" onClick={closeBag} className="solid-button mt-10">Explore the drop</Link>
           </div>
         ) : (
@@ -59,9 +70,9 @@ export function BagDrawer({ whatsappNumber }: { whatsappNumber?: string }) {
                     <div className="flex items-start justify-between gap-4">
                       <div>
                         <h3 className="text-base leading-tight">{item.name}</h3>
-                        <p className="mt-2 text-xs text-black/50">{item.colour} · {item.size}</p>
+                        <p className="mt-2 text-xs text-muted">{item.colour} · {item.size}</p>
                       </div>
-                      <button type="button" onClick={() => removeItem(item.key)} className="text-[.65rem] uppercase tracking-[.12em] text-black/45 underline-offset-4 hover:underline">Remove</button>
+                      <button type="button" onClick={() => removeItem(item.key)} className="text-[.65rem] uppercase tracking-[.12em] text-muted underline-offset-4 hover:underline">Remove</button>
                     </div>
                     <div className="mt-auto flex items-end justify-between pt-5">
                       <div className="flex h-10 items-center border border-black/20" aria-label={`Quantity for ${item.name}`}>
@@ -76,21 +87,21 @@ export function BagDrawer({ whatsappNumber }: { whatsappNumber?: string }) {
               ))}
             </div>
             <footer className="shrink-0 border-t border-black/15 bg-white px-5 py-6 md:px-8">
-              <div className="flex items-center justify-between text-lg"><span>Total</span><span>{formatMoney(total, items[0].currency)}</span></div>
-              <p className="mt-2 text-xs text-black/45">Delivery is confirmed with you on WhatsApp.</p>
+              <div className="flex items-center justify-between text-lg"><span>Items subtotal</span><span>{formatMoney(total, items[0].currency)}</span></div>
+              <p className="mt-2 text-xs leading-relaxed text-muted">Shipping is additional. Share your delivery address on WhatsApp for a quote and confirmation of availability and the final total before payment.</p>
               {checkoutUrl ? (
-                <a href={checkoutUrl} target="_blank" rel="noreferrer" className="solid-button mt-6 w-full" aria-label="Continue checkout on WhatsApp">Checkout on WhatsApp</a>
+                <a href={checkoutUrl} onClick={() => trackEvent("checkout_handoff", { item_count: items.reduce((sum, item) => sum + item.quantity, 0), value: total / 100, currency: items[0].currency, placement: "bag" })} target="_blank" rel="noreferrer" className="solid-button mt-6 w-full" aria-label="Continue checkout on WhatsApp">Checkout on WhatsApp</a>
               ) : (
                 <>
                   <button type="button" disabled className="solid-button mt-6 w-full disabled:cursor-not-allowed disabled:opacity-35">Checkout unavailable</button>
-                  <p className="mt-3 text-xs leading-relaxed text-black/50" role="status">WhatsApp checkout is not configured yet. Your bag remains saved.</p>
+                  <p className="mt-3 text-xs leading-relaxed text-muted" role="status">WhatsApp checkout is not configured yet. Your bag remains saved.</p>
                 </>
               )}
               <div className="mt-5 min-h-6 text-center">
                 {confirmingClear ? (
                   <p className="text-xs">Clear every item? <button type="button" onClick={() => { clearBag(); setConfirmingClear(false); }} className="ml-2 underline">Yes, clear</button><button type="button" onClick={() => setConfirmingClear(false)} className="ml-3 underline">Keep bag</button></p>
                 ) : (
-                  <button type="button" onClick={() => setConfirmingClear(true)} className="text-[.65rem] uppercase tracking-[.12em] text-black/45">Clear bag</button>
+                  <button type="button" onClick={() => setConfirmingClear(true)} className="text-[.65rem] uppercase tracking-[.12em] text-muted">Clear bag</button>
                 )}
               </div>
             </footer>

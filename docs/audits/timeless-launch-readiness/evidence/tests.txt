@@ -1,0 +1,13 @@
+
+> timeless@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.1 /private/tmp/timeless-launch-audit
+
+
+ Test Files  4 passed (4)
+      Tests  19 passed (19)
+   Start at  08:01:03
+   Duration  487ms (transform 64%, tests 17%, import 15%, worker 4%)
+

@@ -21,6 +21,8 @@ import {
   type AddBagItem,
 } from "@/lib/bag";
 import { BagDrawer } from "./BagDrawer";
+import { readStorage, writeStorage } from "@/lib/storage";
+import { trackEvent } from "@/lib/analytics";
 
 type BagContextValue = {
   items: ReturnType<typeof parseStoredBag>;
@@ -28,6 +30,7 @@ type BagContextValue = {
   total: number;
   open: boolean;
   hydrated: boolean;
+  persistent: boolean;
   openBag: () => void;
   closeBag: () => void;
   addItem: (item: AddBagItem) => void;
@@ -49,7 +52,8 @@ export function BagProvider({
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    dispatch({ type: "hydrate", items: parseStoredBag(window.localStorage.getItem(BAG_STORAGE_KEY)) });
+    const stored = readStorage("localStorage", BAG_STORAGE_KEY);
+    dispatch({ type: "hydrate", items: parseStoredBag(stored.value), persistent: stored.available });
     const sync = (event: StorageEvent) => {
       if (event.key === BAG_STORAGE_KEY) {
         dispatch({ type: "hydrate", items: parseStoredBag(event.newValue) });
@@ -60,11 +64,15 @@ export function BagProvider({
   }, []);
 
   useEffect(() => {
-    if (state.hydrated) window.localStorage.setItem(BAG_STORAGE_KEY, serializeBag(state.items));
-  }, [state.hydrated, state.items]);
+    if (state.hydrated) {
+      const available = writeStorage("localStorage", BAG_STORAGE_KEY, serializeBag(state.items));
+      if (available !== state.persistent) dispatch({ type: "storage", available });
+    }
+  }, [state.hydrated, state.items, state.persistent]);
 
   const addItem = useCallback((item: AddBagItem) => {
     dispatch({ type: "add", item });
+    trackEvent("add_to_bag", { product_id: item.productId, variant_id: item.variantId, size: item.size, quantity: item.quantity || 1, currency: item.currency, value: item.price / 100 });
     setOpen(true);
   }, []);
 
@@ -74,13 +82,14 @@ export function BagProvider({
     total: bagTotal(state.items),
     open,
     hydrated: state.hydrated,
+    persistent: state.persistent,
     openBag: () => setOpen(true),
     closeBag: () => setOpen(false),
     addItem,
-    setQuantity: (key, quantity) => dispatch({ type: "quantity", key, quantity }),
-    removeItem: (key) => dispatch({ type: "remove", key }),
-    clearBag: () => dispatch({ type: "clear" }),
-  }), [addItem, open, state.hydrated, state.items]);
+    setQuantity: (key, quantity) => { dispatch({ type: "quantity", key, quantity }); trackEvent("update_bag", { action: "quantity", quantity }); },
+    removeItem: (key) => { dispatch({ type: "remove", key }); trackEvent("update_bag", { action: "remove" }); },
+    clearBag: () => { dispatch({ type: "clear" }); trackEvent("update_bag", { action: "clear" }); },
+  }), [addItem, open, state.persistent, state.hydrated, state.items]);
 
   return (
     <BagContext.Provider value={value}>

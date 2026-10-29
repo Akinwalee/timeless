@@ -1,0 +1,39 @@
+
+> timeless@0.1.0 build
+> next build --webpack
+
+▲ Next.js 16.2.6 (webpack)
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 40s
+  Running TypeScript ...
+  Finished TypeScript in 7.5s ...
+  Collecting page data using 7 workers ...
+  Generating static pages using 7 workers (0/12) ...
+  Generating static pages using 7 workers (3/12) 
+  Generating static pages using 7 workers (6/12) 
+  Generating static pages using 7 workers (9/12) 
+✓ Generating static pages using 7 workers (12/12) in 4.2s
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /about
+├ ○ /in-the-wild
+├ ○ /journal
+├ ● /journal/[slug]
+│ ├ /journal/the-making-of-drop-001
+│ ├ /journal/identity-is-not-static
+│ └ /journal/first-frame
+├ ○ /shop
+├ ● /shop/[slug]
+│ └ /shop/essential-tee
+└ ƒ /studio/[[...tool]]
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+

@@ -20,6 +20,7 @@
   --color-graphite: var(--graphite);
   --color-silver: var(--silver);
   --color-bone: var(--bone);
+  --color-muted: #595959;
   --font-sans: var(--font-host);
   --font-script: var(--font-script);
 }
@@ -51,7 +52,7 @@ button { color: inherit; }
 img { background: #e9e8e4; }
 .brand-wordmark { background: transparent; }
 ::selection { background: var(--ink); color: var(--paper); }
-:focus-visible { outline: 1px solid currentColor; outline-offset: 4px; }
+:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
 
 .skip-link {
   position: fixed; left: 1rem; top: -4rem; z-index: 200;
@@ -62,17 +63,16 @@ img { background: #e9e8e4; }
 .site-shell { padding-inline: var(--gutter); }
 .section-space { padding-block: var(--section); }
 .display {
-  font-family: "Arial Narrow", "Helvetica Neue Condensed", var(--font-host), sans-serif;
-  font-stretch: condensed;
+  font-family: var(--font-host), sans-serif;
   font-weight: 500;
   letter-spacing: -.075em;
-  line-height: .84;
+  line-height: .9;
 }
 .script { font-family: var(--font-script), cursive; font-weight: 400; }
 .eyebrow { font-size: .67rem; line-height: 1; letter-spacing: .18em; text-transform: uppercase; }
 .editorial-copy { max-width: 42rem; font-size: clamp(1.15rem, 1.7vw, 1.55rem); line-height: 1.35; letter-spacing: -.02em; }
 .hairline { border-color: var(--line); }
-.image-frame { position: relative; overflow: hidden; background: #deddd8; }
+.image-frame { min-width: 0; max-width: 100%; position: relative; overflow: hidden; background: #deddd8; }
 .image-frame > img { object-fit: cover; }
 .text-link {
   display: inline-flex; align-items: center; gap: .75rem;
@@ -92,7 +92,7 @@ img { background: #e9e8e4; }
 .solid-button.inverse:hover { background: transparent; color: var(--paper); }
 .page-intro { padding: clamp(8rem, 15vw, 14rem) var(--gutter) clamp(4rem, 7vw, 7rem); }
 .page-title { font-size: clamp(4.8rem, 14vw, 14rem); }
-.route-transition { transform-origin: top; }
+.route-transition { transform-origin: top; transform: scaleY(0); }
 .responsive-content-image {
   object-position: var(--image-position, center);
 }
@@ -139,4 +139,8 @@ img { background: #e9e8e4; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .route-transition { transform: scaleY(0) !important; }
 }

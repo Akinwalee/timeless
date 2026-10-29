@@ -1,30 +1,27 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { getInTheWildEntries } from "@/sanity/lib/fetch";
 import { ImageReveal, Reveal } from "@/components/motion/Reveal";
 import { columnImageSizes } from "@/lib/images";
 import { ResponsiveImage } from "@/components/media/ResponsiveImage";
 
-export const metadata: Metadata = {
-  title: "In the Wild",
-  description: "Timeless worn in real rooms, streets, friendships and journeys.",
-};
+export const metadata = pageMetadata('In the Wild', 'Timeless worn in real rooms, streets, friendships and journeys.', '/in-the-wild');
 
 export default async function InTheWildPage() {
   const entries = await getInTheWildEntries();
   return (
     <main id="main-content">
       <header className="page-intro pb-14">
-        <p className="eyebrow text-black/45">Field archive / 2026</p>
+        <p className="eyebrow text-muted">Field archive / 2026</p>
         <h1 className="display page-title mt-6">In the Wild</h1>
-        <p className="mt-8 max-w-2xl text-xl leading-relaxed text-black/55">Once the clothing leaves the controlled campaign environment, it becomes part of real rooms, streets, friendships and journeys.</p>
+        <p className="mt-8 max-w-2xl text-xl leading-relaxed text-muted">Once the clothing leaves the controlled campaign environment, it becomes part of real rooms, streets, friendships and journeys.</p>
       </header>
       {entries.length ? (
         <div className="pb-[var(--section)]">
           {entries.map((entry, index) => (
             <article id={entry.slug} key={entry.id} className="site-shell border-t border-black/20 py-16 md:py-24">
               <Reveal className="mb-10 grid gap-7 md:grid-cols-[.65fr_1.35fr] md:items-end">
-                <div><p className="eyebrow text-black/45">{String(index + 1).padStart(2, "0")} / {entry.location}</p><p className="mt-4 text-xs text-black/45">{entry.date} · {entry.pieceWorn}</p></div>
-                <div><h2 className="display text-[clamp(4rem,8vw,9rem)]">{entry.title}</h2>{entry.note && <p className="mt-6 max-w-xl text-sm leading-relaxed text-black/55">{entry.note}</p>}</div>
+                <div><p className="eyebrow text-muted">{String(index + 1).padStart(2, "0")} / {entry.location}</p><p className="mt-4 text-xs text-muted">{entry.date} · {entry.pieceWorn}</p></div>
+                <div><h2 className="display text-[clamp(4rem,8vw,9rem)]">{entry.title}</h2>{entry.note && <p className="mt-6 max-w-xl text-sm leading-relaxed text-muted">{entry.note}</p>}</div>
               </Reveal>
               <div className="grid gap-4 md:grid-cols-12 md:items-start">
                 {entry.images.slice(0, 3).map((image, imageIndex) => (

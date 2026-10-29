@@ -49,17 +49,21 @@ async function fetchPublished<T>(
   tags: string[] = [],
 ) {
   const client = getSanityClient();
-  if (!client) return { configured: false as const, data: null as T | null };
+  if (!client) return { configured: false as const, data: null as T | null, unavailable: false };
 
   try {
     const data = await client.fetch<T>(query, params, {
       next: { revalidate: 60, tags },
     });
-    return { configured: true as const, data };
-  } catch (error) {
-    console.warn("Sanity content fetch failed; using local fallback content.", error);
-    return { configured: false as const, data: null as T | null };
+    return { configured: true as const, data, unavailable: false };
+  } catch {
+    console.warn("Sanity published content unavailable; commerce content is withheld.");
+    return { configured: true as const, data: null as T | null, unavailable: true };
   }
+}
+
+function requirePublishedContent(result: { unavailable: boolean }) {
+  if (result.unavailable) throw new Error("Published content is temporarily unavailable. Please try again.");
 }
 
 function mapProduct(raw: RawProduct): Product | null {
@@ -76,11 +80,12 @@ function mapProduct(raw: RawProduct): Product | null {
     }];
   });
 
-  if (!raw.id || !raw.slug || !raw.name || variants.length === 0) return null;
+  if (!raw.id || !raw.slug || !raw.name || variants.length === 0 ||
+      !Number.isSafeInteger(raw.price) || raw.price < 0 || !/^[A-Z]{3}$/.test(raw.currency || "")) return null;
   return {
     ...raw,
     shortName: raw.shortName || raw.name,
-    status: raw.status || "available",
+    status: ["available", "coming-soon", "sold-out", "archived"].includes(raw.status) ? raw.status : "coming-soon",
     drop: raw.drop || "",
     description: raw.description || "",
     price: Number(raw.price || 0),
@@ -163,6 +168,7 @@ function mapInTheWild(raw: RawInTheWild): InTheWildEntry | null {
 
 export async function getProducts(): Promise<Product[]> {
   const result = await fetchPublished<RawProduct[]>(PRODUCTS_QUERY, {}, ["product"]);
+  requirePublishedContent(result);
   if (!result.configured) return [fallbackProduct];
   return (result.data || []).flatMap((item) => {
     const mapped = mapProduct(item);
@@ -172,12 +178,14 @@ export async function getProducts(): Promise<Product[]> {
 
 export async function getProduct(slug: string): Promise<Product | null> {
   const result = await fetchPublished<RawProduct | null>(PRODUCT_QUERY, { slug }, [`product:${slug}`]);
+  requirePublishedContent(result);
   if (!result.configured) return slug === fallbackProduct.slug ? fallbackProduct : null;
   return result.data ? mapProduct(result.data) : null;
 }
 
 export async function getJournalEntries(): Promise<JournalEntry[]> {
   const result = await fetchPublished<RawJournal[]>(JOURNAL_QUERY, {}, ["journal"]);
+  requirePublishedContent(result);
   if (!result.configured) return fallbackJournal;
   return (result.data || []).flatMap((item) => {
     const mapped = mapJournal(item);
@@ -187,12 +195,14 @@ export async function getJournalEntries(): Promise<JournalEntry[]> {
 
 export async function getJournalEntry(slug: string): Promise<JournalEntry | null> {
   const result = await fetchPublished<RawJournal | null>(JOURNAL_ENTRY_QUERY, { slug }, [`journal:${slug}`]);
+  requirePublishedContent(result);
   if (!result.configured) return fallbackJournal.find((entry) => entry.slug === slug) || null;
   return result.data ? mapJournal(result.data) : null;
 }
 
 export async function getInTheWildEntries(): Promise<InTheWildEntry[]> {
   const result = await fetchPublished<RawInTheWild[]>(IN_THE_WILD_QUERY, {}, ["inTheWild"]);
+  requirePublishedContent(result);
   if (!result.configured) return fallbackInTheWild;
   return (result.data || []).flatMap((item) => {
     const mapped = mapInTheWild(item);

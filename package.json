@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": "22.x"
+    "node": ">=22.12.0 <23"
   },
   "scripts": {
     "dev": "next dev",
@@ -14,32 +14,48 @@
     "test": "vitest run",
     "sanity": "sanity",
     "sanity:seed": "sanity exec scripts/seed-sanity.ts --with-user-token -- --apply",
-    "sanity:seed:dry": "sanity exec scripts/seed-sanity.ts -- --dry-run"
+    "sanity:seed:dry": "sanity exec scripts/seed-sanity.ts -- --dry-run",
+    "test:e2e": "playwright test",
+    "check:launch": "node scripts/check-launch.mjs"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
     "@sanity/image-url": "^2.1.1",
+    "@sentry/nextjs": "^11.9.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "gsap": "^3.15.0",
     "lucide-react": "^1.16.0",
-    "next": "16.2.6",
-    "next-sanity": "^13.3.4",
-    "react": "19.3.0",
-    "react-dom": "19.3.0",
-    "sanity": "^6.15.0",
+    "next": "^16.4.3",
+    "next-sanity": "^13.4.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "sanity": "^6.20.0",
     "styled-components": "^6.5.3",
     "tailwind-merge": "^3.6.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.64.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^22.0.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.2.6",
+    "eslint-config-next": "^16.4.3",
     "tailwindcss": "^4",
     "typescript": "^5",
-    "vitest": "^5.0.1"
+    "vitest": "^5.0.5"
+  },
+  "overrides": {
+    "@vercel/frameworks": {
+      "js-yaml": "^3.15.2",
+      "smol-toml": "^1.8.1"
+    },
+    "@module-federation/dts-plugin": {
+      "undici": "^7.30.1"
+    },
+    "typeid-js": {
+      "uuid": "^11.1.1"
+    }
   }
 }

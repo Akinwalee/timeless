@@ -31,10 +31,10 @@ export function FeaturedProduct({ product }: { product: Product }) {
         <ProductColourSelector variants={product.variants} selectedId={variant.id} onChange={setVariantId} onIntent={(id) => { const image = product.variants.find((item) => item.id === id)?.primaryImage; if (image) warm(image); }} className="mt-4 md:hidden" />
       </div>
       <div className="md:pl-[3vw]">
-        <p className="eyebrow text-black/50">{product.drop} / 001</p>
+        <p className="eyebrow text-muted">{product.drop} / 001</p>
         <h2 className="display mt-6 text-[clamp(4rem,7vw,8rem)]">The {product.shortName}.</h2>
         <p className="mt-7 text-xl">{formatMoney(product.price, product.currency)}</p>
-        <p className="mt-8 max-w-xs text-sm leading-relaxed text-black/55">One deliberate piece, made to begin where your styling takes over.</p>
+        <p className="mt-8 max-w-xs text-sm leading-relaxed text-muted">One deliberate piece, made to begin where your styling takes over.</p>
         <fieldset className="product-colour-selector mt-7 hidden md:block">
           <legend className="sr-only">Select colour</legend>
           <div className="flex flex-wrap gap-2" aria-label={`Selected colour: ${variant.name}`}>

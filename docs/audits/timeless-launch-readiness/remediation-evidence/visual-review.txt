@@ -1,0 +1,198 @@
+[
+  {
+    "path": "/",
+    "width": 375,
+    "overflow": false,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "path": "/shop",
+    "width": 375,
+    "overflow": false,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "path": "/shop/essential-tee",
+    "width": 375,
+    "overflow": false,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "path": "/about",
+    "width": 375,
+    "overflow": false,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "path": "/journal",
+    "width": 375,
+    "overflow": false,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "path": "/journal/the-making-of-drop-001",
+    "width": 375,
+    "overflow": false,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "path": "/in-the-wild",
+    "width": 375,
+    "overflow": false,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "path": "/",
+    "width": 768,
+    "overflow": false,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "path": "/shop",
+    "width": 768,
+    "overflow": false,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "path": "/shop/essential-tee",
+    "width": 768,
+    "overflow": false,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "path": "/about",
+    "width": 768,
+    "overflow": false,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "path": "/journal",
+    "width": 768,
+    "overflow": false,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "path": "/journal/the-making-of-drop-001",
+    "width": 768,
+    "overflow": false,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "path": "/in-the-wild",
+    "width": 768,
+    "overflow": false,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "path": "/",
+    "width": 1440,
+    "overflow": false,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "path": "/shop",
+    "width": 1440,
+    "overflow": false,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "path": "/shop/essential-tee",
+    "width": 1440,
+    "overflow": false,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "path": "/about",
+    "width": 1440,
+    "overflow": false,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "path": "/journal",
+    "width": 1440,
+    "overflow": false,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "path": "/journal/the-making-of-drop-001",
+    "width": 1440,
+    "overflow": false,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "path": "/in-the-wild",
+    "width": 1440,
+    "overflow": false,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "path": "/",
+    "width": 1920,
+    "overflow": false,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "path": "/shop",
+    "width": 1920,
+    "overflow": false,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "path": "/shop/essential-tee",
+    "width": 1920,
+    "overflow": false,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "path": "/about",
+    "width": 1920,
+    "overflow": false,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "path": "/journal",
+    "width": 1920,
+    "overflow": false,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "path": "/journal/the-making-of-drop-001",
+    "width": 1920,
+    "overflow": false,
+    "errors": [],
+    "axe": []
+  },
+  {
+    "path": "/in-the-wild",
+    "width": 1920,
+    "overflow": false,
+    "errors": [],
+    "axe": []
+  }
+]

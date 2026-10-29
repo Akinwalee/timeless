@@ -35,14 +35,14 @@ export function IdentitySequence() {
 
   return (
     <section id="identity-in-motion" ref={section} className="relative min-h-svh overflow-hidden bg-black text-white" aria-label="Identity in Motion">
-      <div className="absolute left-[var(--gutter)] top-24 z-20 max-w-2xl"><p className="eyebrow mb-4 text-white/60">Identity in Motion</p><h2 className="display text-[clamp(3.5rem,8vw,8rem)]">Worn by every version of you.</h2></div>
+      <div className="absolute left-[var(--gutter)] top-24 z-20 max-w-2xl"><p className="eyebrow mb-4 text-white/75">Identity in Motion</p><h2 className="display text-[clamp(3.5rem,8vw,8rem)]">Worn by every version of you.</h2></div>
       <div ref={framesRef} className="relative z-10 space-y-4 px-[var(--gutter)] pb-12 pt-[22rem] md:absolute md:inset-0 md:left-[38%] md:space-y-0 md:p-0">
         {identityFrames.map((frame, index) => <div key={frame.image} className="identity-frame relative aspect-[3/4] overflow-hidden md:absolute md:inset-0 md:aspect-auto" style={{ zIndex: identityFrames.length - index }}><Image src={frame.image} alt={frame.alt} fill sizes={IMAGE_SIZES.identity} className="object-cover" style={{ objectPosition: frame.position }} /><p className="absolute inset-x-4 bottom-4 text-2xl md:hidden">{frame.words}</p></div>)}
       </div>
       <div className="absolute bottom-10 left-[var(--gutter)] z-30 hidden h-20 overflow-hidden md:block">
         {identityFrames.map((frame, index) => <p key={frame.words} className={`identity-label absolute bottom-0 whitespace-nowrap text-[clamp(1.6rem,3vw,3rem)] ${index ? "opacity-0" : ""}`}>{frame.words}</p>)}
       </div>
-      <p className="absolute bottom-8 right-[var(--gutter)] z-30 hidden text-[.65rem] uppercase tracking-[.16em] text-white/55 md:block"></p>
+      <p className="absolute bottom-8 right-[var(--gutter)] z-30 hidden text-[.65rem] uppercase tracking-[.16em] text-white/75 md:block"></p>
     </section>
   );
 }

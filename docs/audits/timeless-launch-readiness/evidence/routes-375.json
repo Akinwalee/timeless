@@ -1,0 +1,1541 @@
+[
+  {
+    "route": "/",
+    "status": 200,
+    "errors": [],
+    "h1": [],
+    "title": "Timeless — Style Without Limit",
+    "overflow": false,
+    "meta": [
+      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+      "<meta name=\"next-size-adjust\" content=\"\">",
+      "<meta name=\"description\" content=\"Timeless is an independent Nigerian fashion label built around identity, movement and unrestricted expression.\">"
+    ],
+    "links": [
+      {
+        "text": "Skip to content",
+        "href": "#main-content"
+      },
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "Shop",
+        "href": "/shop"
+      },
+      {
+        "text": "In the Wild",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "Journal",
+        "href": "/journal"
+      },
+      {
+        "text": "About",
+        "href": "/about"
+      },
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "01Shop",
+        "href": "/shop"
+      },
+      {
+        "text": "02In the Wild",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "03Journal",
+        "href": "/journal"
+      },
+      {
+        "text": "04About",
+        "href": "/about"
+      },
+      {
+        "text": "Instagram",
+        "href": "#"
+      },
+      {
+        "text": "Contact",
+        "href": "mailto:hello@timeless.ng"
+      },
+      {
+        "text": "Explore the first drop ↗",
+        "href": "/shop"
+      },
+      {
+        "text": "View the piece ",
+        "href": "/shop/essential-tee"
+      },
+      {
+        "text": "Discover Timeless ",
+        "href": "/about"
+      },
+      {
+        "text": "Enter the archive ",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "Enter the archive ",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "Journal 003 · ProcessThe weight of a simple thingOn fabric, proportion and the choices that make simplicity feel intentional.July 2026 ",
+        "href": "/journal/the-making-of-drop-001"
+      },
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "Shop",
+        "href": "/shop"
+      },
+      {
+        "text": "In the Wild",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "Journal",
+        "href": "/journal"
+      },
+      {
+        "text": "About",
+        "href": "/about"
+      },
+      {
+        "text": "Instagram",
+        "href": "#"
+      },
+      {
+        "text": "Contact",
+        "href": "mailto:hello@timeless.ng"
+      },
+      {
+        "text": "Shipping",
+        "href": "#"
+      },
+      {
+        "text": "Returns",
+        "href": "#"
+      },
+      {
+        "text": "Privacy",
+        "href": "#"
+      },
+      {
+        "text": "Terms",
+        "href": "#"
+      },
+      {
+        "text": "Explore the drop",
+        "href": "/shop"
+      }
+    ],
+    "violations": [
+      {
+        "id": "aria-prohibited-attr",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".hero-copy"
+            ],
+            "html": "<p class=\"hero-copy display max-w-[11ch] text-[clamp(4.4rem,11vw,12rem)]\" aria-label=\"Make your style move without permission.\">",
+            "failure": "Fix all of the following:\n  aria-label attribute cannot be used on a p with no valid role attribute."
+          }
+        ]
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".ml-3"
+            ],
+            "html": "<span class=\"ml-3 normal-case tracking-normal text-black/50\">Black</span>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".md\\:pl-\\[3vw\\] > .text-black\\/50.eyebrow"
+            ],
+            "html": "<p class=\"eyebrow text-black/50\">Drop 001<!-- --> / 001</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 8.0pt (10.72px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".text-white\\/45"
+            ],
+            "html": "<p class=\"eyebrow text-white/45\">Field archive</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 4.42 (foreground color: #737373, background color: #000000, font size: 8.0pt (10.72px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".mb-16 > div > .text-black\\/50.eyebrow"
+            ],
+            "html": "<p class=\"eyebrow text-black/50\">Journal / Latest</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 8.0pt (10.72px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".border-black\\/20.pt-4.flex-col > .text-black\\/50.eyebrow"
+            ],
+            "html": "<p class=\"eyebrow text-black/50\">Journal 003<!-- --> · <!-- -->Process</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 8.0pt (10.72px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".min-h-\\[70svh\\] > div:nth-child(1) > .text-black\\/50.eyebrow"
+            ],
+            "html": "<p class=\"eyebrow text-black/50\">Community</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 8.0pt (10.72px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      },
+      {
+        "id": "scrollable-region-focusable",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".editorial-carousel"
+            ],
+            "html": "<div class=\"editorial-carousel mt-14 flex snap-x snap-mandatory gap-4 overflow-x-auto overscroll-x-contain pl-[var(--gutter)] pr-[12vw] md:gap-7 md:pr-[18vw]\">",
+            "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "route": "/shop",
+    "status": 200,
+    "errors": [],
+    "h1": [
+      "The First Drop"
+    ],
+    "title": "Shop — Timeless",
+    "overflow": false,
+    "meta": [
+      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+      "<meta name=\"next-size-adjust\" content=\"\">",
+      "<meta name=\"description\" content=\"Timeless is an independent Nigerian fashion label built around identity, movement and unrestricted expression.\">"
+    ],
+    "links": [
+      {
+        "text": "Skip to content",
+        "href": "#main-content"
+      },
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "Shop",
+        "href": "/shop"
+      },
+      {
+        "text": "In the Wild",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "Journal",
+        "href": "/journal"
+      },
+      {
+        "text": "About",
+        "href": "/about"
+      },
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "01Shop",
+        "href": "/shop"
+      },
+      {
+        "text": "02In the Wild",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "03Journal",
+        "href": "/journal"
+      },
+      {
+        "text": "04About",
+        "href": "/about"
+      },
+      {
+        "text": "Instagram",
+        "href": "#"
+      },
+      {
+        "text": "Contact",
+        "href": "mailto:hello@timeless.ng"
+      },
+      {
+        "text": "View",
+        "href": "/shop/essential-tee"
+      },
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "Shop",
+        "href": "/shop"
+      },
+      {
+        "text": "In the Wild",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "Journal",
+        "href": "/journal"
+      },
+      {
+        "text": "About",
+        "href": "/about"
+      },
+      {
+        "text": "Instagram",
+        "href": "#"
+      },
+      {
+        "text": "Contact",
+        "href": "mailto:hello@timeless.ng"
+      },
+      {
+        "text": "Shipping",
+        "href": "#"
+      },
+      {
+        "text": "Returns",
+        "href": "#"
+      },
+      {
+        "text": "Privacy",
+        "href": "#"
+      },
+      {
+        "text": "Terms",
+        "href": "#"
+      },
+      {
+        "text": "Explore the drop",
+        "href": "/shop"
+      }
+    ],
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".page-intro > .eyebrow.text-black\\/50"
+            ],
+            "html": "<p class=\"eyebrow text-black/50\">Drop 001 / 2026</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 8.0pt (10.72px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".ml-3"
+            ],
+            "html": "<span class=\"ml-3 normal-case tracking-normal text-black/50\">Black</span>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".order-4"
+            ],
+            "html": "<p class=\"order-4 col-span-full mt-2 text-[.64rem] uppercase tracking-[.12em] text-black/45\">Black<!-- --> · <!-- -->3<!-- --> <!-- -->colours</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.36 (foreground color: #8c8c8c, background color: #ffffff, font size: 7.7pt (10.24px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      "aria-prohibited-attr",
+      "color-contrast"
+    ]
+  },
+  {
+    "route": "/shop/essential-tee",
+    "status": 200,
+    "errors": [],
+    "h1": [
+      "Timeless Essential Tee"
+    ],
+    "title": "Timeless Essential Tee — Timeless",
+    "overflow": false,
+    "meta": [
+      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+      "<meta name=\"next-size-adjust\" content=\"\">",
+      "<meta name=\"description\" content=\"A relaxed everyday tee shaped for movement, layering and your own interpretation.\">"
+    ],
+    "links": [
+      {
+        "text": "Skip to content",
+        "href": "#main-content"
+      },
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "Shop",
+        "href": "/shop"
+      },
+      {
+        "text": "In the Wild",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "Journal",
+        "href": "/journal"
+      },
+      {
+        "text": "About",
+        "href": "/about"
+      },
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "01Shop",
+        "href": "/shop"
+      },
+      {
+        "text": "02In the Wild",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "03Journal",
+        "href": "/journal"
+      },
+      {
+        "text": "04About",
+        "href": "/about"
+      },
+      {
+        "text": "Instagram",
+        "href": "#"
+      },
+      {
+        "text": "Contact",
+        "href": "mailto:hello@timeless.ng"
+      },
+      {
+        "text": "Size guide",
+        "href": "#size-guide"
+      },
+      {
+        "text": "The weight of a simple thingProcess · July 2026 →",
+        "href": "/journal/the-making-of-drop-001"
+      },
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "Shop",
+        "href": "/shop"
+      },
+      {
+        "text": "In the Wild",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "Journal",
+        "href": "/journal"
+      },
+      {
+        "text": "About",
+        "href": "/about"
+      },
+      {
+        "text": "Instagram",
+        "href": "#"
+      },
+      {
+        "text": "Contact",
+        "href": "mailto:hello@timeless.ng"
+      },
+      {
+        "text": "Shipping",
+        "href": "#"
+      },
+      {
+        "text": "Returns",
+        "href": "#"
+      },
+      {
+        "text": "Privacy",
+        "href": "#"
+      },
+      {
+        "text": "Terms",
+        "href": "#"
+      },
+      {
+        "text": "Explore the drop",
+        "href": "/shop"
+      }
+    ],
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".mx-\\[var\\(--gutter\\)\\] > .mb-3 > .ml-3.normal-case.tracking-normal"
+            ],
+            "html": "<span class=\"ml-3 normal-case tracking-normal text-black/50\">Black</span>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".py-10 > .eyebrow.text-black\\/50"
+            ],
+            "html": "<p class=\"eyebrow text-black/50\">Drop 001</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 8.0pt (10.72px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".mt-3.text-black\\/50[role=\"status\"]"
+            ],
+            "html": "<p class=\"mt-3 text-xs text-black/50\" role=\"status\">Choose a size before adding this piece.</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".md\\:grid-cols-\\[\\.7fr_1\\.3fr\\] > .eyebrow.text-black\\/50"
+            ],
+            "html": "<p class=\"eyebrow text-black/50\">The piece.</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 8.0pt (10.72px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".py-20 > .eyebrow.text-black\\/50"
+            ],
+            "html": "<p class=\"eyebrow text-black/50\">Fit / relaxed</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.85 (foreground color: #797977, background color: #f2f1ed, font size: 8.0pt (10.72px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".py-\\[var\\(--section\\)\\]:nth-child(4) > .eyebrow.text-black\\/50"
+            ],
+            "html": "<p class=\"eyebrow text-black/50\">Worn your way.</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 8.0pt (10.72px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".md\\:justify-self-end > .product-colour-selector > .mb-3 > .ml-3.normal-case.tracking-normal"
+            ],
+            "html": "<span class=\"ml-3 normal-case tracking-normal text-black/50\">Black</span>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".py-\\[var\\(--section\\)\\].border-black\\/15.border-t > .eyebrow.text-black\\/50"
+            ],
+            "html": "<p class=\"eyebrow text-black/50\">Continue exploring</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 8.0pt (10.72px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "div:nth-child(1) > .mt-6.text-black\\/50.text-sm"
+            ],
+            "html": "<p class=\"mt-6 text-sm text-black/50\">Process<!-- --> · <!-- -->July 2026<!-- --> →</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #808080, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "route": "/about",
+    "status": 200,
+    "errors": [],
+    "h1": [
+      "Identity over imitation."
+    ],
+    "title": "About — Timeless",
+    "overflow": false,
+    "meta": [
+      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+      "<meta name=\"next-size-adjust\" content=\"\">",
+      "<meta name=\"description\" content=\"Timeless is an independent Nigerian fashion label built around identity, movement and unrestricted expression.\">"
+    ],
+    "links": [
+      {
+        "text": "Skip to content",
+        "href": "#main-content"
+      },
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "Shop",
+        "href": "/shop"
+      },
+      {
+        "text": "In the Wild",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "Journal",
+        "href": "/journal"
+      },
+      {
+        "text": "About",
+        "href": "/about"
+      },
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "01Shop",
+        "href": "/shop"
+      },
+      {
+        "text": "02In the Wild",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "03Journal",
+        "href": "/journal"
+      },
+      {
+        "text": "04About",
+        "href": "/about"
+      },
+      {
+        "text": "Instagram",
+        "href": "#"
+      },
+      {
+        "text": "Contact",
+        "href": "mailto:hello@timeless.ng"
+      },
+      {
+        "text": "Explore the first drop ",
+        "href": "/shop"
+      },
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "Shop",
+        "href": "/shop"
+      },
+      {
+        "text": "In the Wild",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "Journal",
+        "href": "/journal"
+      },
+      {
+        "text": "About",
+        "href": "/about"
+      },
+      {
+        "text": "Instagram",
+        "href": "#"
+      },
+      {
+        "text": "Contact",
+        "href": "mailto:hello@timeless.ng"
+      },
+      {
+        "text": "Shipping",
+        "href": "#"
+      },
+      {
+        "text": "Returns",
+        "href": "#"
+      },
+      {
+        "text": "Privacy",
+        "href": "#"
+      },
+      {
+        "text": "Terms",
+        "href": "#"
+      },
+      {
+        "text": "Explore the drop",
+        "href": "/shop"
+      }
+    ],
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".text-black\\/45.pt-2.eyebrow"
+            ],
+            "html": "<p class=\"eyebrow pt-2 text-black/45\">The beginning / Nigeria</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.36 (foreground color: #8c8c8c, background color: #ffffff, font size: 8.0pt (10.72px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".mb-20 > .text-black\\/45.eyebrow"
+            ],
+            "html": "<p class=\"eyebrow text-black/45\">What Timeless believes</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.36 (foreground color: #8c8c8c, background color: #ffffff, font size: 8.0pt (10.72px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".pb-8 > .text-black\\/45.eyebrow"
+            ],
+            "html": "<p class=\"eyebrow text-black/45\">Where it is going</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.36 (foreground color: #8c8c8c, background color: #ffffff, font size: 8.0pt (10.72px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "route": "/journal",
+    "status": 200,
+    "errors": [],
+    "h1": [
+      "Journal"
+    ],
+    "title": "Journal — Timeless",
+    "overflow": false,
+    "meta": [
+      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+      "<meta name=\"next-size-adjust\" content=\"\">",
+      "<meta name=\"description\" content=\"People, places, process and identity in motion.\">"
+    ],
+    "links": [
+      {
+        "text": "Skip to content",
+        "href": "#main-content"
+      },
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "Shop",
+        "href": "/shop"
+      },
+      {
+        "text": "In the Wild",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "Journal",
+        "href": "/journal"
+      },
+      {
+        "text": "About",
+        "href": "/about"
+      },
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "01Shop",
+        "href": "/shop"
+      },
+      {
+        "text": "02In the Wild",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "03Journal",
+        "href": "/journal"
+      },
+      {
+        "text": "04About",
+        "href": "/about"
+      },
+      {
+        "text": "Instagram",
+        "href": "#"
+      },
+      {
+        "text": "Contact",
+        "href": "mailto:hello@timeless.ng"
+      },
+      {
+        "text": "Journal 003 · ProcessJuly 2026The weight of a simple thingOn fabric, proportion and the choices that make simplicity feel intentional.Open story ",
+        "href": "/journal/the-making-of-drop-001"
+      },
+      {
+        "text": "Journal 002 · NotesIdentity is not staticClothing can hold a moment without deciding who you become next.",
+        "href": "/journal/identity-is-not-static"
+      },
+      {
+        "text": "Journal 001 · CampaignThe first frameThe visual language behind the opening Timeless campaign.",
+        "href": "/journal/first-frame"
+      },
+      {
+        "text": "A separate living archiveTimeless in the WildClothing in real rooms, streets, friendships and journeys—kept apart from the Journal as its own ongoing record.Open the archive ",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "Shop",
+        "href": "/shop"
+      },
+      {
+        "text": "In the Wild",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "Journal",
+        "href": "/journal"
+      },
+      {
+        "text": "About",
+        "href": "/about"
+      },
+      {
+        "text": "Instagram",
+        "href": "#"
+      },
+      {
+        "text": "Contact",
+        "href": "mailto:hello@timeless.ng"
+      },
+      {
+        "text": "Shipping",
+        "href": "#"
+      },
+      {
+        "text": "Returns",
+        "href": "#"
+      },
+      {
+        "text": "Privacy",
+        "href": "#"
+      },
+      {
+        "text": "Terms",
+        "href": "#"
+      },
+      {
+        "text": "Explore the drop",
+        "href": "/shop"
+      }
+    ],
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".page-intro > .eyebrow.text-black\\/45"
+            ],
+            "html": "<p class=\"eyebrow text-black/45\">Timeless archive / 2026</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.36 (foreground color: #8c8c8c, background color: #ffffff, font size: 8.0pt (10.72px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".mt-12 > .text-black\\/45:nth-child(2)"
+            ],
+            "html": "<span class=\"text-black/45\">Process</span>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.36 (foreground color: #8c8c8c, background color: #ffffff, font size: 8.2pt (10.88px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".text-black\\/45:nth-child(3)"
+            ],
+            "html": "<span class=\"text-black/45\">Notes</span>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.36 (foreground color: #8c8c8c, background color: #ffffff, font size: 8.2pt (10.88px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".text-black\\/45:nth-child(4)"
+            ],
+            "html": "<span class=\"text-black/45\">Campaign</span>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.36 (foreground color: #8c8c8c, background color: #ffffff, font size: 8.2pt (10.88px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".flex-col.justify-between.flex > .eyebrow.text-black\\/45"
+            ],
+            "html": "<p class=\"eyebrow text-black/45\">Journal 003<!-- --> · <!-- -->Process<br>July 2026</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.36 (foreground color: #8c8c8c, background color: #ffffff, font size: 8.0pt (10.72px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".text-white\\/45"
+            ],
+            "html": "<p class=\"eyebrow text-white/45\">A separate living archive</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 4.42 (foreground color: #737373, background color: #000000, font size: 8.0pt (10.72px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "route": "/journal/the-making-of-drop-001",
+    "status": 200,
+    "errors": [],
+    "h1": [
+      "The weight of a simple thing"
+    ],
+    "title": "The weight of a simple thing — Timeless",
+    "overflow": false,
+    "meta": [
+      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+      "<meta name=\"next-size-adjust\" content=\"\">",
+      "<meta name=\"description\" content=\"On fabric, proportion and the choices that make simplicity feel intentional.\">"
+    ],
+    "links": [
+      {
+        "text": "Skip to content",
+        "href": "#main-content"
+      },
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "Shop",
+        "href": "/shop"
+      },
+      {
+        "text": "In the Wild",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "Journal",
+        "href": "/journal"
+      },
+      {
+        "text": "About",
+        "href": "/about"
+      },
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "01Shop",
+        "href": "/shop"
+      },
+      {
+        "text": "02In the Wild",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "03Journal",
+        "href": "/journal"
+      },
+      {
+        "text": "04About",
+        "href": "/about"
+      },
+      {
+        "text": "Instagram",
+        "href": "#"
+      },
+      {
+        "text": "Contact",
+        "href": "mailto:hello@timeless.ng"
+      },
+      {
+        "text": "Next storyIdentity is not staticNotes ",
+        "href": "/journal/identity-is-not-static"
+      },
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "Shop",
+        "href": "/shop"
+      },
+      {
+        "text": "In the Wild",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "Journal",
+        "href": "/journal"
+      },
+      {
+        "text": "About",
+        "href": "/about"
+      },
+      {
+        "text": "Instagram",
+        "href": "#"
+      },
+      {
+        "text": "Contact",
+        "href": "mailto:hello@timeless.ng"
+      },
+      {
+        "text": "Shipping",
+        "href": "#"
+      },
+      {
+        "text": "Returns",
+        "href": "#"
+      },
+      {
+        "text": "Privacy",
+        "href": "#"
+      },
+      {
+        "text": "Terms",
+        "href": "#"
+      },
+      {
+        "text": "Explore the drop",
+        "href": "/shop"
+      }
+    ],
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".text-black\\/45.eyebrow"
+            ],
+            "html": "<p class=\"eyebrow text-black/45\">Process</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.36 (foreground color: #8c8c8c, background color: #ffffff, font size: 8.0pt (10.72px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".mt-4"
+            ],
+            "html": "<p class=\"mt-4 text-xs text-black/45\">Journal 003<!-- --> · <!-- -->July 2026</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.36 (foreground color: #8c8c8c, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "article > .md\\:grid-cols-\\[\\.55fr_1\\.45fr\\].gap-10 > .pt-2.text-black\\/40.eyebrow"
+            ],
+            "html": "<p class=\"eyebrow pt-2 text-black/40\">Introduction</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.0pt (10.72px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "div > .md\\:grid-cols-\\[\\.55fr_1\\.45fr\\].gap-10 > .pt-2.text-black\\/40.eyebrow"
+            ],
+            "html": "<p class=\"eyebrow pt-2 text-black/40\">Field note</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.0pt (10.72px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "route": "/journal/identity-is-not-static",
+    "status": 200,
+    "errors": [],
+    "h1": [
+      "Identity is not static"
+    ],
+    "title": "Identity is not static — Timeless",
+    "overflow": false,
+    "meta": [
+      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+      "<meta name=\"next-size-adjust\" content=\"\">",
+      "<meta name=\"description\" content=\"Clothing can hold a moment without deciding who you become next.\">"
+    ],
+    "links": [
+      {
+        "text": "Skip to content",
+        "href": "#main-content"
+      },
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "Shop",
+        "href": "/shop"
+      },
+      {
+        "text": "In the Wild",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "Journal",
+        "href": "/journal"
+      },
+      {
+        "text": "About",
+        "href": "/about"
+      },
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "01Shop",
+        "href": "/shop"
+      },
+      {
+        "text": "02In the Wild",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "03Journal",
+        "href": "/journal"
+      },
+      {
+        "text": "04About",
+        "href": "/about"
+      },
+      {
+        "text": "Instagram",
+        "href": "#"
+      },
+      {
+        "text": "Contact",
+        "href": "mailto:hello@timeless.ng"
+      },
+      {
+        "text": "Next storyThe first frameCampaign ",
+        "href": "/journal/first-frame"
+      },
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "Shop",
+        "href": "/shop"
+      },
+      {
+        "text": "In the Wild",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "Journal",
+        "href": "/journal"
+      },
+      {
+        "text": "About",
+        "href": "/about"
+      },
+      {
+        "text": "Instagram",
+        "href": "#"
+      },
+      {
+        "text": "Contact",
+        "href": "mailto:hello@timeless.ng"
+      },
+      {
+        "text": "Shipping",
+        "href": "#"
+      },
+      {
+        "text": "Returns",
+        "href": "#"
+      },
+      {
+        "text": "Privacy",
+        "href": "#"
+      },
+      {
+        "text": "Terms",
+        "href": "#"
+      },
+      {
+        "text": "Explore the drop",
+        "href": "/shop"
+      }
+    ],
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".text-black\\/45.eyebrow"
+            ],
+            "html": "<p class=\"eyebrow text-black/45\">Notes</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.36 (foreground color: #8c8c8c, background color: #ffffff, font size: 8.0pt (10.72px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".mt-4"
+            ],
+            "html": "<p class=\"mt-4 text-xs text-black/45\">Journal 002<!-- --> · <!-- -->June 2026</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.36 (foreground color: #8c8c8c, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "article > .md\\:grid-cols-\\[\\.55fr_1\\.45fr\\] > .pt-2.text-black\\/40.eyebrow"
+            ],
+            "html": "<p class=\"eyebrow pt-2 text-black/40\">Introduction</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.0pt (10.72px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "div > .md\\:grid-cols-\\[\\.55fr_1\\.45fr\\] > .pt-2.text-black\\/40.eyebrow"
+            ],
+            "html": "<p class=\"eyebrow pt-2 text-black/40\">Field note</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.0pt (10.72px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "route": "/journal/first-frame",
+    "status": 200,
+    "errors": [],
+    "h1": [
+      "The first frame"
+    ],
+    "title": "The first frame — Timeless",
+    "overflow": false,
+    "meta": [
+      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+      "<meta name=\"next-size-adjust\" content=\"\">",
+      "<meta name=\"description\" content=\"The visual language behind the opening Timeless campaign.\">"
+    ],
+    "links": [
+      {
+        "text": "Skip to content",
+        "href": "#main-content"
+      },
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "Shop",
+        "href": "/shop"
+      },
+      {
+        "text": "In the Wild",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "Journal",
+        "href": "/journal"
+      },
+      {
+        "text": "About",
+        "href": "/about"
+      },
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "01Shop",
+        "href": "/shop"
+      },
+      {
+        "text": "02In the Wild",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "03Journal",
+        "href": "/journal"
+      },
+      {
+        "text": "04About",
+        "href": "/about"
+      },
+      {
+        "text": "Instagram",
+        "href": "#"
+      },
+      {
+        "text": "Contact",
+        "href": "mailto:hello@timeless.ng"
+      },
+      {
+        "text": "Next storyThe weight of a simple thingProcess ",
+        "href": "/journal/the-making-of-drop-001"
+      },
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "Shop",
+        "href": "/shop"
+      },
+      {
+        "text": "In the Wild",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "Journal",
+        "href": "/journal"
+      },
+      {
+        "text": "About",
+        "href": "/about"
+      },
+      {
+        "text": "Instagram",
+        "href": "#"
+      },
+      {
+        "text": "Contact",
+        "href": "mailto:hello@timeless.ng"
+      },
+      {
+        "text": "Shipping",
+        "href": "#"
+      },
+      {
+        "text": "Returns",
+        "href": "#"
+      },
+      {
+        "text": "Privacy",
+        "href": "#"
+      },
+      {
+        "text": "Terms",
+        "href": "#"
+      },
+      {
+        "text": "Explore the drop",
+        "href": "/shop"
+      }
+    ],
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".text-black\\/45.eyebrow"
+            ],
+            "html": "<p class=\"eyebrow text-black/45\">Campaign</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.36 (foreground color: #8c8c8c, background color: #ffffff, font size: 8.0pt (10.72px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".mt-4"
+            ],
+            "html": "<p class=\"mt-4 text-xs text-black/45\">Journal 001<!-- --> · <!-- -->June 2026</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.36 (foreground color: #8c8c8c, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "article > section > .pt-2.text-black\\/40.eyebrow"
+            ],
+            "html": "<p class=\"eyebrow pt-2 text-black/40\">Introduction</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.0pt (10.72px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "div > section > .pt-2.text-black\\/40.eyebrow"
+            ],
+            "html": "<p class=\"eyebrow pt-2 text-black/40\">Field note</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 2.84 (foreground color: #999999, background color: #ffffff, font size: 8.0pt (10.72px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "route": "/in-the-wild",
+    "status": 200,
+    "errors": [],
+    "h1": [
+      "In the Wild"
+    ],
+    "title": "In the Wild — Timeless",
+    "overflow": false,
+    "meta": [
+      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+      "<meta name=\"next-size-adjust\" content=\"\">",
+      "<meta name=\"description\" content=\"Timeless worn in real rooms, streets, friendships and journeys.\">"
+    ],
+    "links": [
+      {
+        "text": "Skip to content",
+        "href": "#main-content"
+      },
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "Shop",
+        "href": "/shop"
+      },
+      {
+        "text": "In the Wild",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "Journal",
+        "href": "/journal"
+      },
+      {
+        "text": "About",
+        "href": "/about"
+      },
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "01Shop",
+        "href": "/shop"
+      },
+      {
+        "text": "02In the Wild",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "03Journal",
+        "href": "/journal"
+      },
+      {
+        "text": "04About",
+        "href": "/about"
+      },
+      {
+        "text": "Instagram",
+        "href": "#"
+      },
+      {
+        "text": "Contact",
+        "href": "mailto:hello@timeless.ng"
+      },
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "Shop",
+        "href": "/shop"
+      },
+      {
+        "text": "In the Wild",
+        "href": "/in-the-wild"
+      },
+      {
+        "text": "Journal",
+        "href": "/journal"
+      },
+      {
+        "text": "About",
+        "href": "/about"
+      },
+      {
+        "text": "Instagram",
+        "href": "#"
+      },
+      {
+        "text": "Contact",
+        "href": "mailto:hello@timeless.ng"
+      },
+      {
+        "text": "Shipping",
+        "href": "#"
+      },
+      {
+        "text": "Returns",
+        "href": "#"
+      },
+      {
+        "text": "Privacy",
+        "href": "#"
+      },
+      {
+        "text": "Terms",
+        "href": "#"
+      },
+      {
+        "text": "Explore the drop",
+        "href": "/shop"
+      }
+    ],
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".page-intro > .eyebrow.text-black\\/45"
+            ],
+            "html": "<p class=\"eyebrow text-black/45\">Field archive / 2026</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.36 (foreground color: #8c8c8c, background color: #ffffff, font size: 8.0pt (10.72px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "#court-assembly > .mb-10.gap-7.md\\:grid-cols-\\[\\.65fr_1\\.35fr\\] > div:nth-child(1) > .eyebrow.text-black\\/45"
+            ],
+            "html": "<p class=\"eyebrow text-black/45\">01<!-- --> / <!-- -->Akure, Nigeria</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.36 (foreground color: #8c8c8c, background color: #ffffff, font size: 8.0pt (10.72px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "#court-assembly > .mb-10.gap-7.md\\:grid-cols-\\[\\.65fr_1\\.35fr\\] > div:nth-child(1) > .mt-4.text-xs.text-black\\/45"
+            ],
+            "html": "<p class=\"mt-4 text-xs text-black/45\">August 2026<!-- --> · <!-- -->The Essential Tee</p>",
+            "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.36 (foreground color: #8c8c8c, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      "color-contrast"
+    ]
+  }
+]

@@ -24,10 +24,10 @@ export function ProductCard({ product }: { product: Product }) {
       </Link>
       </div>
       <div className="order-3 mt-5 md:order-2">
-        <h3 className="text-base">{product.name}</h3><p className="mt-1 text-sm text-black/55">{formatMoney(product.price, product.currency)}</p>
+        <h3 className="text-base">{product.name}</h3><p className="mt-1 text-sm text-muted">{formatMoney(product.price, product.currency)}</p>
       </div>
       <fieldset className="order-2 mt-4 min-w-0 md:order-3 md:mt-5">
-        <legend className="mb-2 text-xs uppercase tracking-[.12em] md:sr-only">Colour <span className="ml-3 normal-case tracking-normal text-black/50">{variant.name}</span></legend>
+        <legend className="mb-2 text-xs uppercase tracking-[.12em] md:sr-only">Colour <span className="ml-3 normal-case tracking-normal text-muted">{variant.name}</span></legend>
         <div className="flex flex-wrap gap-2 md:gap-3" aria-label={`Selected colour: ${variant.name}`}>
           {product.variants.map((item) => (
             <button
@@ -46,7 +46,7 @@ export function ProductCard({ product }: { product: Product }) {
           ))}
         </div>
       </fieldset>
-      <p className="order-4 col-span-full mt-2 text-[.64rem] uppercase tracking-[.12em] text-black/45">{variant.name} · {product.variants.length} {product.variants.length === 1 ? "colour" : "colours"}</p>
+      <p className="order-4 col-span-full mt-2 text-[.64rem] uppercase tracking-[.12em] text-muted">{variant.name} · {product.variants.length} {product.variants.length === 1 ? "colour" : "colours"}</p>
     </article>
   );
 }

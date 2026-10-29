@@ -1,0 +1,99 @@
+[
+  {
+    "route": "/shop",
+    "width": 768,
+    "scroll": 1006,
+    "offenders": [
+      {
+        "tag": "DIV",
+        "text": "",
+        "class": "image-frame aspect-[4/5] md:aspect-[16/8] md:min-h-[48svh]",
+        "rect": {
+          "x": 23.0390625,
+          "w": 983.03125
+        }
+      },
+      {
+        "tag": "IMG",
+        "text": "",
+        "class": "object-cover",
+        "rect": {
+          "x": 23.0390625,
+          "w": 983.03125
+        }
+      }
+    ]
+  },
+  {
+    "route": "/about",
+    "width": 768,
+    "scroll": 1115,
+    "offenders": [
+      {
+        "tag": "DIV",
+        "text": "",
+        "class": "image-frame mx-[var(--gutter)] aspect-[4/5] md:aspect-[16/9] md:min-h-[60svh]",
+        "rect": {
+          "x": 23.0390625,
+          "w": 1092.2578125
+        }
+      },
+      {
+        "tag": "IMG",
+        "text": "",
+        "class": "object-cover",
+        "rect": {
+          "x": -20.6512451171875,
+          "w": 1179.638427734375
+        }
+      }
+    ]
+  },
+  {
+    "route": "/journal",
+    "width": 768,
+    "scroll": 924,
+    "offenders": [
+      {
+        "tag": "DIV",
+        "text": "",
+        "class": "image-frame aspect-[4/5] md:aspect-[16/10] md:min-h-[55svh]",
+        "rect": {
+          "x": 23.0390625,
+          "w": 901.109375
+        }
+      },
+      {
+        "tag": "IMG",
+        "text": "",
+        "class": "responsive-content-image object-cover grayscale transition-transform duration-700 group-hover:scale-[1.02]",
+        "rect": {
+          "x": 23.0390625,
+          "w": 901.109375
+        }
+      }
+    ]
+  },
+  {
+    "route": "/in-the-wild",
+    "width": 768,
+    "scroll": 768,
+    "offenders": []
+  },
+  {
+    "route": "/shop/essential-tee",
+    "width": 768,
+    "scroll": 768,
+    "offenders": [
+      {
+        "tag": "IMG",
+        "text": "",
+        "class": "responsive-content-image object-cover ",
+        "rect": {
+          "x": -15.360015869140625,
+          "w": 414.72003173828125
+        }
+      }
+    ]
+  }
+]

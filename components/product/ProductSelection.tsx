@@ -3,6 +3,7 @@
 import { createContext, useContext, useState, type ReactNode } from "react";
 import type { Product, ProductVariant } from "@/lib/content";
 import { useBag } from "@/components/bag/BagProvider";
+import { trackEvent } from "@/lib/analytics";
 
 type ProductSelection = {
   product: Product;
@@ -25,8 +26,8 @@ export function ProductSelectionProvider({ product, children }: { product: Produ
   const variant = product.variants.find((item) => item.id === variantId) || product.variants[0];
   const selection = `${variant?.id}:${size}`;
 
-  const selectVariant = (id: string) => { setVariantId(id); setAddedSelection(""); };
-  const selectSize = (value: string) => { setSize(value); setAddedSelection(""); };
+  const selectVariant = (id: string) => { setVariantId(id); setAddedSelection(""); trackEvent("select_variant", { product_id: product.id, variant_id: id, placement: "product" }); };
+  const selectSize = (value: string) => { setSize(value); setAddedSelection(""); trackEvent("select_variant", { product_id: product.id, variant_id: variantId, size: value, placement: "product" }); };
   const add = () => {
     if (!variant || !product.sizes.includes(size) || product.status !== "available") return;
     addItem({
