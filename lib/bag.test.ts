@@ -52,7 +52,8 @@ describe("bag", () => {
     expect(message).toContain("Colour: Black");
     expect(message).toContain("Size: M");
     expect(message).toContain("Quantity: 2");
-    expect(message).toContain("ORDER TOTAL: ₦30,000");
+    expect(message).toContain("ITEMS SUBTOTAL: ₦30,000");
+    expect(message).not.toContain("ORDER TOTAL");
     expect(buildWhatsAppUrl(state.items, "+234 800 123 4567")).toContain("wa.me/2348001234567");
     expect(state.items).toHaveLength(1);
   });

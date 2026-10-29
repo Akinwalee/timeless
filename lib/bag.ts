@@ -132,7 +132,7 @@ export function buildWhatsAppMessage(items: BagItem[]) {
       "",
     );
   });
-  lines.push(`ORDER TOTAL: ${formatMoney(bagTotal(items), currency)}`, "", "Shipping is additional and will be quoted after I share my delivery address.", "Please confirm current availability and the final total before payment.");
+  lines.push(`ITEMS SUBTOTAL: ${formatMoney(bagTotal(items), currency)}`, "", "Shipping is additional and will be quoted after I share my delivery address.", "Please confirm current availability and the final total before payment.");
   return lines.join("\n");
 }
 
