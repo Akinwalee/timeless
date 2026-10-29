@@ -1,0 +1,49 @@
+{
+  "persona": "skeptic",
+  "base": "http://127.0.0.1:3111",
+  "phase": "after-local",
+  "viewport": 1440,
+  "issues": [],
+  "steps": [
+    "Declined optional measurement",
+    "Read shipping",
+    "Read returns",
+    "Read privacy",
+    "Read terms",
+    "Prepared WhatsApp request without opening or sending it"
+  ],
+  "errors": [],
+  "screenshots": [
+    "01-landing.png",
+    "02-shipping.png",
+    "03-returns.png",
+    "04-privacy.png",
+    "05-terms.png",
+    "06-newsletter-result.png",
+    "07-product.png",
+    "08-bag.png"
+  ],
+  "newsletterSafeProbe": {
+    "status": 503,
+    "body": {
+      "ok": false,
+      "message": "Newsletter signup is temporarily unavailable. Please try again later."
+    },
+    "note": "Loopback server probe uses configured production origin; UI submissions are mocked"
+  },
+  "domContentLoadedMs": 439,
+  "newsletterSuccessMocked": true,
+  "realEmailDeliveryVerified": false,
+  "newsletterUI": [
+    ""
+  ],
+  "bagText": "YOUR BAG\n\n1 selection\n\nTimeless Essential Tee\n\nBlack · M\n\nREMOVE\n1\n\n₦15,000\n\nItems subtotal\n₦15,000\n\nShipping is additional. Share your delivery address on WhatsApp for a quote and confirmation of availability and the final total before payment.\n\nCHECKOUT ON WHATSAPP\nCLEAR BAG",
+  "firstSuccess": {
+    "type": "order_request_prepared",
+    "host": "wa.me",
+    "messageHasSize": true,
+    "messageHasShipping": true,
+    "openedExternal": false
+  },
+  "overflow": false
+}

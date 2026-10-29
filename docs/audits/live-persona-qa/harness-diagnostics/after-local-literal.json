@@ -1,0 +1,19 @@
+{
+  "persona": "literal",
+  "base": "http://127.0.0.1:3111",
+  "phase": "after-local",
+  "viewport": 375,
+  "issues": [
+    {
+      "id": "FLOW-INTERRUPTED",
+      "detail": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3111/"
+    }
+  ],
+  "steps": [],
+  "errors": [],
+  "screenshots": [
+    "01-stuck.png"
+  ],
+  "newsletterSafeProbe": null,
+  "stuck": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:3111/\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:3111/\", waiting until \"load\"\u001b[22m\n"
+}

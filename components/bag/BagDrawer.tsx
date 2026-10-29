@@ -38,7 +38,11 @@ export function BagDrawer({ whatsappNumber }: { whatsappNumber?: string }) {
       aria-labelledby="bag-title"
       onCancel={(event) => { event.preventDefault(); closeBag(); }}
       onClose={closeBag}
-      onClick={(event) => { if (event.target === dialog.current) closeBag(); }}
+      onClick={(event) => {
+        // A double-click on Add opens the dialog on click one. Click two may
+        // then land on its backdrop; it must not immediately dismiss the bag.
+        if (event.target === dialog.current && event.detail < 2) closeBag();
+      }}
     >
       <div className="flex h-full flex-col">
         {!persistent && <p role="status" className="border-b border-black/15 px-5 py-3 text-sm">Your bag works for this visit. This browser cannot save it for later.</p>}

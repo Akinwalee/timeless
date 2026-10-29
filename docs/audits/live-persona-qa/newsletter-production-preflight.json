@@ -1,0 +1,21 @@
+{
+  "url": "https://www.weartimeless.xyz/api/newsletter",
+  "payload": {
+    "email": "invalid",
+    "consent": false
+  },
+  "results": [
+    {
+      "origin": "https://www.weartimeless.xyz",
+      "status": 403,
+      "message": "Please submit the form from the Timeless website."
+    },
+    {
+      "origin": "https://weartimeless.xyz",
+      "status": 503,
+      "message": "Newsletter signup is temporarily unavailable. Please try again later."
+    }
+  ],
+  "providerCalls": 0,
+  "explanation": "Invalid input cannot reach provider processing. The 503 check runs before body validation and demonstrates missing/invalid configuration."
+}

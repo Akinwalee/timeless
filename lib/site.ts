@@ -1,5 +1,5 @@
 export function getSiteUrl() {
-  const configured = process.env.NEXT_PUBLIC_SITE_URL || "https://weartimeless.xyz";
+  const configured = process.env.NEXT_PUBLIC_SITE_URL || "https://www.weartimeless.xyz";
   const url = new URL(configured);
   if (url.protocol !== "https:" && !(process.env.NODE_ENV !== "production" && url.hostname === "localhost")) {
     throw new Error("NEXT_PUBLIC_SITE_URL must be an HTTPS origin.");

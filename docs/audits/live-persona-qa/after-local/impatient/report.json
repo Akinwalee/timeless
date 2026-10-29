@@ -1,0 +1,28 @@
+{
+  "persona": "impatient",
+  "base": "http://127.0.0.1:3111",
+  "phase": "after-local",
+  "viewport": 1440,
+  "issues": [],
+  "steps": [
+    "Declined optional measurement",
+    "Prepared WhatsApp request without opening or sending it"
+  ],
+  "errors": [],
+  "screenshots": [
+    "01-landing.png",
+    "02-product.png",
+    "03-bag.png"
+  ],
+  "newsletterSafeProbe": null,
+  "domContentLoadedMs": 624,
+  "bagText": "YOUR BAG\n\n1 selection\n\nTimeless Essential Tee\n\nBlack · M\n\nREMOVE\n1\n\n₦15,000\n\nItems subtotal\n₦15,000\n\nShipping is additional. Share your delivery address on WhatsApp for a quote and confirmation of availability and the final total before payment.\n\nCHECKOUT ON WHATSAPP\nCLEAR BAG",
+  "firstSuccess": {
+    "type": "order_request_prepared",
+    "host": "wa.me",
+    "messageHasSize": true,
+    "messageHasShipping": true,
+    "openedExternal": false
+  },
+  "overflow": false
+}

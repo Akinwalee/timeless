@@ -1,0 +1,204 @@
+[
+  {
+    "persona": "impatient",
+    "base": "http://127.0.0.1:3111",
+    "phase": "after-local",
+    "viewport": 1440,
+    "issues": [],
+    "steps": [
+      "Declined optional measurement",
+      "Prepared WhatsApp request without opening or sending it"
+    ],
+    "errors": [],
+    "screenshots": [
+      "01-landing.png",
+      "02-product.png",
+      "03-bag.png"
+    ],
+    "newsletterSafeProbe": null,
+    "domContentLoadedMs": 624,
+    "bagText": "YOUR BAG\n\n1 selection\n\nTimeless Essential Tee\n\nBlack \u00b7 M\n\nREMOVE\n1\n\n\u20a615,000\n\nItems subtotal\n\u20a615,000\n\nShipping is additional. Share your delivery address on WhatsApp for a quote and confirmation of availability and the final total before payment.\n\nCHECKOUT ON WHATSAPP\nCLEAR BAG",
+    "firstSuccess": {
+      "type": "order_request_prepared",
+      "host": "wa.me",
+      "messageHasSize": true,
+      "messageHasShipping": true,
+      "openedExternal": false
+    },
+    "overflow": false
+  },
+  {
+    "persona": "skeptic",
+    "base": "http://127.0.0.1:3111",
+    "phase": "after-local",
+    "viewport": 1440,
+    "issues": [],
+    "steps": [
+      "Declined optional measurement",
+      "Read shipping",
+      "Read returns",
+      "Read privacy",
+      "Read terms",
+      "Prepared WhatsApp request without opening or sending it"
+    ],
+    "errors": [],
+    "screenshots": [
+      "01-landing.png",
+      "02-shipping.png",
+      "03-returns.png",
+      "04-privacy.png",
+      "05-terms.png",
+      "06-newsletter-result.png",
+      "07-product.png",
+      "08-bag.png"
+    ],
+    "newsletterSafeProbe": {
+      "status": 503,
+      "body": {
+        "ok": false,
+        "message": "Newsletter signup is temporarily unavailable. Please try again later."
+      },
+      "note": "Loopback server probe uses configured production origin; UI submissions are mocked"
+    },
+    "domContentLoadedMs": 439,
+    "newsletterSuccessMocked": true,
+    "realEmailDeliveryVerified": false,
+    "newsletterUI": [
+      ""
+    ],
+    "bagText": "YOUR BAG\n\n1 selection\n\nTimeless Essential Tee\n\nBlack \u00b7 M\n\nREMOVE\n1\n\n\u20a615,000\n\nItems subtotal\n\u20a615,000\n\nShipping is additional. Share your delivery address on WhatsApp for a quote and confirmation of availability and the final total before payment.\n\nCHECKOUT ON WHATSAPP\nCLEAR BAG",
+    "firstSuccess": {
+      "type": "order_request_prepared",
+      "host": "wa.me",
+      "messageHasSize": true,
+      "messageHasShipping": true,
+      "openedExternal": false
+    },
+    "overflow": false
+  },
+  {
+    "persona": "mobile",
+    "base": "http://127.0.0.1:3111",
+    "phase": "after-local",
+    "viewport": 375,
+    "issues": [],
+    "steps": [
+      "Declined optional measurement",
+      "Prepared WhatsApp request without opening or sending it"
+    ],
+    "errors": [],
+    "screenshots": [
+      "01-landing.png",
+      "02-product.png",
+      "03-bag.png"
+    ],
+    "newsletterSafeProbe": null,
+    "throttle": {
+      "latencyMs": 400,
+      "downloadKbps": 500,
+      "uploadKbps": 500,
+      "cpuSlowdown": 4
+    },
+    "domContentLoadedMs": 10096,
+    "bagText": "YOUR BAG\n\n1 selection\n\nTimeless Essential Tee\n\nBlack \u00b7 M\n\nREMOVE\n1\n\n\u20a615,000\n\nItems subtotal\n\u20a615,000\n\nShipping is additional. Share your delivery address on WhatsApp for a quote and confirmation of availability and the final total before payment.\n\nCHECKOUT ON WHATSAPP\nCLEAR BAG",
+    "firstSuccess": {
+      "type": "order_request_prepared",
+      "host": "wa.me",
+      "messageHasSize": true,
+      "messageHasShipping": true,
+      "openedExternal": false
+    },
+    "overflow": false
+  },
+  {
+    "persona": "literal",
+    "base": "http://127.0.0.1:3111",
+    "phase": "after-local",
+    "viewport": 375,
+    "issues": [],
+    "steps": [
+      "Declined optional measurement",
+      "Prepared WhatsApp request without opening or sending it"
+    ],
+    "errors": [],
+    "screenshots": [
+      "01-landing.png",
+      "02-newsletter-result.png",
+      "03-product.png",
+      "04-bag.png"
+    ],
+    "newsletterSafeProbe": {
+      "status": 503,
+      "body": {
+        "ok": false,
+        "message": "Newsletter signup is temporarily unavailable. Please try again later."
+      },
+      "note": "Loopback server probe uses configured production origin; UI submissions are mocked"
+    },
+    "domContentLoadedMs": 133,
+    "newsletterSuccessMocked": true,
+    "realEmailDeliveryVerified": false,
+    "newsletterUI": [
+      ""
+    ],
+    "bagText": "YOUR BAG\n\n1 selection\n\nTimeless Essential Tee\n\nBlack \u00b7 M\n\nREMOVE\n1\n\n\u20a615,000\n\nItems subtotal\n\u20a615,000\n\nShipping is additional. Share your delivery address on WhatsApp for a quote and confirmation of availability and the final total before payment.\n\nCHECKOUT ON WHATSAPP\nCLEAR BAG",
+    "firstSuccess": {
+      "type": "order_request_prepared",
+      "host": "wa.me",
+      "messageHasSize": true,
+      "messageHasShipping": true,
+      "openedExternal": false
+    },
+    "overflow": false
+  },
+  {
+    "persona": "breaker",
+    "base": "http://127.0.0.1:3111",
+    "phase": "after-local",
+    "viewport": 1440,
+    "issues": [],
+    "steps": [
+      "Declined optional measurement",
+      "Prepared WhatsApp request without opening or sending it"
+    ],
+    "errors": [],
+    "screenshots": [
+      "01-landing.png",
+      "02-invalid-email.png",
+      "03-newsletter-result.png",
+      "04-product.png",
+      "05-bag.png",
+      "06-history-bag.png",
+      "07-double-click-bag.png"
+    ],
+    "newsletterSafeProbe": {
+      "status": 503,
+      "body": {
+        "ok": false,
+        "message": "Newsletter signup is temporarily unavailable. Please try again later."
+      },
+      "note": "Loopback server probe uses configured production origin; UI submissions are mocked"
+    },
+    "domContentLoadedMs": 269,
+    "invalidEmailBlocked": true,
+    "newsletterSuccessMocked": true,
+    "realEmailDeliveryVerified": false,
+    "newsletterUI": [
+      "Please check your email and confirm your subscription.",
+      "",
+      ""
+    ],
+    "bagText": "YOUR BAG\n\n1 selection\n\nTimeless Essential Tee\n\nBlack \u00b7 M\n\nREMOVE\n1\n\n\u20a615,000\n\nItems subtotal\n\u20a615,000\n\nShipping is additional. Share your delivery address on WhatsApp for a quote and confirmation of availability and the final total before payment.\n\nCHECKOUT ON WHATSAPP\nCLEAR BAG",
+    "firstSuccess": {
+      "type": "order_request_prepared",
+      "host": "wa.me",
+      "messageHasSize": true,
+      "messageHasShipping": true,
+      "openedExternal": false
+    },
+    "bagSurvivesHistory": true,
+    "doubleClickBagOpen": true,
+    "doubleClickBagText": "YOUR BAG\n\n1 selection\n\nTimeless Essential Tee\n\nBlack \u00b7 M\n\nREMOVE\n2\n\n\u20a630,000\n\nItems subtotal\n\u20a630,000\n\nShipping is additional. Share your delivery address on WhatsApp for a quote and confirmation of availability and the final total before payment.\n\nCHECKOUT ON WHATSAPP\nCLEAR BAG",
+    "overflow": false
+  }
+]

@@ -1,5 +1,28 @@
 import { test, expect } from "@playwright/test";
 
+test.beforeEach(async ({ context }) => {
+  await context.route(/google-analytics\.com|googletagmanager\.com/, route => route.abort());
+});
+
+test("measurement preferences do not cover the mobile hero or purchase controls", async ({ page }) => {
+  await page.setViewportSize({ width: 375, height: 812 });
+  await page.goto("/");
+  const prompt = page.getByRole("complementary", { name: "Optional measurement" });
+  await expect(prompt).toBeVisible();
+  const cta = page.getByRole("link", { name: /Explore the first drop/i });
+  const bannerBounds = await prompt.boundingBox();
+  const ctaBounds = await cta.boundingBox();
+  expect(bannerBounds!.y + bannerBounds!.height).toBeLessThan(ctaBounds!.y);
+  expect(ctaBounds!.y + ctaBounds!.height).toBeLessThanOrEqual(812);
+  await cta.click();
+  await expect(page).toHaveURL(/\/shop$/);
+  await page.getByRole("button", { name: "Decline", exact: true }).click();
+  await expect(prompt).toHaveCount(0);
+  await page.getByRole("button", { name: "Measurement preferences", exact: true }).click();
+  await expect(prompt).toBeVisible();
+  await expect(prompt).toBeFocused();
+});
+
 test("reduced-motion and no-JavaScript visits retain visible content", async ({ browser }) => {
   for (const javaScriptEnabled of [true, false]) {
     const context = await browser.newContext({ reducedMotion: "reduce", javaScriptEnabled });
@@ -34,6 +57,18 @@ test("storage denial preserves shopping and the itemized handoff", async ({ page
   const href = await bag.getByRole("link", { name: "Continue checkout on WhatsApp" }).getAttribute("href");
   expect(decodeURIComponent(href!)).toContain("Size: M");
   expect(decodeURIComponent(href!)).toContain("Shipping is additional");
+});
+
+test("double-clicking Add keeps the bag open with one added item", async ({ page }) => {
+  await page.goto("/shop/essential-tee");
+  await page.getByRole("button", { name: "Decline", exact: true }).click();
+  await page.getByRole("button", { name: "M", exact: true }).first().click();
+  await page.getByRole("button", { name: "Add to Bag", exact: true }).first().dblclick();
+  const bag = page.getByRole("dialog", { name: "Your bag" });
+  await expect(bag).toBeVisible();
+  await expect(bag.locator('[aria-live="polite"]')).toHaveText("1");
+  await page.getByRole("button", { name: "Close bag" }).click();
+  await expect(bag).not.toBeVisible();
 });
 
 test("newsletter failure stays recoverable and success asks for confirmation", async ({ page }) => {

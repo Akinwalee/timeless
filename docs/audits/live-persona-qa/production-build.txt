@@ -1,0 +1,51 @@
+
+> timeless@0.1.0 build
+> next build --webpack
+
+▲ Next.js 16.4.3 (webpack)
+- Environments: .env.local
+✓ Running next.config.ts took 123ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 40s
+  Running TypeScript ...
+  Finished TypeScript in 2.8s ...
+  Collecting page data using 7 workers ...
+  Generating static pages using 7 workers (0/22) ...
+  Generating static pages using 7 workers (5/22) 
+  Generating static pages using 7 workers (10/22) 
+  Generating static pages using 7 workers (16/22) 
+✓ Generating static pages using 7 workers (22/22) in 5.7s
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)                            Revalidate  Expire
+┌ ○ /                                          1m      1y
+├ ○ /_not-found                                1m      1y
+├ ○ /about                                     1m      1y
+├ ƒ /api/health
+├ ƒ /api/newsletter
+├ ○ /in-the-wild                               1m      1y
+├ ƒ /journal
+├   /journal/[slug]
+│ ├ ● /journal/the-making-of-drop-001          1m      1y
+│ ├ ● /journal/identity-is-not-static          1m      1y
+│ └ ● /journal/first-frame                     1m      1y
+├ ○ /newsletter/confirmed                      1m      1y
+├ ○ /opengraph-image
+├ ○ /privacy                                   1m      1y
+├ ○ /returns                                   1m      1y
+├ ○ /robots.txt
+├ ○ /shipping                                  1m      1y
+├ ○ /shop                                      1m      1y
+├   /shop/[slug]
+│ └ ● /shop/essential-tee                      1m      1y
+├ ○ /sitemap.xml                               1m      1y
+├ ƒ /studio/[[...tool]]
+└ ○ /terms                                     1m      1y
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+

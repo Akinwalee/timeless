@@ -12,7 +12,15 @@ export async function POST(request: Request) {
   const origin = request.headers.get("origin");
   // No cross-origin form/JSON submissions. Production origin is configuration, not an untrusted Host header.
   const expected = process.env.NODE_ENV === "production" ? getSiteUrl() : new URL(request.url).origin;
-  if (origin !== expected) return reply(403, "Please submit the form from the Timeless website.");
+  const trustedOrigins = new Set([expected]);
+  if (process.env.NODE_ENV === "production") {
+    // The owned apex and www hosts serve the same site. Never trust arbitrary
+    // request Host/forwarded headers or suffix matches when accepting an alias.
+    const alias = new URL(expected);
+    alias.hostname = alias.hostname.startsWith("www.") ? alias.hostname.slice(4) : `www.${alias.hostname}`;
+    trustedOrigins.add(alias.origin);
+  }
+  if (!origin || !trustedOrigins.has(origin)) return reply(403, "Reload this page and try again. If signup still fails, contact Timeless.");
   if (!request.headers.get("content-type")?.toLowerCase().startsWith("application/json")) return reply(415, "Please use the newsletter form.");
 
   const apiKey = process.env.BREVO_API_KEY;

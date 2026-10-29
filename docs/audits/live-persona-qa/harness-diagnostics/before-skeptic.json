@@ -1,0 +1,23 @@
+{
+  "persona": "skeptic",
+  "base": "https://www.weartimeless.xyz",
+  "phase": "before",
+  "viewport": 1440,
+  "issues": [
+    {
+      "id": "FLOW-INTERRUPTED",
+      "detail": "locator.click: Timeout 12000ms exceeded."
+    }
+  ],
+  "steps": [
+    "Declined optional measurement"
+  ],
+  "errors": [],
+  "screenshots": [
+    "01-landing.png",
+    "02-stuck.png"
+  ],
+  "newsletterSafeProbe": null,
+  "domContentLoadedMs": 1054,
+  "stuck": "locator.click: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('footer').last().getByRole('link', { name: 'shipping', exact: true })\u001b[22m\n"
+}

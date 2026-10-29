@@ -15,6 +15,36 @@ beforeEach(() => {
 afterEach(() => { vi.unstubAllEnvs(); vi.unstubAllGlobals(); });
 
 describe("newsletter acceptance boundary", () => {
+  it("accepts the exact www alias in production and requests confirmation", async () => {
+    vi.stubEnv("NODE_ENV", "production");
+    const fetcher = vi.fn().mockResolvedValue(new Response(null, { status: 201 }));
+    vi.stubGlobal("fetch", fetcher);
+    const response = await POST(request({ email: "audit-www@example.invalid", consent: true }, "https://www.weartimeless.xyz"));
+    expect(response.status).toBe(200);
+    expect(fetcher).toHaveBeenCalledOnce();
+  });
+
+  it("accepts the apex alias when the configured production origin uses www", async () => {
+    vi.stubEnv("NODE_ENV", "production");
+    vi.stubEnv("NEXT_PUBLIC_SITE_URL", "https://www.weartimeless.xyz");
+    vi.stubGlobal("fetch", vi.fn());
+    // Invalid input must reach validation, without contacting the provider.
+    expect((await POST(request({ email: "invalid", consent: false }))).status).toBe(400);
+    expect(fetch).not.toHaveBeenCalled();
+  });
+
+  it("rejects suffix lookalikes, other subdomains, insecure and missing origins in production", async () => {
+    vi.stubEnv("NODE_ENV", "production");
+    vi.stubGlobal("fetch", vi.fn());
+    for (const foreign of ["https://weartimeless.xyz.evil.invalid", "https://other.weartimeless.xyz", "http://www.weartimeless.xyz", "https://www.weartimeless.xyz:444", "null"]) {
+      expect((await POST(request({ email: "audit@example.invalid", consent: true }, foreign))).status).toBe(403);
+    }
+    const missing = request({ email: "audit@example.invalid", consent: true });
+    missing.headers.delete("Origin");
+    expect((await POST(missing)).status).toBe(403);
+    expect(fetch).not.toHaveBeenCalled();
+  });
+
   it("only confirms an accepted Brevo DOI request and keeps the key server-side", async () => {
     const fetcher = vi.fn().mockResolvedValue(new Response(null, { status: 201 }));
     vi.stubGlobal("fetch", fetcher);

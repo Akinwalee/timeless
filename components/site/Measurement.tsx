@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { campaignAttribution, MEASUREMENT_KEY, measurementAllowed, measurementConfigured, saveMeasurementPreference, trackEvent } from "@/lib/analytics";
@@ -10,6 +10,27 @@ export function Measurement() {
   const pathname = usePathname();
   const [prompt, setPrompt] = useState(false);
   const [allowed, setAllowed] = useState(false);
+  const banner = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    if (!prompt || pathname.startsWith("/studio")) return;
+    const root = document.documentElement;
+    const update = () => {
+      const height = banner.current?.getBoundingClientRect().height || 0;
+      root.style.setProperty("--measurement-height", `${height}px`);
+      root.style.setProperty("--measurement-visible-height", `${Math.max(0, height - window.scrollY)}px`);
+    };
+    update();
+    const resize = new ResizeObserver(update);
+    if (banner.current) resize.observe(banner.current);
+    window.addEventListener("scroll", update, { passive: true });
+    return () => {
+      resize.disconnect();
+      window.removeEventListener("scroll", update);
+      root.style.removeProperty("--measurement-height");
+      root.style.removeProperty("--measurement-visible-height");
+    };
+  }, [prompt, pathname]);
 
   useEffect(() => {
     const update = () => {
@@ -18,7 +39,13 @@ export function Measurement() {
       setAllowed(enabled);
       setPrompt(measurementConfigured() && navigator.doNotTrack !== "1" && !readStorage("localStorage", MEASUREMENT_KEY).value);
     };
-    const show = () => setPrompt(measurementConfigured());
+    const show = () => {
+      setPrompt(measurementConfigured());
+      // The preference panel is in document flow, so reveal it when requested
+      // from the footer without covering purchase controls or trapping focus.
+      window.scrollTo({ top: 0, behavior: "instant" });
+      requestAnimationFrame(() => banner.current?.focus());
+    };
     update();
     window.addEventListener("timeless:measurement-change", update);
     window.addEventListener("timeless:measurement-preferences", show);
@@ -62,9 +89,11 @@ export function Measurement() {
   }, [allowed]);
 
   if (!prompt || pathname.startsWith("/studio")) return null;
-  return <aside aria-label="Optional measurement" className="fixed inset-x-4 bottom-4 z-[85] max-w-xl border border-black/25 bg-white p-5 text-black shadow-lg md:left-auto md:right-6">
-    <p className="text-sm leading-relaxed">Allow optional Google Analytics measurement to help us understand visits and shopping actions? Shopping works either way. <Link className="underline" href="/privacy">Privacy</Link></p>
-    <div className="mt-4 flex flex-wrap gap-3"><button className="solid-button" onClick={() => { saveMeasurementPreference(false); setPrompt(false); }}>Decline</button><button className="solid-button" onClick={() => { saveMeasurementPreference(true); setPrompt(false); }}>Allow measurement</button></div>
+  return <aside ref={banner} tabIndex={-1} aria-label="Optional measurement" className="relative z-[85] border-b border-black/25 bg-white px-[var(--gutter)] py-4 text-black">
+    <div className="mx-auto flex max-w-screen-xl flex-col gap-3 md:flex-row md:items-center md:justify-between md:gap-8">
+      <p className="max-w-2xl text-sm leading-relaxed">Allow Google Analytics to measure visits and shopping actions? It is optional; shopping works either way. <Link className="underline" href="/privacy">Privacy</Link></p>
+      <div className="flex shrink-0 gap-3"><button className="solid-button min-h-11 px-4" onClick={() => { saveMeasurementPreference(false); setPrompt(false); }}>Decline</button><button className="solid-button min-h-11 px-4" onClick={() => { saveMeasurementPreference(true); setPrompt(false); }}>Allow measurement</button></div>
+    </div>
   </aside>;
 }
 

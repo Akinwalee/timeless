@@ -1,0 +1,44 @@
+{
+  "persona": "mobile",
+  "base": "https://www.weartimeless.xyz",
+  "phase": "before-verified",
+  "viewport": 375,
+  "issues": [
+    {
+      "id": "CONSENT-COVERS-CTA",
+      "detail": {
+        "overlap": true,
+        "promptHeight": 242.25,
+        "viewport": 812
+      }
+    }
+  ],
+  "steps": [
+    "Declined optional measurement",
+    "Prepared WhatsApp request without opening or sending it"
+  ],
+  "errors": [],
+  "screenshots": [
+    "01-landing.png",
+    "02-consent-covers-cta.png",
+    "03-product.png",
+    "04-bag.png"
+  ],
+  "newsletterSafeProbe": null,
+  "throttle": {
+    "latencyMs": 400,
+    "downloadKbps": 500,
+    "uploadKbps": 500,
+    "cpuSlowdown": 4
+  },
+  "domContentLoadedMs": 10351,
+  "bagText": "YOUR BAG\n\n1 selection\n\nTimeless Essential Tee\n\nBlack · M\n\nREMOVE\n1\n\n₦15,000\n\nItems subtotal\n₦15,000\n\nShipping is additional. Share your delivery address on WhatsApp for a quote and confirmation of availability and the final total before payment.\n\nCHECKOUT ON WHATSAPP\nCLEAR BAG",
+  "firstSuccess": {
+    "type": "order_request_prepared",
+    "host": "wa.me",
+    "messageHasSize": true,
+    "messageHasShipping": true,
+    "openedExternal": false
+  },
+  "overflow": false
+}

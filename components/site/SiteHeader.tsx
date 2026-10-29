@@ -72,7 +72,7 @@ export function SiteHeader({
 
   return (
     <>
-      <header onFocusCapture={() => setHidden(false)} className={`fixed inset-x-0 top-0 z-[80] text-white transition-transform duration-500 focus-within:translate-y-0 focus-within:transition-none ${overHomeHero ? "" : "mix-blend-difference"} ${hidden ? "-translate-y-full" : "translate-y-0"}`}>
+      <header onFocusCapture={() => setHidden(false)} className={`fixed inset-x-0 top-[var(--measurement-visible-height,0px)] z-[80] text-white transition-transform duration-500 focus-within:translate-y-0 focus-within:transition-none ${overHomeHero ? "" : "mix-blend-difference"} ${hidden ? "-translate-y-full" : "translate-y-0"}`}>
         <nav className="site-shell flex h-20 items-center justify-between" aria-label="Primary navigation">
           <Wordmark className="relative z-10" />
           <div className="hidden items-center gap-8 text-[.72rem] uppercase tracking-[.13em] md:flex">

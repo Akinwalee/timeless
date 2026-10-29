@@ -1,0 +1,23 @@
+{
+  "persona": "skeptic",
+  "base": "https://www.weartimeless.xyz",
+  "phase": "before-skeptic",
+  "viewport": 1440,
+  "issues": [
+    {
+      "id": "FLOW-INTERRUPTED",
+      "detail": "page.waitForURL: Timeout 12000ms exceeded."
+    }
+  ],
+  "steps": [
+    "Declined optional measurement"
+  ],
+  "errors": [],
+  "screenshots": [
+    "01-landing.png",
+    "02-stuck.png"
+  ],
+  "newsletterSafeProbe": null,
+  "domContentLoadedMs": 9986,
+  "stuck": "page.waitForURL: Timeout 12000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/shipping\" until \"load\"\n============================================================"
+}

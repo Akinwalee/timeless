@@ -84,7 +84,7 @@ Add these values to `.env.local` for development and to the hosting environment 
 BREVO_API_KEY=your-server-api-key
 BREVO_LIST_ID=your-numeric-list-id
 BREVO_DOI_TEMPLATE_ID=your-numeric-double-opt-in-template-id
-NEXT_PUBLIC_SITE_URL=https://weartimeless.xyz
+NEXT_PUBLIC_SITE_URL=https://www.weartimeless.xyz
 ```
 
 Use the actual production HTTPS origin if different. **Never use a `NEXT_PUBLIC_` prefix for the Brevo API key.** Do not commit it or paste it into a chat. `BREVO_LIST_ID` is the destination Contacts list ID, not a folder ID. `BREVO_DOI_TEMPLATE_ID` is an active transactional double-opt-in template, using a verified sender and a confirmation link with `{{ params.DOIurl }}`. The website supplies `/newsletter/confirmed` as its post-confirmation redirect.

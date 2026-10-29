@@ -1,0 +1,51 @@
+{
+  "persona": "breaker",
+  "base": "https://www.weartimeless.xyz",
+  "phase": "before-breaker",
+  "viewport": 1440,
+  "issues": [
+    {
+      "id": "NEWSLETTER-ORIGIN",
+      "detail": "Live same-origin signup is rejected before validation"
+    },
+    {
+      "id": "FLOW-INTERRUPTED",
+      "detail": "locator.innerText: Timeout 12000ms exceeded."
+    }
+  ],
+  "steps": [
+    "Declined optional measurement"
+  ],
+  "errors": [],
+  "screenshots": [
+    "01-landing.png",
+    "02-invalid-email.png",
+    "03-newsletter-result.png",
+    "04-product.png",
+    "05-bag.png",
+    "06-history-bag.png",
+    "07-stuck.png"
+  ],
+  "newsletterSafeProbe": {
+    "status": 403,
+    "body": {
+      "ok": false,
+      "message": "Please submit the form from the Timeless website."
+    }
+  },
+  "domContentLoadedMs": 1978,
+  "invalidEmailBlocked": true,
+  "newsletterUI": [
+    "Please submit the form from the Timeless website."
+  ],
+  "bagText": "YOUR BAG\n\n1 selection\n\nTimeless Essential Tee\n\nBlack · M\n\nREMOVE\n1\n\n₦15,000\n\nItems subtotal\n₦15,000\n\nShipping is additional. Share your delivery address on WhatsApp for a quote and confirmation of availability and the final total before payment.\n\nCHECKOUT ON WHATSAPP\nCLEAR BAG",
+  "firstSuccess": {
+    "type": "order_request_prepared",
+    "host": "wa.me",
+    "messageHasSize": true,
+    "messageHasShipping": true,
+    "openedExternal": false
+  },
+  "bagSurvivesHistory": true,
+  "stuck": "locator.innerText: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('dialog', { name: 'Your bag' })\u001b[22m\n"
+}
