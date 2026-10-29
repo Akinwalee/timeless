@@ -93,6 +93,8 @@ img { background: #e9e8e4; }
 .page-intro { padding: clamp(8rem, 15vw, 14rem) var(--gutter) clamp(4rem, 7vw, 7rem); }
 .page-title { font-size: clamp(4.8rem, 14vw, 14rem); }
 .route-transition { transform-origin: top; transform: scaleY(0); }
+html[data-measurement-choice="allowed"] .measurement-banner,
+html[data-measurement-choice="denied"] .measurement-banner { display: none; }
 .responsive-content-image {
   object-position: var(--image-position, center);
 }

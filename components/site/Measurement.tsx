@@ -1,18 +1,22 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { campaignAttribution, MEASUREMENT_KEY, measurementAllowed, measurementConfigured, saveMeasurementPreference, trackEvent } from "@/lib/analytics";
 import { readStorage } from "@/lib/storage";
 
+// Static, trusted bootstrap. Runs after the SSR banner and before the hero is
+// parsed, so neither new nor returning visitors get a consent-induced jump.
+const measurementBootstrap = `(()=>{const root=document.documentElement;let choice="ask";try{const saved=localStorage.getItem("timeless:measurement:v1");if(saved==="allowed"||saved==="denied")choice=saved}catch{}if(navigator.doNotTrack==="1")choice="denied";root.dataset.measurementChoice=choice;const panel=document.getElementById("timeless-measurement");const height=choice==="ask"?(panel?.getBoundingClientRect().height||0):0;root.style.setProperty("--measurement-height",height+"px");root.style.setProperty("--measurement-visible-height",Math.max(0,height-scrollY)+"px")})();`;
+
 export function Measurement() {
   const pathname = usePathname();
-  const [prompt, setPrompt] = useState(false);
+  const [prompt, setPrompt] = useState(measurementConfigured);
   const [allowed, setAllowed] = useState(false);
   const banner = useRef<HTMLElement>(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!prompt || pathname.startsWith("/studio")) return;
     const root = document.documentElement;
     const update = () => {
@@ -40,6 +44,7 @@ export function Measurement() {
       setPrompt(measurementConfigured() && navigator.doNotTrack !== "1" && !readStorage("localStorage", MEASUREMENT_KEY).value);
     };
     const show = () => {
+      document.documentElement.dataset.measurementChoice = "ask";
       setPrompt(measurementConfigured());
       // The preference panel is in document flow, so reveal it when requested
       // from the footer without covering purchase controls or trapping focus.
@@ -89,12 +94,16 @@ export function Measurement() {
   }, [allowed]);
 
   if (!prompt || pathname.startsWith("/studio")) return null;
-  return <aside ref={banner} tabIndex={-1} aria-label="Optional measurement" className="relative z-[85] border-b border-black/25 bg-white px-[var(--gutter)] py-4 text-black">
+  return <>
+  <noscript><style>{".measurement-banner{display:none}"}</style></noscript>
+  <aside id="timeless-measurement" ref={banner} tabIndex={-1} aria-label="Optional measurement" className="measurement-banner relative z-[85] border-b border-black/25 bg-white px-[var(--gutter)] py-4 text-black">
     <div className="mx-auto flex max-w-screen-xl flex-col gap-3 md:flex-row md:items-center md:justify-between md:gap-8">
       <p className="max-w-2xl text-sm leading-relaxed">Allow Google Analytics to measure visits and shopping actions? It is optional; shopping works either way. <Link className="underline" href="/privacy">Privacy</Link></p>
       <div className="flex shrink-0 gap-3"><button className="solid-button min-h-11 px-4" onClick={() => { saveMeasurementPreference(false); setPrompt(false); }}>Decline</button><button className="solid-button min-h-11 px-4" onClick={() => { saveMeasurementPreference(true); setPrompt(false); }}>Allow measurement</button></div>
     </div>
-  </aside>;
+  </aside>
+  <script dangerouslySetInnerHTML={{ __html: measurementBootstrap }} />
+  </>;
 }
 
 export function MeasurementPreferences() {

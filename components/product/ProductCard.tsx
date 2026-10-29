@@ -24,7 +24,7 @@ export function ProductCard({ product }: { product: Product }) {
       </Link>
       </div>
       <div className="order-3 mt-5 md:order-2">
-        <h3 className="text-base">{product.name}</h3><p className="mt-1 text-sm text-muted">{formatMoney(product.price, product.currency)}</p>
+        <h3 className="text-base"><Link href={`/shop/${product.slug}`} className="underline-offset-4 hover:underline">{product.name}</Link></h3><p className="mt-1 text-sm text-muted">{formatMoney(product.price, product.currency)}</p>
       </div>
       <fieldset className="order-2 mt-4 min-w-0 md:order-3 md:mt-5">
         <legend className="mb-2 text-xs uppercase tracking-[.12em] md:sr-only">Colour <span className="ml-3 normal-case tracking-normal text-muted">{variant.name}</span></legend>

@@ -33,7 +33,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
   const whatsappNumber = settings.whatsappNumber || process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
 
   return (
-    <html lang="en" className={host.variable}>
+    <html lang="en" className={host.variable} suppressHydrationWarning>
       <body>
         <Measurement />
         <BagProvider whatsappNumber={whatsappNumber}>

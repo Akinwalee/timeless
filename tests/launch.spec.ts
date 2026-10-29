@@ -6,6 +6,16 @@ test.beforeEach(async ({ context }) => {
 
 test("measurement preferences do not cover the mobile hero or purchase controls", async ({ page }) => {
   await page.setViewportSize({ width: 375, height: 812 });
+  await page.addInitScript(() => {
+    const observed = window as typeof window & { qaLayoutShift?: number };
+    observed.qaLayoutShift = 0;
+    new PerformanceObserver(list => {
+      for (const item of list.getEntries()) {
+        const shift = item as PerformanceEntry & { hadRecentInput: boolean; value: number };
+        if (!shift.hadRecentInput) observed.qaLayoutShift! += shift.value;
+      }
+    }).observe({ type: "layout-shift", buffered: true });
+  });
   await page.goto("/");
   const prompt = page.getByRole("complementary", { name: "Optional measurement" });
   await expect(prompt).toBeVisible();
@@ -14,8 +24,11 @@ test("measurement preferences do not cover the mobile hero or purchase controls"
   const ctaBounds = await cta.boundingBox();
   expect(bannerBounds!.y + bannerBounds!.height).toBeLessThan(ctaBounds!.y);
   expect(ctaBounds!.y + ctaBounds!.height).toBeLessThanOrEqual(812);
+  expect(await page.evaluate(() => (window as typeof window & { qaLayoutShift: number }).qaLayoutShift)).toBeLessThan(0.1);
   await cta.click();
   await expect(page).toHaveURL(/\/shop$/);
+  await page.locator('main h3 a[href^="/shop/"]').first().click();
+  await expect(page).toHaveURL(/\/shop\/essential-tee$/);
   await page.getByRole("button", { name: "Decline", exact: true }).click();
   await expect(prompt).toHaveCount(0);
   await page.getByRole("button", { name: "Measurement preferences", exact: true }).click();
