@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-29",
+  "stage": "intermediate in-flow consent fix before a8235e2",
+  "viewport": "375x812",
+  "type": "single fresh Chromium lab navigation",
+  "cls": 0.21283374279003425,
+  "source": "hero SECTION shifted after prompt insertion",
+  "fixedBy": "SSR prompt and trusted prepaint preference/height bootstrap"
+}

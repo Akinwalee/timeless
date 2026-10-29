@@ -1,0 +1,8 @@
+{
+  "status": 503,
+  "body": "{\"ok\":false,\"message\":\"Newsletter signup is temporarily unavailable. Please try again later.\"}",
+  "request": {
+    "email": "invalid",
+    "consent": false
+  }
+}

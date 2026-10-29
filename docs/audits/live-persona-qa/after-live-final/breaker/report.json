@@ -1,0 +1,56 @@
+{
+  "persona": "breaker",
+  "base": "https://www.weartimeless.xyz",
+  "phase": "after-live-final",
+  "viewport": 1440,
+  "issues": [
+    {
+      "id": "NEWSLETTER-CONFIGURATION",
+      "detail": "Live Brevo configuration missing or invalid"
+    }
+  ],
+  "steps": [
+    "Declined optional measurement",
+    "Prepared WhatsApp request without opening or sending it"
+  ],
+  "errors": [],
+  "screenshots": [
+    "01-landing.png",
+    "02-invalid-email.png",
+    "03-newsletter-result.png",
+    "04-product.png",
+    "05-bag.png",
+    "06-history-bag.png",
+    "07-double-click-bag.png"
+  ],
+  "newsletterSafeProbe": {
+    "status": 503,
+    "body": {
+      "ok": false,
+      "message": "Newsletter signup is temporarily unavailable. Please try again later."
+    }
+  },
+  "domContentLoadedMs": 2529,
+  "invalidEmailBlocked": true,
+  "newsletterSuccessMocked": true,
+  "realEmailDeliveryVerified": false,
+  "newsletterUI": [
+    "Please check your email and confirm your subscription.",
+    "",
+    ""
+  ],
+  "bagText": "YOUR BAG\n\n1 selection\n\nTimeless Essential Tee\n\nBlack · M\n\nREMOVE\n1\n\n₦15,000\n\nItems subtotal\n₦15,000\n\nShipping is additional. Share your delivery address on WhatsApp for a quote and confirmation of availability and the final total before payment.\n\nCHECKOUT ON WHATSAPP\nCLEAR BAG",
+  "firstSuccess": {
+    "type": "order_request_prepared",
+    "host": "wa.me",
+    "messageHasSize": true,
+    "messageHasShipping": true,
+    "itemsSubtotalLabel": true,
+    "noOrderTotalLabel": true,
+    "openedExternal": false
+  },
+  "bagSurvivesHistory": true,
+  "doubleClickBagOpen": true,
+  "doubleClickBagText": "YOUR BAG\n\n1 selection\n\nTimeless Essential Tee\n\nBlack · M\n\nREMOVE\n2\n\n₦30,000\n\nItems subtotal\n₦30,000\n\nShipping is additional. Share your delivery address on WhatsApp for a quote and confirmation of availability and the final total before payment.\n\nCHECKOUT ON WHATSAPP\nCLEAR BAG",
+  "overflow": false
+}

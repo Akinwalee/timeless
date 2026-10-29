@@ -1,0 +1,22 @@
+{
+  "viewport": "375x812",
+  "locale": "fr-NG",
+  "deployment": "a8235e2 (parent-verified)",
+  "catalogueTitleNavigation": true,
+  "firstSuccess": true,
+  "selected": "White / M",
+  "whatsapp": [
+    {
+      "label": "ASK ABOUT MEASUREMENTS",
+      "host": "wa.me",
+      "message": "Please help me choose a size for Timeless Essential Tee."
+    },
+    {
+      "label": "CHECKOUT ON WHATSAPP",
+      "host": "wa.me",
+      "message": "TIMELESS ORDER REQUEST\n\n1. Timeless Essential Tee\nColour: White\nSize: M\nQuantity: 1\nUnit price: ₦15,000\nLine total: ₦15,000\n\nITEMS SUBTOTAL: ₦15,000\n\nShipping is additional and will be quoted after I share my delivery address.\nPlease confirm current availability and the final total before payment."
+    }
+  ],
+  "newsletter": "not submitted",
+  "measurement": "declined; collectors blocked"
+}

@@ -1,0 +1,79 @@
+{
+  "persona": "skeptic first-time buyer",
+  "status": "completed-with-content-gaps",
+  "timestamp": "2026-10-29T20:39:31.095Z",
+  "target": "https://www.weartimeless.xyz",
+  "deployment": "Root reported main17702e5 public-ready; fresh contexts created after that signal.",
+  "method": "Isolated Playwright Chromium 1440x1000; analytics collectors blocked; decline chosen when banner visible. Valid newsletter POSTs always intercepted. No external handoff opened.",
+  "steps": [
+    {
+      "action": "Read /shipping, /returns, /privacy, /terms before newsletter or bag",
+      "result": "All rendered successfully. Shipping, availability, final price and delivery estimate are agreed on WhatsApp before payment. Returns explicitly lacks a fixed voluntary window. Privacy describes Brevo confirmation, consent, storage and providers."
+    },
+    {
+      "action": "Inspect Essential Tee price and fit",
+      "result": "NGN15000 consistent on home/product/bag. M/L/XL available; explicit fit note says it is not a measurement chart. Selected Black M."
+    },
+    {
+      "action": "Invalid email and valid email without consent",
+      "result": "Native validation blocked both, with zero mocked POSTs before consent. Marketing checkbox starts unchecked."
+    },
+    {
+      "action": "Mock newsletter503 and200",
+      "result": "Generic rejection renders on deliberately noncanonical error response;200 renders Check your inbox to confirm your subscription. Follow-up canonical503 response screenshot captured; canonical200 removes the sole footer form, so that follow-up script timed out reading the removed form (test harness issue). No real valid request reached server."
+    },
+    {
+      "action": "Live invalid-only POST to /api/newsletter with www Origin, invalid email and consent false",
+      "result": "503, canonical temporarily unavailable message. Known Brevo setup limitation; no origin403 observed."
+    },
+    {
+      "action": "Add Black M, increase quantity to2, inspect bag and WhatsApp href text without opening",
+      "result": "Items subtotal NGN30000. Draft contains product, Black, M, quantity2, unit NGN15000, line NGN30000 and shipping/final-confirmation caveat."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "P2 copy clarity",
+      "observed": "WhatsApp draft calls merchandise-only amount ORDER TOTAL, while the bag correctly calls it Items subtotal.",
+      "impact": "A cautious buyer can read the amount as final before reaching the following shipping caveat.",
+      "suggestion": "Rename draft label to ITEMS SUBTOTAL."
+    },
+    {
+      "severity": "business-content gap",
+      "observed": "Returns publishes no fixed change-of-mind return/exchange conditions.",
+      "impact": "Buyer must ask before payment; this is explicitly disclosed rather than a broken flow."
+    },
+    {
+      "severity": "business-content gap",
+      "observed": "No garment measurements; fit notes direct buyer to WhatsApp.",
+      "impact": "Buyer cannot independently choose M/L/XL with confidence."
+    }
+  ],
+  "externalSetup": {
+    "brevo": "Owner explicitly says not ready. Live invalid-only503 confirms graceful unavailable response, not successful integration. Delivery, confirmation and unsubscribe were not tested."
+  },
+  "beforeAfter": "Initial sandbox-only blocked report superseded: supported escalated isolated browser succeeded. Baseline policy content and post-deployment policy content were substantively consistent. No source changes made by this persona.",
+  "safety": {
+    "realSubscriptions": 0,
+    "ordersSent": 0,
+    "messagesSent": 0,
+    "cmsMutations": 0,
+    "sourceOrGitEdits": 0,
+    "phonesOrKeysRecorded": false
+  },
+  "limitations": [
+    "Desktop Chromium only; no mobile or assistive-technology run.",
+    "WhatsApp destination and sending not exercised.",
+    "No real provider email or confirmed subscription.",
+    "No legal adequacy assessment."
+  ],
+  "evidence": [
+    "01-size-confusion.png",
+    "02-newsletter-unavailable-mocked.png",
+    "03-newsletter-success-mocked.png",
+    "04-bag-first-success.png",
+    "newsletter.json",
+    "invalid-preflight.json",
+    "whatsapp.json"
+  ]
+}

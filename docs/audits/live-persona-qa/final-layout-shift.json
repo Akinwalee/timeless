@@ -1,0 +1,22 @@
+{
+  "deployment": "a8235e2",
+  "viewport": "375x812",
+  "type": "single-lab-navigation-per-state",
+  "reports": [
+    {
+      "choice": "fresh",
+      "cls": 0,
+      "bannerVisible": true
+    },
+    {
+      "choice": "denied",
+      "cls": 0.000028856964902488936,
+      "bannerVisible": false
+    },
+    {
+      "choice": "allowed",
+      "cls": 0,
+      "bannerVisible": false
+    }
+  ]
+}

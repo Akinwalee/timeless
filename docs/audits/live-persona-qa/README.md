@@ -1,6 +1,6 @@
 # Live launch persona QA — 29 October 2026
 
-Target: https://www.weartimeless.xyz/. Baseline: published site after `ce09563`. Five isolated Chromium contexts represent the requested personas. The requested subagent dispatch failed with `no rollout found` for this side conversation; these are five scripted persona scenarios reviewed by one QA lead, **not five independent agents or human usability participants**.
+Target: https://www.weartimeless.xyz/. Baseline: published site after `ce09563`. Five isolated Chromium contexts represent the requested personas. The first subagent dispatch failed with `no rollout found`; initial baseline and local reruns used five isolated scripted persona scenarios. Fresh-context dispatch subsequently worked. Five independent agents completed public-site persona checks, with their own reports under `independent/`. After the final corrections, the QA lead repeated all five scenarios in fresh browser contexts against final production `a8235e2`; the literal-reader agent also confirmed that final build directly. These remain simulated personas, not human usability participants.
 
 ## Ranked findings
 
@@ -10,7 +10,12 @@ Rank reflects observed affected scenarios, not a prevalence estimate for real vi
 |---|---|---|---|---|
 | 1 | LQ-001: Newsletter cannot request confirmation | 3/5: skeptic, literal, breaker | P1 | Origin handling fixed and regression-tested. **Production Brevo configuration remains missing/invalid; real subscription is blocked.** |
 | 2 | LQ-002: Mobile consent prompt covers the hero CTA | 2/5: mobile, literal | P2 | Fixed in source; both narrow-screen reruns retain visible CTA and shopping controls |
-| 3 | LQ-003: Double-clicking Add immediately dismisses the bag | 1/5: breaker | P2 | Fixed in source; drawer remains open and regression confirms one item per initial double-click |
+| 3 | LQ-003: Double-clicking Add immediately dismisses the bag | 1/5: breaker | P2 | Fixed; drawer remains open and regression confirms one item per initial double-click |
+| 4 | LQ-004: WhatsApp calls an item-only amount ORDER TOTAL | 1/5: independent skeptic | P2 | Changed to ITEMS SUBTOTAL; arithmetic and shipping caveat retained |
+| 5 | LQ-005: Product title is not a navigation link | 1/5: independent literal reader | P3 | Title now links to the same product as its photograph |
+| 6 | LQ-006: Consent startup causes layout shift in intermediate fix | 0/5 persona observations; additional lab probe | P2 | Corrected and measured on final live build; fresh CLS 0 |
+
+Confirmed findings in this scoped QA: **P0 0 · P1 1 · P2 4 · P3 1**. All identified code issues are corrected; LQ-001’s remaining Brevo setup is explicitly deferred by the owner. LQ-006 was a regression introduced and caught during remediation, rather than a defect in the initial baseline.
 
 ### LQ-001 — Signup rejects the actual site and masks missing setup
 
@@ -30,7 +35,7 @@ At 375×812, the initial 242px fixed consent panel overlaps the hero headline an
 - Evidence: [before](baseline/mobile/02-consent-covers-cta.png), [literal overlap report](baseline/literal/report.json), [after](after-local/mobile/01-landing.png).
 - Reproduce: fresh browser storage, 375×812 viewport, initial home load with GA4 configured. Compare panel and CTA bounding boxes before making a choice.
 - Expected: optional measurement never hides shopping navigation or purchasing controls.
-- Change: `components/site/Measurement.tsx:92` places a shorter equal-choice prompt in page flow. Resize/scroll observations reserve the visible header offset; `SiteHeader.tsx` follows it and `HeroScene.tsx` fits the remaining initial viewport. The footer preference action scrolls/focuses the panel when reopened.
+- Change: `components/site/Measurement.tsx` places a shorter equal-choice prompt in page flow. Resize/scroll observations reserve the visible header offset; `SiteHeader.tsx` follows it and `HeroScene.tsx` fits the remaining initial viewport. The footer preference action scrolls/focuses the panel when reopened.
 - Validation: production browser regression checks non-overlap, CTA inside the initial viewport, navigation without deciding first, decline and keyboard focus on reopening. Both 375px persona screenshots were inspected. The local slow-network run uses actual CDP throttling, not mocked image delivery.
 
 ### LQ-003 — Second Add click closes the new drawer
@@ -42,6 +47,18 @@ The breaker prepares an item, closes/reopens the saved bag across back/forward n
 - Expected: a rapid Add double-click leaves the confirmation visible and adds one item. Deliberate later additions and quantity controls remain available.
 - Change: `components/bag/BagDrawer.tsx:41` ignores the second click of a double-click on the backdrop. Ordinary backdrop click, close button and Escape behavior remain available.
 - Validation: a production browser regression checks open dialog and quantity `1` after an initial double-click; the breaker rerun checks saved bag/history and another deliberate addition.
+
+### LQ-004 — WhatsApp amount wording
+
+The independent skeptic found that the bag correctly says “Items subtotal”, but its generated WhatsApp draft still said “ORDER TOTAL”. Shipping was already explicitly additional, so the arithmetic was correct; the label was ambiguous. `lib/bag.ts:135` now says “ITEMS SUBTOTAL”; `lib/bag.test.ts` checks both the expected subtotal and absence of “ORDER TOTAL”. See [skeptic evidence](independent/skeptic/report.md). No actual message was sent.
+
+### LQ-005 — Catalogue title click does nothing
+
+The independent literal reader clicked the product title and had to locate the separate image/View link. `components/product/ProductCard.tsx` now makes the title a real product link. The browser regression navigates via that title on mobile. This is minor discovery friction, not a broken product route. See [literal evidence](independent/literal/report.md).
+
+### LQ-006 — Regression guard: consent startup layout shift
+
+An extra fresh-visit performance probe found CLS `0.2128` from late insertion of the new in-flow prompt. It was caught during verification and corrected before final sign-off: the configured banner is rendered in the initial HTML, with a small static, trusted bootstrap before hero parsing to read the existing preference and establish the initial layout. Returning/DNT visitors are hidden before layout; no-JS visitors do not get nonfunctional consent controls. The original consent/script gate remains intact. The eight-browser suite now includes CLS below `0.1`, visible mobile CTA and the no-JS path. This was a technical regression check, not a counted persona encounter or a field performance claim. [Before measurement](layout-shift-before.json) and [final live measurements](final-layout-shift.json) retain the evidence. Fresh and allowed-state CLS measured 0; denied-state CLS measured 0.000029. These are individual lab navigations, not field distributions.
 
 ## Scenario outcomes after the source fixes
 
@@ -55,6 +72,22 @@ The breaker prepares an item, closes/reopens the saved bag across back/forward n
 
 All five reach the shopping site's safe first success: an itemized WhatsApp request URL with size and shipping disclosure. The WhatsApp application was not opened and no message/order/payment was sent. Three newsletter UIs use intercepted responses after a separate invalid-only server probe; this verifies display behavior, **not actual email delivery**. GA requests are blocked to prevent polluting production analytics.
 
+## Final deployed confirmation
+
+Final code commit **a8235e2** is live on `main`. [Deployment/CI status](final-ci-status.json) shows Vercel, build, deploy and quality success. [Final five-scenario results](after-live-final/results.json) confirm all five prepared an unsent WhatsApp request with size, additional-shipping disclosure, **ITEMS SUBTOTAL** and no **ORDER TOTAL** label. The three signup scenarios correctly retain the owner-deferred missing-Brevo issue; their successful UI confirmations are explicitly mocked. No actual email was delivered.
+
+| Independent persona | Agent evidence | Final consolidated rerun |
+|---|---|---|
+| Impatient | [Report](independent/impatient/report.md) | [Final](after-live-final/impatient/report.json) |
+| Skeptic | [Report](independent/skeptic/report.md) | [Final](after-live-final/skeptic/report.json) |
+| Mobile | [Report and slow-3G measurements](independent/mobile/report.md) | [Final slow-3G run](after-live-final/mobile/report.json) |
+| Literal reader | [Report, including final-build confirmation](independent/literal/report.md) | [Final](after-live-final/literal/report.json) |
+| Breaker | [Report, including double-submit and copy confirmation](independent/breaker/report.md) | [Final](after-live-final/breaker/report.json) |
+
+Independent reports reflect the production phase each agent actually checked. Resuming an expired mobile agent for the last build was unavailable; a replacement could not launch under its interpretation of side-conversation permissions. It established no new findings. The lead therefore performed the final five fresh real-browser runs, including actual 375px/CDP throttling, and separately measured fresh/returning CLS. We do not claim five independent agents each re-executed every final code revision.
+
+Business content still worth supplying: actual garment measurements and explicit voluntary-return arrangements. Current wording accurately labels fit help and asks buyers to confirm terms before payment. Those facts were not invented. One independent navigation timeout was an undiagnosed timing outlier and succeeded on retry; it is not claimed as a fixed application defect. Physical devices, field performance and real delivery/fulfilment remain outside this scoped sign-off.
+
 ## Verification and evidence
 
 - [38 unit tests](unit-tests.txt), [eight production-browser regressions](browser-regressions.txt), [lint](lint.txt), [TypeScript](typecheck.txt), [connected production build](production-build.txt): pass.
@@ -65,4 +98,8 @@ All five reach the shopping site's safe first success: an itemized WhatsApp requ
 
 Reproduce against a safe local production build using `QA_BASE=http://127.0.0.1:3111 QA_PHASE=after-local node docs/audits/live-persona-qa/run.cjs`. Default target is the live domain; valid newsletter submissions are always intercepted. `QA_PERSONAS=breaker` selects one scenario. The script requires the installed Playwright Chromium runtime.
 
-**Release gate: do not call signup launch-ready until the actual Brevo setup and a controlled end-to-end confirmation test pass.** Local source fixes are distinct from deployed verification.
+**Deployment:** the owner confirmed `main` is the production branch. Source fixes `b563eff` were merged with existing main history as `17702e5`; subtotal copy followed as `8c9e1b4`, and final title/startup corrections as `a8235e2`. All were pushed normally to main and redesign. The public API now accepts the www origin and returns the expected missing-Brevo `503`, replacing its prior erroneous `403`. The owner explicitly deferred Brevo configuration; no email delivery is claimed.
+
+**Release gate: do not call signup launch-ready until the actual Brevo setup and a controlled end-to-end confirmation test pass.** See the independent public rerun reports for deployed UI verification.
+
+Final evidence is committed on `redesign`; production `main` remains at the verified application commit `a8235e2`. No code changes follow that verification.

@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-29",
+  "sourceFixCommit": "b563eff",
+  "productionCommit": "17702e5",
+  "productionBranch": "main",
+  "preservedMainHistory": "CNAME deletion and earlier redesign merge",
+  "push": "normal non-force main and redesign",
+  "githubChecks": {
+    "Vercel": "success",
+    "quality": "success",
+    "build": "success",
+    "deploy": "success",
+    "report-build-status": "success"
+  },
+  "publicNewsletterProbe": {
+    "url": "https://www.weartimeless.xyz/api/newsletter",
+    "origin": "https://www.weartimeless.xyz",
+    "invalidPayload": {
+      "email": "invalid",
+      "consent": false
+    },
+    "previousStatus": 403,
+    "deployedStatus": 503,
+    "meaning": "Owned www origin now reaches server configuration guard; Brevo deliberately deferred by owner",
+    "emailSent": false
+  },
+  "independentPersonaReruns": "Reports in independent/; no external order, message or subscription sent",
+  "finalCodeCommit": "a8235e2",
+  "subtotalCopyCommit": "8c9e1b4",
+  "finalFiveScenarioResults": "after-live-final/results.json",
+  "finalCIEvidence": "final-ci-status.json",
+  "finalCLS": "final-layout-shift.json"
+}

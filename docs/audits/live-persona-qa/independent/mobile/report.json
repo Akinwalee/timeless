@@ -1,0 +1,66 @@
+{
+  "target": "https://www.weartimeless.xyz",
+  "deployment": "main17702e5; parent confirmed public-ready before fresh-context run",
+  "persona": "Independent mobile first-time shopper",
+  "outcome": "PASS: selected White/M tee reaches bag and itemized WhatsApp request URL",
+  "environment": {
+    "browser": "isolated Playwright Chromium",
+    "viewport": "375x812",
+    "touch": true,
+    "mobile": true,
+    "network": "500kbps download and upload, 400ms latency via CDP",
+    "cpu": "4x slowdown via CDP",
+    "images": "actual production responses; no image mocks",
+    "analytics": "collectors blocked; measurement declined after CTA"
+  },
+  "checks": {
+    "landingDocumentWidth": 375,
+    "productDocumentWidth": 375,
+    "viewportWidth": 375,
+    "heroCTA": {
+      "top": 758.4375,
+      "bottom": 780,
+      "height": 21.5625
+    },
+    "consentButtons": {
+      "top": 96.25,
+      "bottom": 148.25
+    },
+    "pageErrors": [],
+    "item": "Timeless Essential Tee, White, M, quantity 1",
+    "subtotal": "NGN 15,000",
+    "shipping": "Additional; address quote, availability and final total before payment"
+  },
+  "timing": {
+    "domContentLoadedMs": 4138,
+    "loadMs": 8779,
+    "interpretation": "Single throttled lab navigation; not field Core Web Vitals or real-user distribution"
+  },
+  "findings": [],
+  "observations": [
+    "Consent does not overlap CTA. CTA remains in initial viewport and navigates before consent choice.",
+    "Colour loading explicitly announces Loading White photograph while retaining prior Black image. Controls remain usable; correct White image appears in bag.",
+    "Fit and sizing help offers fit notes and WhatsApp support, rather than numerical measurements. First-order sizing confidence could still cause friction. No measurement enquiry sent."
+  ],
+  "handoff": {
+    "host": "wa.me",
+    "recipient": "redacted",
+    "message": "TIMELESS ORDER REQUEST\n\n1. Timeless Essential Tee\nColour: White\nSize: M\nQuantity: 1\nUnit price: ₦15,000\nLine total: ₦15,000\n\nORDER TOTAL: ₦15,000\n\nShipping is additional and will be quoted after I share my delivery address.\nPlease confirm current availability and the final total before payment."
+  },
+  "limitations": [
+    "Chromium emulation only; no physical-phone Safari, keyboard, safe-area or tactile verification.",
+    "No order, message, payment, signup or CMS changes; WhatsApp href inspected without navigation.",
+    "One scripted independent persona, not a human research participant.",
+    "Two product-card selector timeouts were harness mistakes: uppercase text and accessible name. Corrected selector used View Timeless Essential Tee in Black. Excluded from findings.",
+    "Add was tapped in final purchase section. Main and sticky controls were visible/enabled at size selection; sticky activation not independently exercised.",
+    "Product first-view screenshot catches a header transition; stable purchase screenshot confirms it moves away. Not treated as a defect."
+  ],
+  "screenshots": [
+    "01-landing.png",
+    "02-product-first-view.png",
+    "03-colour-switch.png",
+    "04-size-selected.png",
+    "05-purchase-ready.png",
+    "06-bag-success.png"
+  ]
+}

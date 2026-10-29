@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-10-29T20:36:32.800Z",
+  "invalid": {
+    "valid": false,
+    "message": "Please include an '@' in the email address. 'not-an-email' is missing an '@'."
+  },
+  "consent": {
+    "checked": false,
+    "valid": false,
+    "message": "Please check this box if you want to proceed."
+  },
+  "mockedRequests": [
+    {
+      "method": "POST",
+      "payload": {
+        "email": "[test address redacted]",
+        "consent": true,
+        "website": ""
+      },
+      "status": 503
+    },
+    {
+      "method": "POST",
+      "payload": {
+        "email": "[test address redacted]",
+        "consent": true,
+        "website": ""
+      },
+      "status": 200
+    }
+  ],
+  "successText": "Email address\nI agree to receive Timeless drops and stories by email. Confirm by email and unsubscribe anytime. Privacy\n\nCheck your inbox to confirm your subscription."
+}
