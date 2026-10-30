@@ -35,8 +35,8 @@ export function IdentitySequence() {
 
   return (
     <section id="identity-in-motion" ref={section} className="relative min-h-svh overflow-hidden bg-black text-white" aria-label="Identity in Motion">
-      <div className="absolute left-[var(--gutter)] top-24 z-20 max-w-2xl"><p className="eyebrow mb-4 text-white/75">Identity in Motion</p><h2 className="display text-[clamp(3.5rem,8vw,8rem)]">Worn by every version of you.</h2></div>
-      <div ref={framesRef} className="relative z-10 space-y-4 px-[var(--gutter)] pb-12 pt-[22rem] md:absolute md:inset-0 md:left-[38%] md:space-y-0 md:p-0">
+      <div className="relative z-20 px-[var(--gutter)] pt-24 md:absolute md:left-[var(--gutter)] md:top-24 md:w-[calc(38%_-_var(--gutter)_-_2rem)] md:p-0"><p className="eyebrow mb-4 text-white/75">Identity in Motion</p><h2 className="display text-[clamp(3.5rem,12vw,6rem)] md:text-[clamp(2.5rem,5.8vw,6.5rem)]">Worn by every version of you.</h2></div>
+      <div ref={framesRef} className="relative z-10 space-y-4 px-[var(--gutter)] pb-12 pt-12 md:absolute md:inset-0 md:left-[38%] md:space-y-0 md:p-0">
         {identityFrames.map((frame, index) => <div key={frame.image} className="identity-frame relative aspect-[3/4] overflow-hidden md:absolute md:inset-0 md:aspect-auto" style={{ zIndex: identityFrames.length - index }}><Image src={frame.image} alt={frame.alt} fill sizes={IMAGE_SIZES.identity} className="object-cover" style={{ objectPosition: frame.position }} /><p className="absolute inset-x-4 bottom-4 text-2xl md:hidden">{frame.words}</p></div>)}
       </div>
       <div className="absolute bottom-10 left-[var(--gutter)] z-30 hidden h-20 overflow-hidden md:block">

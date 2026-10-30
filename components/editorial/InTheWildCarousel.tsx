@@ -75,30 +75,34 @@ export function InTheWildCarousel({ entries }: { entries: InTheWildEntry[] }) {
       }}
     >
       <div className="site-shell flex items-end justify-between gap-8">
-        <div><p className="eyebrow text-white/75">Field archive</p><h2 className="display mt-5 text-[clamp(4.5rem,10vw,11rem)]">Timeless In the Wild</h2></div>
+        <div><h2 className="display text-[clamp(4.5rem,10vw,11rem)]">Timeless In the Wild</h2></div>
         <Link href="/in-the-wild" className="text-link desktop-only">Enter the archive <ArrowRight size={15} /></Link>
       </div>
       <p id="wild-carousel-help" className="sr-only">Use the left and right arrow keys to browse stories.</p>
       <div ref={track} tabIndex={0} role="group" aria-label="Story photographs" aria-describedby="wild-carousel-help" className="editorial-carousel mt-14 flex snap-x snap-mandatory gap-4 overflow-x-auto overscroll-x-contain pl-[var(--gutter)] pr-[12vw] md:gap-7 md:pr-[18vw]">
-        {entries.map((entry, slideIndex) => (
+        {entries.map((entry, slideIndex) => {
+          const image = entry.images[0];
+          const portrait = !!(image.width && image.height && image.height > image.width);
+          return (
           <article
             key={entry.id}
             ref={(node) => { slides.current[slideIndex] = node; }}
             data-index={slideIndex}
-            className="w-[84vw] shrink-0 snap-center md:w-[64vw]"
+            className={`w-[84vw] shrink-0 snap-center ${portrait ? "md:w-[27vw]" : "md:w-[64vw]"}`}
             role="group"
             aria-roledescription="slide"
             aria-label={`${slideIndex + 1} of ${entries.length}: ${entry.title}`}
           >
-            <div className={`image-frame ${slideIndex % 2 ? "aspect-[4/5] md:aspect-[16/10]" : "aspect-[3/4] md:aspect-[16/9]"}`}>
-              <ResponsiveImage image={entry.images[0]} frame={{ mobile: slideIndex % 2 ? .8 : .75, desktop: slideIndex % 2 ? 1.6 : 16 / 9 }} sizes="(max-width: 767px) 84vw, 64vw" />
+            <div className={`image-frame aspect-[3/4] ${portrait ? "md:aspect-[3/4]" : "md:aspect-[16/9]"}`}>
+              <ResponsiveImage image={image} sizes={`(max-width: 767px) 84vw, ${portrait ? "27vw" : "64vw"}`} className="object-contain" />
             </div>
-            <div data-caption className="mt-5 grid gap-4 border-t border-white/25 pt-4 md:grid-cols-[1fr_auto]">
+            <div data-caption className={`mt-5 grid gap-4 border-t border-white/25 pt-4 ${portrait ? "" : "md:grid-cols-[1fr_auto]"}`}>
               <div><h3 className="text-[clamp(1.7rem,3vw,3.4rem)] leading-none tracking-[-.045em]">{entry.title}</h3><p className="mt-3 text-xs uppercase tracking-[.13em] text-white/75">{entry.location} · {entry.date}</p></div>
-              <p className="max-w-xs text-sm leading-relaxed text-white/75 md:text-right">{entry.note}</p>
+              <p className={`max-w-xs text-sm leading-relaxed text-white/75 ${portrait ? "" : "md:text-right"}`}>{entry.note}</p>
             </div>
           </article>
-        ))}
+          );
+        })}
       </div>
       <div className="site-shell mt-8 flex items-center justify-between">
         <p className="text-xs tracking-[.16em] text-white/75" aria-live="polite">{String(index + 1).padStart(2, "0")} / {String(entries.length).padStart(2, "0")}</p>

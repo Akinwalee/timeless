@@ -46,7 +46,7 @@ export default async function Home() {
       <InTheWildCarousel entries={inTheWild} />
 
       <section className="site-shell py-[var(--section)]">
-        <div className="mb-16 grid gap-6 md:grid-cols-2 md:items-end"><div><p className="eyebrow text-muted">Journal / Latest</p><h2 className="display mt-5 text-[clamp(4.5rem,9vw,10rem)]">Stories in motion.</h2></div><p className="max-w-sm pb-2 text-sm text-muted md:justify-self-end">People, process and the moments that give timeless its life beyond the catalogue.</p></div>
+        <div className="mb-16 grid gap-6 md:grid-cols-2 md:items-end"><div><h2 className="display text-[clamp(4.5rem,9vw,10rem)]">Stories in motion.</h2></div><p className="max-w-sm pb-2 text-sm text-muted md:justify-self-end">People, process and the moments that give timeless its life beyond the catalogue.</p></div>
         {journal ? (
           <Link href={`/journal/${journal.slug}`} className="group grid gap-6 md:grid-cols-[1.4fr_.6fr]">
             <ImageReveal className="aspect-[16/10]"><ResponsiveImage image={journal.coverImage} frame={{ mobile: 1.6, desktop: 1.6 }} sizes={IMAGE_SIZES.homepageJournal} className="transition-transform duration-700 group-hover:scale-[1.02]" /></ImageReveal>
@@ -55,9 +55,9 @@ export default async function Home() {
         ) : <p className="border-t border-black/20 py-12 text-muted">The next Journal story is being prepared.</p>}
       </section>
 
-      <section className="site-shell grid min-h-[70svh] items-center border-t border-black/15 py-24 md:grid-cols-2">
-        <div><p className="eyebrow text-muted">Community</p><h2 className="display mt-7 text-[clamp(5rem,11vw,12rem)]">Stay close.</h2></div>
-        <div className="mt-10 max-w-xl md:mt-0"><p className="mb-12 text-xl leading-snug tracking-[-.03em]">Drops, stories and things worth knowing before they travel wider.</p><Newsletter /></div>
+      <section className="site-shell grid min-h-[70svh] items-center gap-x-[clamp(3rem,8vw,8rem)] gap-y-12 border-t border-black/15 py-24 md:grid-cols-[minmax(0,.9fr)_minmax(0,1fr)]">
+        <div className="min-w-0"><h2 className="display text-[clamp(4.5rem,8vw,9rem)]">Stay close.</h2></div>
+        <div className="min-w-0 max-w-xl"><p className="mb-12 text-xl leading-snug tracking-[-.03em]">Drops, stories and things worth knowing before they travel wider.</p><Newsletter /></div>
       </section>
 
       <section className="relative overflow-hidden bg-black text-white md:min-h-svh">

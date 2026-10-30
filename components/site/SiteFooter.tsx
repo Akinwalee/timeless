@@ -9,7 +9,7 @@ export function SiteFooter({ settings }: { settings: GlobalSettings }) {
   return (
     <footer className="bg-black px-[var(--gutter)] pb-8 pt-24 text-white md:pt-36">
       <div className="grid gap-20 border-b border-white/25 pb-20 md:grid-cols-2">
-        <div><p className="eyebrow mb-5 text-white/75">Keep in motion</p><h2 className="display max-w-xl text-[clamp(3.7rem,7vw,7.5rem)]">Stay close.</h2><p className="mt-5 max-w-sm text-sm text-white/75">Drops, stories and things worth knowing before they travel wider.</p></div>
+        <div><h2 className="display max-w-xl text-[clamp(3.7rem,7vw,7.5rem)]">Stay close.</h2><p className="mt-5 max-w-sm text-sm text-white/75">Drops, stories and things worth knowing before they travel wider.</p></div>
         <div className="self-end"><Newsletter inverse /></div>
       </div>
       <div className="grid gap-14 py-16 text-[.72rem] uppercase tracking-[.12em] md:grid-cols-[1fr_auto_auto_auto]">

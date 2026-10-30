@@ -105,6 +105,7 @@ html[data-measurement-choice="denied"] .measurement-banner { display: none; }
 .product-colour-selector button[aria-pressed="true"], .product-size-selector button[aria-pressed="true"] { color: var(--paper); }
 .variant-image-enter { animation: variant-image-enter .45s var(--ease-editorial) both; }
 .editorial-carousel { scrollbar-width: none; }
+.editorial-carousel .image-frame { background: #000; }
 .editorial-carousel::-webkit-scrollbar { display: none; }
 .bag-dialog {
   inset-block: 0;
@@ -135,8 +136,6 @@ html[data-measurement-choice="denied"] .measurement-banner { display: none; }
 }
 @media (min-width: 768px) {
   .mobile-only { display: none !important; }
-  .responsive-content-image.product-preview-image { object-fit: cover; }
-  .image-preview-product { background-size: cover; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

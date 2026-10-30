@@ -20,8 +20,7 @@ export default async function JournalPage({ searchParams }: { searchParams: Prom
   return (
     <main id="main-content">
       <section className="page-intro pb-12">
-        <p className="eyebrow text-muted">Timeless archive / 2026</p>
-        <h1 className="display page-title mt-6">Journal</h1>
+        <h1 className="display page-title">Journal</h1>
         <p className="mt-8 max-w-lg text-xl text-muted">People, places, process and identity in motion.</p>
         {categories.length > 1 && (
           <div className="mt-12 flex flex-wrap gap-x-7 gap-y-3 text-[.68rem] uppercase tracking-[.13em]">
